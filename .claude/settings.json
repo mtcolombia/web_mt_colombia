@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"c:/Users/javir/Documents/DEVs/agnostic system/src\" -name \"route.ts\" -path \"*/engine/*\" 2>/dev/null | head -3)",
+      "Read(//c/Users/javir/Documents/DEVs/agnostic system/src/**)",
+      "Bash(node -e ' *)",
+      "Bash(find \"c:/Users/javir/Documents/DEVs/agnostic system/packages\" -name \"AgnosticLogicEngine*\" 2>/dev/null | head -5)",
+      "Read(//c/Users/javir/Documents/DEVs/agnostic system/packages/**)",
+      "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" log --oneline -- \"storage/empresa-2/db/items_variante.json\")",
+      "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" log --oneline -5)",
+      "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" show 2ecff54:storage/empresa-2/db/items_variante.json)",
+      "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" show 4e8b02b --name-only)",
+      "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" check-ignore -v \"storage/empresa-2/db/items_variante.json\")",
+      "Bash(powershell -Command ' *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\javir\\Documents\\DEVs\\agnostic system\\src\\server\\strategies"
+    ]
+  }
+}

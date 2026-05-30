@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <rect width="200" height="48" fill="none"/>
+  <!-- Símbolo circular -->
+  <circle cx="24" cy="24" r="20" stroke="#C9A85D" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="12" stroke="#0F2A44" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="4" fill="#C9A85D"/>
+  <!-- Texto FMC -->
+  <text x="52" y="20" font-family="Georgia, serif" font-size="13" font-weight="600" fill="#0F2A44">Fundación Maharishi</text>
+  <text x="52" y="36" font-family="Georgia, serif" font-size="11" fill="#C9A85D">de Colombia</text>
+</svg>

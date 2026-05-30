@@ -1,0 +1,251 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   DESIGN TOKENS — Manual de Marca MT Colombia
+   Única fuente de verdad. Tailwind v4 genera utilidades automáticamente.
+───────────────────────────────────────────────────────────────────────────── */
+@theme {
+  /* Paleta */
+  --color-azul-profundo: #0F2A44;
+  --color-azul-texto:    #1E40AF;
+  --color-azul-claro:    #3DAEE9;  /* sky blue — actualizado */
+  --color-dorado:        #C9A85D;
+  --color-beige:         #F5F1E8;
+
+  /* Tipografías — referencia variables inyectadas por next/font en <html>
+     Manual de marca: Poppins = PRINCIPAL · Playfair = títulos · Lora = lectura */
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans:    var(--font-poppins),  system-ui, sans-serif;
+  --font-serif:   var(--font-lora),     Georgia, serif;
+
+  /* Radios */
+  --radius-card: 14px;
+  --radius-btn:   8px;
+  --radius-img:  12px;
+
+  /* Sombras */
+  --shadow-card: 0 8px 24px rgba(15, 42, 68, 0.08);
+  --shadow-nav:  0 2px 16px rgba(15, 42, 68, 0.06);
+
+  /* Espaciado de secciones */
+  --spacing-section-y:    7rem;
+  --spacing-section-y-sm: 4rem;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   BASE STYLES
+   Manual de marca: Poppins es la fuente PRINCIPAL para todo el sitio.
+   Playfair Display → H1, H2.  Poppins → H3–H6, UI, párrafos cortos.
+   Lora → lectura larga (se aplica con la clase utilitaria .prose-lora o font-serif).
+───────────────────────────────────────────────────────────────────────────── */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Poppins es la fuente universal por defecto */
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-azul-profundo);
+    background-color: #ffffff;
+    line-height: 1.6;
+  }
+
+  /* Playfair Display para H1, H2 (títulos elegantes) */
+  h1, h2 {
+    font-family: var(--font-display);
+    line-height: 1.15;
+    color: var(--color-azul-profundo);
+  }
+
+  /* Poppins para H3–H6 (interfaz, tarjetas, UI) */
+  h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    line-height: 1.25;
+    color: var(--color-azul-profundo);
+  }
+
+  /* p y li usan Poppins por defecto (regla del manual: Poppins = principal).
+     Aplica font-serif explícitamente donde quieras Lora para lectura larga. */
+  p {
+    line-height: 1.7;
+  }
+
+  li {
+    line-height: 1.65;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   UTILIDADES DE SECCIÓN
+───────────────────────────────────────────────────────────────────────────── */
+@layer utilities {
+  .section-y {
+    padding-top:    var(--spacing-section-y);
+    padding-bottom: var(--spacing-section-y);
+  }
+
+  .section-y-sm {
+    padding-top:    var(--spacing-section-y-sm);
+    padding-bottom: var(--spacing-section-y-sm);
+  }
+
+  .container-site {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  /* Ancho óptimo de lectura */
+  .prose-width {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  /* Lora solo para bloques de lectura larga (artículos, descripciones extensas) */
+  .prose-lora p,
+  .prose-lora li {
+    font-family: var(--font-serif);
+    line-height: 1.75;
+  }
+
+  /* Video responsive sin espacio negro */
+  .video-responsive {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-img);
+  }
+  .video-responsive iframe,
+  .video-responsive video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ── Chip / Badge — sistema glass 2026 ─────────────────────────────────────
+     Principios: figura-fondo sutil, azul transparente, tipografía fina.
+     Inspirado en: Linear, Vercel, Framer, Cal.com, Raycast (2025-2026).
+     .chip         → fondos blancos/beige
+     .chip-light   → fondos azul-profundo oscuros
+     .chip-dorado  → énfasis dorado
+  ─────────────────────────────────────────────────────────────────────────── */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3125rem 0.875rem;
+    border-radius: 9999px;
+    background-color: rgba(15, 42, 68, 0.055);
+    border: 1px solid rgba(15, 42, 68, 0.11);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.60);
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: rgba(15, 42, 68, 0.60);
+    transition: background-color 180ms, border-color 180ms;
+    white-space: nowrap;
+    user-select: none;
+  }
+  .chip:hover {
+    background-color: rgba(15, 42, 68, 0.09);
+    border-color: rgba(15, 42, 68, 0.18);
+  }
+
+  /* Para fondos azul-profundo oscuros */
+  .chip-light {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07);
+    color: rgba(255, 255, 255, 0.70);
+  }
+  .chip-light:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.24);
+  }
+
+  /* Énfasis dorado */
+  .chip-dorado {
+    background-color: rgba(201, 168, 93, 0.09);
+    border-color: rgba(201, 168, 93, 0.28);
+    color: rgba(201, 168, 93, 0.90);
+  }
+
+  /* Carrusel CSS-only (0 JS de librería) */
+  .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .carousel-track::-webkit-scrollbar { display: none; }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   ANIMATION KIT — AnimateIn component
+   Progressive enhancement:
+   • Sin JS  → sin data-ready → elemento visible (no se oculta nunca)
+   • Con JS  → data-ready en mount → estado inicial oculto
+   • IO fire → data-visible → transición a visible
+───────────────────────────────────────────────────────────────────────────── */
+
+/* Estados iniciales — sólo se aplican cuando JS activó data-ready */
+[data-ready][data-anim="fade-up"] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.58s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.58s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-ready][data-anim="fade-in"] {
+  opacity: 0;
+  transition: opacity 0.55s ease;
+}
+[data-ready][data-anim="scale-in"] {
+  opacity: 0;
+  transform: scale(0.93);
+  transition: opacity 0.55s ease,
+              transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-ready][data-anim="fade-left"] {
+  opacity: 0;
+  transform: translateX(22px);
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+[data-ready][data-anim="fade-right"] {
+  opacity: 0;
+  transform: translateX(-22px);
+  transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Estado visible — igual para todos los variantes */
+[data-ready][data-visible][data-anim] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Delays escalonados: delay={1} → 100 ms … delay={5} → 500 ms */
+[data-delay="1"] { transition-delay: 100ms; }
+[data-delay="2"] { transition-delay: 200ms; }
+[data-delay="3"] { transition-delay: 300ms; }
+[data-delay="4"] { transition-delay: 400ms; }
+[data-delay="5"] { transition-delay: 500ms; }

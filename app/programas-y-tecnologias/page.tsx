@@ -1,0 +1,126 @@
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import * as LucideIcons from 'lucide-react'
+import { HeroSecondary } from '@/components/sections/HeroSecondary'
+import { CTABand }       from '@/components/sections/CTABand'
+import { VideoEmbed }    from '@/components/sections/VideoEmbed'
+import { cn }            from '@/lib/utils'
+import { programs }      from '@/lib/content/programs'
+
+export const metadata: Metadata = {
+  title: 'Programas y Tecnologías',
+  description:
+    'Catálogo completo de tecnologías védicas Maharishi: Gandharva Veda, Marmas, Yoga Maharishi, Técnicas Avanzadas de MT y Programa de Sidhis.',
+}
+
+function DynamicIcon({ name, size = 20 }: { name: string; size?: number }) {
+  const Icon = (LucideIcons as unknown as Record<string, React.ComponentType<{ size?: number }>>)[name]
+  if (!Icon) return null
+  return <Icon size={size} />
+}
+
+export default function ProgramasPage() {
+  return (
+    <>
+      <HeroSecondary
+        title="Programas y Tecnologías"
+        subtitle="Tecnologías védicas Maharishi para el bienestar integral"
+        breadcrumbs={[{ label: 'Programas y Tecnologías' }]}
+        imageSrc="/images/hero-programas.jpg"
+      />
+
+      {/* Índice de anclas */}
+      <section className="section-y bg-beige">
+        <div className="container-site">
+          <h2 className="text-3xl md:text-4xl mb-10 text-center">Tecnologías disponibles</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {programs.map((p) => (
+              <a
+                key={p.id}
+                href={`#${p.id}`}
+                className="bg-white rounded-[var(--radius-card)] p-4 text-center
+                           shadow-card hover:shadow-lg hover:-translate-y-1
+                           transition-all duration-200 text-sm font-sans font-medium text-azul-profundo"
+              >
+                {p.name.split('(')[0].trim()}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Secciones de programa */}
+      {programs.map((program, i) => {
+        const imageRight = i % 2 !== 0
+        const bg: 'white' | 'beige' = i % 2 === 0 ? 'white' : 'beige'
+        const hasRealVideo = program.videoId && !program.videoId.startsWith('PLACEHOLDER')
+        // Infogramas verticales: contain en lugar de cover
+        const isInfographic = ['sidhis-mt', 'aromaterapia', 'diagnostico-pulso'].includes(program.id)
+
+        return (
+          <section
+            key={program.id}
+            id={program.id}
+            className={cn('section-y scroll-mt-20', bg === 'beige' ? 'bg-beige' : 'bg-white')}
+          >
+            <div
+              className={cn(
+                'container-site grid grid-cols-1 lg:grid-cols-2 gap-12 items-center',
+                imageRight && 'lg:[&>*:first-child]:order-last',
+              )}
+            >
+              {isInfographic ? (
+                <div className="rounded-[var(--radius-img)] overflow-hidden shadow-card bg-white p-3">
+                  <Image
+                    src={program.image}
+                    alt={program.name}
+                    width={600}
+                    height={800}
+                    className="w-full h-auto object-contain"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
+              ) : (
+                <div className="relative h-72 sm:h-96 lg:h-[420px] rounded-[var(--radius-img)] overflow-hidden shadow-card">
+                  <Image
+                    src={program.image}
+                    alt={program.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
+              )}
+
+              <div>
+                <h3 className="text-2xl md:text-3xl mb-2">{program.name}</h3>
+                <p className="text-dorado font-sans font-medium mb-4">{program.tagline}</p>
+                <p className="font-serif text-azul-profundo/80 mb-6">{program.description}</p>
+
+                <h4 className="font-sans font-semibold mb-3">Beneficios</h4>
+                <ul className="space-y-2">
+                  {program.benefits.map((b, j) => (
+                    <li key={j} className="flex items-center gap-3 font-serif text-sm text-azul-profundo/80">
+                      <span className="text-dorado shrink-0">
+                        <DynamicIcon name={b.icon} size={16} />
+                      </span>
+                      {b.text}
+                    </li>
+                  ))}
+                </ul>
+
+                {hasRealVideo && (
+                  <div className="mt-8">
+                    <VideoEmbed videoId={program.videoId!} title={program.name} />
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+        )
+      })}
+
+      <CTABand title="¿Listo para comenzar?" />
+    </>
+  )
+}
