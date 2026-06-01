@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Compass, Microscope, Sparkles, Calendar } from 'lucide-react'
-import { HeroSecondary } from '@/components/sections/HeroSecondary'
 import { CTABand } from '@/components/sections/CTABand'
 import { Slider } from '@/components/sections/Slider'
 import { articles } from '@/lib/content/blog'
@@ -111,14 +110,78 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
 
   return (
     <>
-      <HeroSecondary
-        title="Blog"
-        subtitle="Artículos sobre Meditación Trascendental, ciencia y bienestar"
-        breadcrumbs={[{ label: 'Blog' }]}
-        imageSrc="/images/hero-blog.jpeg"
-      />
+      {/* ─── Cabecera de Sección Dinámica Unificada (Hero Único y Dynamic del Blog) ─── */}
+      <div className="relative h-[340px] md:h-[420px] overflow-hidden bg-azul-profundo flex items-center">
+        {activeKey === 'noticias-positivas' ? (
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/images/blog/portada-noticias.mp4" type="video/mp4" />
+          </video>
+        ) : (
+          <Image
+            src={
+              activeKey === 'actividades'
+                ? '/images/blog/portada-actividades.jpeg'
+                : activeKey === 'investigacion-cientifica'
+                ? '/images/mt-fondo-cerebro.jpeg'
+                : '/images/hero-blog.jpeg'
+            }
+            alt={activeSection.label}
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
+        {/* Filtro degradado premium */}
+        <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/95 via-azul-profundo/60 to-transparent" />
+        
+        {/* Contenido flotante */}
+        <div className="relative container-site text-white z-10 space-y-4 pt-10">
+          {/* Breadcrumbs integrados */}
+          <nav aria-label="Breadcrumb" className="mb-2">
+            <ol className="flex items-center gap-1.5 text-xs md:text-sm font-sans text-white/60">
+              <li>
+                <Link href={routes.home} className="hover:text-white transition-colors">
+                  Inicio
+                </Link>
+              </li>
+              <span className="text-white/30">/</span>
+              <li className="text-white font-medium">Blog</li>
+            </ol>
+          </nav>
 
-      {/* ─── Pestañas de subsección / Temas ─── */}
+          <div className="space-y-2">
+            <span className="inline-block bg-dorado text-azul-profundo text-[9px] md:text-[10px] font-sans font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full shadow-sm">
+              {activeKey === 'todas' ? 'Blog Global' : activeSection.label}
+            </span>
+            <h1 className="text-3xl md:text-5xl font-display leading-tight text-white max-w-2xl">
+              {activeKey === 'todas'
+                ? 'El Conocimiento Completo'
+                : activeKey === 'investigacion-cientifica'
+                ? 'Evidencia Científica de la Trascendencia'
+                : activeKey === 'noticias-positivas'
+                ? 'Noticias de Bienestar y Sueño'
+                : 'Actividades del Centro de MT'}
+            </h1>
+            <p className="mt-2 text-white/70 font-sans text-xs md:text-base max-w-xl leading-relaxed">
+              {activeKey === 'todas'
+                ? 'Explora las micro-cápsulas de sabiduría de la Ciencia de la Inteligencia Creativa.'
+                : activeKey === 'investigacion-cientifica'
+                ? 'Descubrimientos clínicos y neurocientíficos sobre la salud cerebral y cardiovascular.'
+                : activeKey === 'noticias-positivas'
+                ? 'Historias de éxito, resiliencia y el impacto de un mejor descanso en el bienestar.'
+                : 'Eventos, retiros de residencia y novedades del Centro de Meditación Trascendental.'}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* ─── Pestañas de subsección / Temas (Sticky below the Hero) ─── */}
       <div className="bg-white/95 backdrop-blur-md border-b border-azul-profundo/[0.06] sticky top-16 z-20 transition-all duration-300">
         <div className="container-site">
 
@@ -156,62 +219,6 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
               )
             })}
           </nav>
-        </div>
-      </div>
-
-      {/* ─── Cabecera de Sección Dinámica con Video/Imagen de Portada en Assets ─── */}
-      <div className="relative h-[240px] md:h-[300px] overflow-hidden bg-azul-profundo flex items-center">
-        {activeKey === 'noticias-positivas' ? (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/images/blog/portada-noticias.mp4" type="video/mp4" />
-          </video>
-        ) : (
-          <Image
-            src={
-              activeKey === 'actividades'
-                ? '/images/blog/portada-actividades.jpeg'
-                : activeKey === 'investigacion-cientifica'
-                ? '/images/mt-fondo-cerebro.jpeg'
-                : '/images/hero-blog.jpeg'
-            }
-            alt={activeSection.label}
-            fill
-            className="object-cover"
-            priority
-          />
-        )}
-        {/* Filtro degradado premium */}
-        <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/90 via-azul-profundo/60 to-transparent" />
-        
-        {/* Contenido flotante */}
-        <div className="relative container-site text-white z-10">
-          <span className="inline-block bg-dorado text-azul-profundo text-[9px] font-sans font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full mb-3 shadow-sm">
-            {activeSection.label}
-          </span>
-          <h2 className="text-3xl md:text-4xl font-display leading-tight text-white max-w-xl">
-            {activeKey === 'todas'
-              ? 'El Conocimiento Completo'
-              : activeKey === 'investigacion-cientifica'
-              ? 'Evidencia Científica de la Trascendencia'
-              : activeKey === 'noticias-positivas'
-              ? 'Noticias de Bienestar y Sueño'
-              : 'Actividades del Centro de MT'}
-          </h2>
-          <p className="mt-2 text-white/70 font-sans text-xs md:text-sm max-w-lg leading-relaxed">
-            {activeKey === 'todas'
-              ? 'Explora las micro-cápsulas de sabiduría de la Ciencia de la Inteligencia Creativa.'
-              : activeKey === 'investigacion-cientifica'
-              ? 'Descubrimientos clínicos y neurocientíficos sobre la salud cerebral y cardiovascular.'
-              : activeKey === 'noticias-positivas'
-              ? 'Historias de éxito, resiliencia y el impacto de un mejor descanso en el bienestar.'
-              : 'Eventos, retiros de residencia y novedades del Centro de Meditación Trascendental.'}
-          </p>
         </div>
       </div>
 
