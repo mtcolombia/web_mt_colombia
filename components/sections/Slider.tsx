@@ -153,27 +153,40 @@ export function Slider({
           <ChevronLeft size={18} strokeWidth={2.5} />
         </button>
 
-        {/* Dots */}
-        <div className="flex items-center gap-3">
-          {slides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goTo(i)}
-              aria-label={`Ir a diapositiva ${i + 1}`}
-              className={cn(
-                'rounded-full transition-all duration-300',
-                i === active
-                  ? 'w-6 h-3 bg-dorado shadow-[0_0_8px_rgba(184,134,11,0.7)]'
-                  : cn(
-                      'w-3 h-3',
-                      darkBg
-                        ? 'bg-white/40 hover:bg-dorado/70'
-                        : 'bg-azul-profundo/20 hover:bg-dorado/50',
-                    ),
-              )}
-            />
-          ))}
-        </div>
+        {/* Dots o Contador Numérico Inteligente */}
+        {slides.length > 12 ? (
+          <span className={cn(
+            "font-sans text-[11px] font-bold tracking-widest px-4.5 py-1.5 rounded-full border shadow-sm select-none",
+            darkBg 
+              ? "border-white/10 text-white/80 bg-white/[0.03]" 
+              : "border-azul-profundo/10 text-azul-profundo/70 bg-azul-profundo/[0.01]"
+          )}>
+            <span className="text-dorado">{active + 1}</span>
+            <span className="opacity-30 px-2">/</span>
+            <span>{slides.length}</span>
+          </span>
+        ) : (
+          <div className="flex items-center gap-3">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => goTo(i)}
+                aria-label={`Ir a diapositiva ${i + 1}`}
+                className={cn(
+                  'rounded-full transition-all duration-300',
+                  i === active
+                    ? 'w-6 h-3 bg-dorado shadow-[0_0_8px_rgba(184,134,11,0.7)]'
+                    : cn(
+                        'w-3 h-3',
+                        darkBg
+                          ? 'bg-white/40 hover:bg-dorado/70'
+                          : 'bg-azul-profundo/20 hover:bg-dorado/50',
+                      ),
+                )}
+              />
+            ))}
+          </div>
+        )}
 
         {/* Flecha next */}
         <button

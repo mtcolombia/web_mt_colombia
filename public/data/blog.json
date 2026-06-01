@@ -28,75 +28,1353 @@
     "readingTime": 8
   },
   {
-    "slug": "boletin-salud-bienestar-colombia",
-    "title": "Salud y Bienestar Social: Boletines de Noticias Positivas",
-    "excerpt": "• Código Dorado: Protocolo nacional de atención inmediata en salud mental.\n• Medicamento VIH: Licencia obligatoria reduce precio de US$200 a US$6.\n• Complejo San Juan de Dios: Restauración de 24 edificios en Bogotá para la atención de adultos mayores.\n• Nuevo Sello Nutricional: Combate frontal a la obesidad con rotulado de ultraprocesados.\n• Medellín Saludable: Convocatoria pública para control de ruido en zonas de entretenimiento.",
+    "slug": "noticia-04-27-minsalud-creo-el-codigo-dorado-un-1",
+    "title": "MinSalud creó el 'Código Dorado', un...",
+    "excerpt": "MinSalud creó el 'Código Dorado', un nuevo protocolo que permite actuar de manera inmediata cuando una persona requiera atención en salud mental. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-el-tribunal-andino-confirma-la-validez-2",
+    "title": "El Tribunal Andino confirma la validez...",
+    "excerpt": "El Tribunal Andino confirma la validez de la licencia obligatoria para medicamento para el VIH en Colombia con lo cual bajarán precios de US$200 a US$6. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-se-construira-en-la-unal-de-3",
+    "title": "Se construirá en la UNal de...",
+    "excerpt": "Se construirá en la UNal de Bogotá el Hospital de la Paz para sanar a víctimas de violencia sexual en el marco del Acuerdo de Paz. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-entre-2025-y-2026-el-parque-4",
+    "title": "Entre 2025 y 2026, el Parque...",
+    "excerpt": "Entre 2025 y 2026, el Parque Jaime Duque de Bogotá ha logrado reproducir 3 crías del cóndor andino, especie amenazada en el país. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-06-el-reconocido-programa-60-minutes-de-5",
+    "title": "El reconocido programa ’60 Minutes’ de...",
+    "excerpt": "El reconocido programa ’60 Minutes’ de EE. UU. realizó episodio sobre el avistamiento de aves en Colombia. (Fuente: Linkedin)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-06",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-22-se-invierten-5948-millones-para-recuperar-6",
+    "title": "Se invierten $5.948 millones para recuperar...",
+    "excerpt": "Se invierten $5.948 millones para recuperar 72 has en los humedales Neuta, Tierra Blanca y Santa Ana en la localidad de Soacha en Bogotá. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-22",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-24-corpoguajira-ratifica-decision-que-no-habra-7",
+    "title": "Corpoguajira ratifica decisión que no habrá...",
+    "excerpt": "Corpoguajira ratifica decisión que no habrá nueva mina de carbón en La Guajira al determinar que el proyecto implica intervenciones irreversibles en el territorio. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-24",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-26-distribuidor-automotriz-internacional-ha-reducido-400-8",
+    "title": "Distribuidor automotriz internacional ha reducido 400...",
+    "excerpt": "Distribuidor automotriz internacional ha reducido 400 tons de CO2 en el último año en el país al promover vehículos con tecnologías más limpias y fomentar la electrificación. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-26",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-la-expansion-de-la-capacidad-de-9",
+    "title": "La expansión de la capacidad de...",
+    "excerpt": "La expansión de la capacidad de energía renovable de Ecopetrol durante 2025 produjo ahorros por $288.000 millones y reducción de 136.949 tons de CO2. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-santa-marta-recibe-el-1er-buque-10",
+    "title": "Santa Marta recibe el 1er buque...",
+    "excerpt": "Santa Marta recibe el 1er buque del mundo movido con amoníaco verde que no emite CO2 a la atmósfera. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-20-el-fondo-nacional-del-ahorro-financiara-11",
+    "title": "El Fondo Nacional del Ahorro financiará...",
+    "excerpt": "El Fondo Nacional del Ahorro financiará créditos hasta 100% para comprar vivienda sin pago de cuota inicial. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-20",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-minhacienda-recompra-bonos-por-us4560-millones-12",
+    "title": "MinHacienda recompra bonos por US$4.560 millones...",
+    "excerpt": "MinHacienda recompra bonos por US$4.560 millones para reducir costos en pago de deuda externa. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-cadena-colombiana-de-hamburguesas-obtuvo-luz-13",
+    "title": "Cadena colombiana de hamburguesas obtuvo luz...",
+    "excerpt": "Cadena colombiana de hamburguesas obtuvo luz verde a su reorganización para atender pasivos por $31.000 millones y evitar la insolvencia. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-venta-de-vehiculos-nuevos-en-colombia-14",
+    "title": "Venta de vehículos nuevos en Colombia...",
+    "excerpt": "Venta de vehículos nuevos en Colombia creció 49,3% entre enero y abril, comparado al mismo periodo 2025. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-en-el-1er-trimestre-remesas-alcanzaron-15",
+    "title": "En el 1er trimestre, remesas alcanzaron...",
+    "excerpt": "En el 1er trimestre, remesas alcanzaron US$3.346 millones, el 2do trimestre más alto en la historia, con $1.225 millones para marzo, el mayor ingreso mensual jamás registrado. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-multinacional-de-equipos-tecnologicos-expandira-con-16",
+    "title": "Multinacional de equipos tecnológicos expandirá con...",
+    "excerpt": "Multinacional de equipos tecnológicos expandirá con 14 puntos de venta en el país para alcanzar 60 a final de año. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-grupo-energia-bogota-adquirio-49-de-17",
+    "title": "Grupo Energía Bogotá adquirió 49% de...",
+    "excerpt": "Grupo Energía Bogotá adquirió 49% de las acciones de 4 empresas de transmisión de energía en Brasil. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-cadena-colombiana-de-acabados-de-construccion-18",
+    "title": "Cadena colombiana de acabados de construcción...",
+    "excerpt": "Cadena colombiana de acabados de construcción expandirá con 7 tiendas nuevas en el país este año con inversión de $10.000 millones. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-minagricultura-confirma-inversion-de-52000-millones-19",
+    "title": "MinAgricultura confirma inversión de $52.000 millones...",
+    "excerpt": "MinAgricultura confirma inversión de $52.000 millones para proteger la caficultura ante el fenómeno de El Niño con cobertura en 610 municipios cafeteros de 23 departamentos. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-plataforma-desarrollada-en-pereira-que-ofrece-20",
+    "title": "Plataforma desarrollada en Pereira que ofrece...",
+    "excerpt": "Plataforma desarrollada en Pereira que ofrece una solución digital al tradicional fiado de tienda inició con 10 empleados en 2016 y ya tiene 240 con operaciones en 11 países. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-la-tasa-de-desocupacion-de-88-21",
+    "title": "La tasa de desocupación de 8,8%...",
+    "excerpt": "La tasa de desocupación de 8,8% en el país para marzo es más baja para este mes desde 2001. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-minminas-y-mintrabajo-buscan-vinculacion-laboral-22",
+    "title": "MinMinas y MinTrabajo buscan vinculación laboral...",
+    "excerpt": "MinMinas y MinTrabajo buscan vinculación laboral de 160.000 técnicos electricistas en proyectos de energías renovables y comunidades energéticas. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-caja-de-compensacion-facilito-137378-conexiones-23",
+    "title": "Caja de compensación facilitó 137.378 conexiones...",
+    "excerpt": "Caja de compensación facilitó 137.378 conexiones laborales en Antioquia durante el último año. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-marca-colombiana-experta-en-el-cuidado-24",
+    "title": "Marca colombiana experta en el cuidado...",
+    "excerpt": "Marca colombiana experta en el cuidado y diseño de uñas con 13 años en el mercado ya tiene 37 tiendas y ventas de $65.000 millones al año. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-02-entre-2022-y-2026-los-trabajadores-25",
+    "title": "Entre 2022 y 2026, los trabajadores...",
+    "excerpt": "Entre 2022 y 2026, los trabajadores que se ganan la vida por cuenta propia crecieron 14%, mientras que los particulares o formales lo hicieron 12,7%. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-02",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-03-con-inversion-de-222000-millones-avanza-26",
+    "title": "Con inversión de $222,000 millones avanza...",
+    "excerpt": "Con inversión de $222,000 millones avanza 95% el proyecto de renovación urbana Bronx Distrito Creativo pasando de un foco de crimen en Bogotá a un centro de artes escénicas. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-03",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-la-agencia-nacional-de-mineria-otorgo-27",
+    "title": "La Agencia Nacional de Minería otorgó...",
+    "excerpt": "La Agencia Nacional de Minería otorgó el 1er título de aprovechamiento de oro para comunidades negras, afros, raizales y palenqueras con 38.000 beneficiarios en 150 has en Timbiquí, Cauca. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-22-con-inversion-de-25000-millones-el-28",
+    "title": "Con inversión de $25.000 millones, el...",
+    "excerpt": "Con inversión de $25.000 millones, el 2do muelle turístico de Buenaventura tiene avance del 90% y ampliará la capacidad de 18 a 56 posiciones de amarre de embarcaciones. (Fuente: País)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-22",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-25-el-proyecto-de-doble-calzada-cienaga-29",
+    "title": "El proyecto de doble calzada Ciénaga...",
+    "excerpt": "El proyecto de doble calzada Ciénaga – Barranquilla reducirá tiempos de desplazamientos 40% y optimizará 30% la conexión entre los puertos de Santa Marta y Barranquilla. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-25",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-avanza-proyecto-de-extension-de-la-30",
+    "title": "Avanza proyecto de extensión de la...",
+    "excerpt": "Avanza proyecto de extensión de la Línea 1 del Metro de Bogotá desde Los Héroes hasta la Calle 100 por $3,4 billones. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-durante-abril-se-registraron-113602-motocicletas-31",
+    "title": "Durante abril, se registraron 113.602 motocicletas...",
+    "excerpt": "Durante abril, se registraron 113.602 motocicletas nuevas en el país, 40,69% más que el mismo mes 2025. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-1400-jovenes-de-veredas-rurales-en-32",
+    "title": "1.400 jóvenes de veredas rurales en...",
+    "excerpt": "1.400 jóvenes de veredas rurales en la Sierra Nevada de Santa Marta podrán iniciar su formación profesional con la estrategia Educación Superior en tu Colegio de MinEducación. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-26-la-universidad-simon-bolivar-ofrece-el-33",
+    "title": "La Universidad Simón Bolívar ofrece el...",
+    "excerpt": "La Universidad Simón Bolívar ofrece el 1er doctorado en Inteligencia Artificial en el Caribe para formar investigadores y conectar ciencia con industria. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-26",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-el-concejo-de-ibague-prohibe-usar-34",
+    "title": "El Concejo de Ibagué prohíbe usar...",
+    "excerpt": "El Concejo de Ibagué prohíbe usar celulares en colegios públicos de la ciudad, tanto en clases como en descansos. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-plataforma-internacional-de-streaming-presenta-serie-35",
+    "title": "Plataforma internacional de streaming presenta serie...",
+    "excerpt": "Plataforma internacional de streaming presenta serie documental sobre el futbolista colombiano James Rodríguez. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-con-65000-asistentes-el-festival-internacional-36",
+    "title": "Con 65.000 asistentes, el Festival Internacional...",
+    "excerpt": "Con 65.000 asistentes, el Festival Internacional de Cine de Cartagena tuvo 250 proyecciones, 1.000 citas de industria y actividades comunitarias en 14 sectores de la ciudad. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-se-realiza-en-medellin-el-alternativa-37",
+    "title": "Se realiza en Medellín el Alternativa...",
+    "excerpt": "Se realiza en Medellín el Alternativa Film Festival con 10.000 asistentes y US$120.000 en premios en 7 categorías donde se presentaron 36 películas del Sur Global. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-03-el-cuento-un-senor-muy-viejo-38",
+    "title": "El cuento ‘Un señor muy viejo...",
+    "excerpt": "El cuento ‘Un señor muy viejo con alas enormes’ de Gabriel García Márquez inspiró un video por el director indú Tarsem Singh con 1.000 millones de vistas en YouTube. (Fuente: Linkedin)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-03",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-01-la-feria-internacional-del-libro-de-39",
+    "title": "La Feria Internacional del Libro de...",
+    "excerpt": "La Feria Internacional del Libro de Bogotá, uno de los eventos literarios más significativos del mundo, atrae a 600,000 visitantes, alberga miles de eventos culturales y cuenta con cientos de expositores internacionales. (Fuente: Colombia One)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-20-el-artista-colombiano-carlos-vives-inicio-40",
+    "title": "El artista colombiano Carlos Vives inició...",
+    "excerpt": "El artista colombiano Carlos Vives inició su gira internacional Tour al Sol 2026 en el Coca-Cola Coliseum de Toronto con boletería agotada. (Fuente: Informador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-20",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-21-la-feria-internacional-del-libro-de-41",
+    "title": "La Feria Internacional del Libro de...",
+    "excerpt": "La Feria Internacional del Libro de Bogotá tiene una agenda dedicada conocer a la Amazonía a través de la literatura, la ciencia y el arte. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-21",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-25-se-realiza-en-cali-el-xxv-42",
+    "title": "Se realiza en Cali el XXV...",
+    "excerpt": "Se realiza en Cali el XXV Festival Internacional de Títeres que congrega a compañías de España, Cuba, Argentina, Brasil, Ecuador, Perú y Colombia. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-25",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-02-shakira-reunio-la-cifra-historica-de-43",
+    "title": "Shakira reunió la cifra histórica de...",
+    "excerpt": "Shakira reunió la cifra histórica de 2 millones de asistentes a un concierto gratuito en las playas de Copacabana en Río de Janeiro, como parte de su gira por Brasil. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-02",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-02-en-corea-del-sur-seran-expuestas-44",
+    "title": "En Corea del Sur serán expuestas...",
+    "excerpt": "En Corea del Sur serán expuestas las obras de 20 artistas colombianos. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-02",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-26-en-los-iv-juegos-suramericanos-de-45",
+    "title": "En los IV Juegos Suramericanos de...",
+    "excerpt": "En los IV Juegos Suramericanos de la Juventud Panamá 2026, Colombia quedó en 4to lugar con 26 medallas de oro, 19 de plata y 44 de bronce. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-26",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-26-colombia-es-campeona-en-atletismo-por-46",
+    "title": "Colombia es campeona en atletismo por...",
+    "excerpt": "Colombia es campeona en atletismo por 1ra vez en la historia de los Juegos Suramericanos de la Juventud Panamá 2026 con 9 medallas de oro, 3 de plata y 5 de bronce. (Fuente: Mondo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-26",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-se-realiza-en-bogota-el-congreso-47",
+    "title": "Se realiza en Bogotá el Congreso...",
+    "excerpt": "Se realiza en Bogotá el Congreso Internacional en Deporte Seguro y Equidad de Género con expositores nacionales e internacionales. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-el-ciclista-boyacense-duvan-pena-gano-48",
+    "title": "El ciclista boyacense Duván Peña ganó...",
+    "excerpt": "El ciclista boyacense Duván Peña ganó el Cross Country Roero Piemonte, en Italia. (Fuente: BR Noticias)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-se-realiza-la-maraton-de-cali-49",
+    "title": "Se realiza la Maratón de Cali...",
+    "excerpt": "Se realiza la Maratón de Cali con 20.000 corredores de 49 países con un impacto económico de $16.000 millones. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-el-colombiano-yeison-lopez-es-campeon-50",
+    "title": "El colombiano Yeison López es campeón...",
+    "excerpt": "El colombiano Yeison López es campeón en el Panamericano de Pesas en Panamá en la categoría 88 kgs e impuso 3 récords mundiales. (Fuente: Comité Olímpico Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-el-pedalista-boyacense-santiago-umba-gano-51",
+    "title": "El pedalista boyacense Santiago Umba ganó...",
+    "excerpt": "El pedalista boyacense Santiago Umba ganó la carrera GP Vorarlberg de 163,1 kms en Nenzing, Austria. (Fuente: Mundo Ciclístico)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-03-se-realiza-la-copa-mundial-de-52",
+    "title": "Se realiza la Copa Mundial de...",
+    "excerpt": "Se realiza la Copa Mundial de Sóftbol Masculino Sub 23 en Sincelejo que recibió reconocimiento internacional por tener la mejor afición de sóftbol del mundo. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-03",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-para-combatir-la-inseguridad-alimentaria-y-53",
+    "title": "Para combatir la inseguridad alimentaria y...",
+    "excerpt": "Para combatir la inseguridad alimentaria y gestionar la sobreoferta en el sector avícola, MinAgricultura entregará 4 millones de huevos a familias vulnerables en Bogotá. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-campesinos-del-cocuy-reciben-titulos-de-54",
+    "title": "Campesinos del Cocuy reciben títulos de...",
+    "excerpt": "Campesinos del Cocuy reciben títulos de sus tierras, luego de un siglo de disputa, y la reconstrucción de títulos que datan desde la época colonial. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-02-tras-quiebra-de-aerolinea-estadounidense-avianca-55",
+    "title": "Tras quiebra de aerolínea estadounidense, Avianca...",
+    "excerpt": "Tras quiebra de aerolínea estadounidense, Avianca trae de forma gratuita a Colombia a pasajeros varados en ese país. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-02",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-02-20-honran-en-miami-al-artista-colombiano-56",
+    "title": "Honran en Miami al artista colombiano...",
+    "excerpt": "Honran en Miami al artista colombiano Juanes con el 1er Premio Lo Nuestro a la Trayectoria por su autenticidad, evolución constante y profunda conexión con sus raíces. (Fuente: Radio Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-02-20",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-03-el-lider-indigena-colombiano-hernando-chindoy-57",
+    "title": "El líder indígena colombiano Hernando Chindoy...",
+    "excerpt": "El líder indígena colombiano Hernando Chindoy recibió en París el galardón la Iniciativa Marianne para Defensores de los Derechos Humanos. (Fuente: País)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-03",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-14-el-alcalde-de-bogota-es-el-58",
+    "title": "El alcalde de Bogotá es el...",
+    "excerpt": "El alcalde de Bogotá es el 9no mejor valorado de Latinoamérica. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-14",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-21-el-director-santandereano-julian-gomez-gana-59",
+    "title": "El director santandereano Julián Gómez gana...",
+    "excerpt": "El director santandereano Julián Gómez gana premio a mejor serie de animación iberoamericana con historia inspirada en Charalá. (Fuente: Vanguardia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-21",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-24-la-camara-colombo-venezolana-abre-nueva-60",
+    "title": "La Cámara Colombo Venezolana abre nueva...",
+    "excerpt": "La Cámara Colombo Venezolana abre nueva oficina empresarial en Santa Marta para promover comercio e inversión con Venezuela y la reactivación económica del vecino país. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-24",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-colombianos-que-viven-en-madrid-barcelona-61",
+    "title": "Colombianos que viven en Madrid, Barcelona...",
+    "excerpt": "Colombianos que viven en Madrid, Barcelona y Valencia, España, tendrán servicios de Registro Civil en tiempo real, siendo las 1ras ciudades europeas en ofrecer este servicio. (Fuente: Colombia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-sistema-de-drones-ayuda-a-que-62",
+    "title": "Sistema de drones ayuda a que...",
+    "excerpt": "Sistema de drones ayuda a que la Fuerza Pública realice patrullajes en el corredor entre Florida, Valle, y Miranda, Cauca, para combatir el accionar de grupos armados. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-17-entidades-lanzan-alerta-rosa-para-63",
+    "title": "17 entidades lanzan Alerta Rosa para...",
+    "excerpt": "17 entidades lanzan Alerta Rosa para búsqueda inmediata de menores y mujeres articulando acciones entre instituciones públicas, organizaciones civiles y la sociedad. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-hurto-de-motocicletas-en-antioquia-en-64",
+    "title": "Hurto de motocicletas en Antioquia en...",
+    "excerpt": "Hurto de motocicletas en Antioquia en el 1er trimestre se redujo 49%, comparado al mismo periodo 2025. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-02-rescatan-a-15-personas-secuestradas-en-65",
+    "title": "Rescatan a 15 personas secuestradas en...",
+    "excerpt": "Rescatan a 15 personas secuestradas en Riohacha, La Guajira, por integrantes de las Autodefensas. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-02",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-22-la-jurisdiccion-especial-para-la-paz-66",
+    "title": "La Jurisdicción Especial para la Paz...",
+    "excerpt": "La Jurisdicción Especial para la Paz ordena crear espacios de memoria en sitios relacionados con la toma del Palacio de Justicia. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-22",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-mindefensa-pedira-perdon-a-las-victimas-67",
+    "title": "MinDefensa pedirá perdón a las víctimas...",
+    "excerpt": "MinDefensa pedirá perdón a las víctimas de la masacre de Bojayá, Chocó, por fallar en su deber de proteger a la población civil en 2002. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-cadena-colombiana-de-tiendas-de-ropa-68",
+    "title": "Cadena colombiana de tiendas de ropa...",
+    "excerpt": "Cadena colombiana de tiendas de ropa con 405 locales en 6 países de la región entró a extinción de dominio por contrabando y lavado de activos. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-la-superintendencia-de-industria-y-comercio-69",
+    "title": "La Superintendencia de Industria y Comercio...",
+    "excerpt": "La Superintendencia de Industria y Comercio multó a empresa de telecomunicaciones por fallas en procesos de portabilidad numérica. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-22-en-operativo-entre-colombia-y-ee-70",
+    "title": "En operativo entre Colombia y EE...",
+    "excerpt": "En operativo entre Colombia y EE. UU., desmantelan estructura criminal dedicada al narcotráfico y al lavado de activos mediante criptomonedas y empresas fachada. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-22",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-25-incautan-6-millones-de-cigarrillos-de-71",
+    "title": "Incautan 6 millones de cigarrillos de...",
+    "excerpt": "Incautan 6 millones de cigarrillos de contrabando en operativo en el barrio San Francisco de Maicao. (Fuente: Diario del Norte)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-25",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-26-policia-y-armada-incautan-2-tons-72",
+    "title": "Policía y Armada incautan 2 tons...",
+    "excerpt": "Policía y Armada incautan 2 tons de marihuana transportadas en una tractomula en Puerto Gaitán, Meta. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-26",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-capturan-en-pereira-donde-llevaba-oculto-73",
+    "title": "Capturan en Pereira, donde llevaba oculto...",
+    "excerpt": "Capturan en Pereira, donde llevaba oculto 20 años, hombre requerido por la justicia de EE. UU. por tráfico de migrantes. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-24-los-24-edificios-del-complejo-universitario-74",
+    "title": "Los 24 edificios del complejo universitario...",
+    "excerpt": "Los 24 edificios del complejo universitario San Juan de Dios de Bogotá serán rehabilitados como un centro dedicado a la salud de adultos mayores. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-24",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-minsalud-implementa-nuevo-sello-de-ultraprocesado-75",
+    "title": "MinSalud implementa nuevo sello de ‘Ultraprocesado’...",
+    "excerpt": "MinSalud implementa nuevo sello de ‘Ultraprocesado’ que busca combatir la obesidad. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-medellin-abre-convocatoria-para-ayudar-a-76",
+    "title": "Medellín abre convocatoria para ayudar a...",
+    "excerpt": "Medellín abre convocatoria para ayudar a bares y discotecas a controlar el ruido. (Fuente: Colombiano)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-08",
-    "readingTime": 3
+    "readingTime": 1
   },
   {
-    "slug": "boletin-medio-ambiente-biodiversidad-colombia",
-    "title": "Conservación de la Biodiversidad y Reforestación",
-    "excerpt": "• Amazonía Libre de Extractivismo: Hito mundial al prohibir toda minería y petróleo en la selva.\n• Concesión Forestal Campesina: Entrega de 23.000 hectáreas de bosque para su aprovechamiento comunitario sostenible.\n• Restauración en Cabo Tortuga: Recuperación costera integral frente a la erosión en Santa Marta.\n• Recuperación en Soacha: Inversión de $5.948 millones para recuperar 72 hectáreas en humedales Neuta y Tierra Blanca.\n• Protección en Risaralda: 35 cámaras trampa monitorean la danta de montaña en el Parque Ucumarí.",
+    "slug": "noticia-04-30-ong-global-instala-35-camaras-trampa-77",
+    "title": "ONG global instala 35 cámaras trampa...",
+    "excerpt": "ONG global instala 35 cámaras trampa en el Parque Regional Ucumarí en Risaralda para monitorear la danta de montaña, una especie amenazada. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-07-practican-cirugia-sin-precedentes-a-un-78",
+    "title": "Practican cirugía sin precedentes a un...",
+    "excerpt": "Practican cirugía sin precedentes a un oso hormiguero en Antioquia tras atropellamiento. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-07",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-09-capturan-la-reaparicion-de-felinos-en-79",
+    "title": "Capturan la reaparición de felinos en...",
+    "excerpt": "Capturan la reaparición de felinos en Bahía Málaga, Valle del Cauca, tras procesos de restauración. (Fuente: República)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-09",
-    "readingTime": 3
+    "readingTime": 1
   },
   {
-    "slug": "boletin-transicion-energetica-sostenibilidad-colombia",
-    "title": "Transición Energética y Energías Limpias",
-    "excerpt": "• Inversión en Parques Solares: US$1.000 millones proyectados en infraestructura de energía solar.\n• Transición Justa: Científicos entregan ruta con 12 recomendaciones en Santa Marta.\n• Amoníaco Verde: Santa Marta recibe el primer buque ecológico del mundo libre de emisiones de CO2.\n• Descarbonización de Ecopetrol: Ahorros por $288.000 millones y reducción de 136.000 toneladas de CO2.\n• Electrificación de Transporte: Distribuidor automotriz reduce 400 toneladas de CO2 al fomentar movilidad eléctrica.",
+    "slug": "noticia-03-14-colombia-se-convierte-en-el-1er-80",
+    "title": "Colombia se convierte en el 1er...",
+    "excerpt": "Colombia se convierte en el 1er país en prohibir toda actividad petrolera y minera en la Amazonía. (Fuente: Pitalito Noticias)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-03-14",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-se-realizara-en-santa-marta-la-81",
+    "title": "Se realizará en Santa Marta la...",
+    "excerpt": "Se realizará en Santa Marta la restauración de Cabo Tortuga para recuperar playas afectadas por erosión costera. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-minambiente-entrega-1ra-concesion-forestal-para-82",
+    "title": "MinAmbiente entrega 1ra concesión forestal para...",
+    "excerpt": "MinAmbiente entrega 1ra concesión forestal para que campesinos administren y aprovechen de manera sostenible 23.000 has de bosque en la Amazonía. (Fuente: Presidencia)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-08",
-    "readingTime": 3
+    "readingTime": 1
   },
   {
-    "slug": "boletin-economia-productividad-exportaciones-colombia",
-    "title": "Economía y Productividad: Crecimiento y Solidez Financiera",
-    "excerpt": "• Exportaciones en Alza: Crecimiento del 20,9% en marzo de 2026 (US$5.315 millones).\n• Flores de Exportación: 330 millones de flores colombianas adornaron el Día de la Madre en EE. UU.\n• Cacao en Expansión: Exportaciones de grano aumentaron un 59,9% interanual.\n• Inversión Extranjera Directa: Captación de US$831 millones en marzo, un incremento del 19%.\n• Remesas Históricas: Ingreso de remesas por US$3.346 millones en el primer trimestre, segundo más alto de la historia.",
+    "slug": "noticia-05-09-medellin-estrena-sistema-de-riego-aereo-83",
+    "title": "Medellín estrena sistema de riego aéreo...",
+    "excerpt": "Medellín estrena sistema de riego aéreo por aspersores que capta aguas lluvias para jardines en zonas públicas. (Fuente: Colombiano)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-09",
-    "readingTime": 3
+    "readingTime": 1
   },
   {
-    "slug": "boletin-educacion-ciencia-tecnologia-colombia",
-    "title": "Educación y Ciencia: Innovación y Oportunidades Profesionales",
-    "excerpt": "• Prácticas Remuneradas: MinTrabajo habilita pasantías pagas para estudiantes técnicos y profesionales.\n• STEM y Clima: Fortalecimiento ambiental con 2.800 nuevos Centros de Interés en el país.\n• Créditos Educativos: Bogotá financia el 100% de la matrícula en 9 universidades.\n• IA en el Caribe: Universidad Simón Bolívar lanza el primer doctorado en Inteligencia Artificial.\n• Sierra Nevada: 1.400 jóvenes rurales inician formación técnica superior en sus propios colegios.",
+    "slug": "noticia-04-29-en-la-1ra-conferencia-para-la-84",
+    "title": "En la 1ra Conferencia para la...",
+    "excerpt": "En la 1ra Conferencia para la Transición Más Allá de los Combustibles Fósiles en Santa Marta científicos entregaron documento con 12 recomendaciones para la transición energética. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-fondo-latinoamericano-invertira-us1000-millones-en-85",
+    "title": "Fondo latinoamericano invertirá US$1.000 millones en...",
+    "excerpt": "Fondo latinoamericano invertirá US$1.000 millones en parques solares en el país. (Fuente: Tiempo)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-08",
-    "readingTime": 3
+    "readingTime": 1
   },
   {
-    "slug": "boletin-cultura-entretenimiento-reconocimiento-colombia",
-    "title": "Cultura, Arte y Reconocimiento de Marca País",
-    "excerpt": "• Canción Oficial de la Copa Mundial 2026: Shakira interpretará el tema oficial del mundial.\n• Patrimonio Recuperado: Colombia repatría más de 1.000 piezas arqueológicas desde el 2022.\n• Denominación de Origen: El mangostino de Mariquita, Tolima, recibe sello de origen nacional.\n• Rock al Parque 30 Años: Celebración histórica con lanzamientos literarios y vinilos conmemorativos.\n• Shakira en Río: Cifra récord de 2 millones de asistentes al concierto gratuito en la playa de Copacabana.",
+    "slug": "noticia-04-21-la-inversion-extranjera-directa-por-us831-86",
+    "title": "La Inversión Extranjera Directa por US$831...",
+    "excerpt": "La Inversión Extranjera Directa por US$831 millones en marzo fue 19% más que el mismo mes 2025. (Fuente: Espectador)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
-    "publishedAt": "2026-05-09",
-    "readingTime": 3
+    "publishedAt": "2026-04-21",
+    "readingTime": 1
   },
   {
-    "slug": "boletin-deporte-victorias-mundiales-colombia",
-    "title": "Hazañas Deportivas: Campeones Colombianos en el Mundo",
-    "excerpt": "• Patinaje de Velocidad: Colombia gana la International Cup en Italia con 18 medallas de oro.\n• Pesas Panamericano: Selección Colombia campeona en Panamá (16 oros, 10 platas, 12 bronces).\n• Récord en Chicamocha: Diego Molano cruza el Cañón con los ojos vendados sobre cuerda floja.\n• Récord en Jabalina: Dilan Graciano triunfa con medalla de oro en los Juegos Suramericanos.\n• Pesas Récord: Yeison López conquista Panamericano de Pesas e impone 3 récords mundiales.",
+    "slug": "noticia-04-21-en-marzo-el-gasto-de-hogares-87",
+    "title": "En marzo el gasto de hogares...",
+    "excerpt": "En marzo el gasto de hogares fue de $98,6 billones, con crecimiento real de 2,38%, después de inflación. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-21",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-antioquia-mantiene-su-puntaje-aaa-de-88",
+    "title": "Antioquia mantiene su puntaje AAA de...",
+    "excerpt": "Antioquia mantiene su puntaje AAA de calificadora internacional de riesgo por la solidez financiera del departamento que permite créditos con mejores condiciones. (Fuente: Colombiano)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-08",
-    "readingTime": 3
+    "readingTime": 1
   },
   {
-    "slug": "boletin-justicia-paz-apoyo-social-colombia",
-    "title": "Construcción de Paz, Tierras Campesinas y Apoyo Social",
-    "excerpt": "• Restitución de Tierras: Entrega de finca de 1.450 hectáreas a 227 familias campesinas en Sucre.\n• Títulos de Propiedad: 100 familias afectadas por la violencia reciben títulos en Flor del Monte.\n• Tierras por la Paz: Agencia Nacional de Tierras entrega 600 has incautadas al narcotráfico en Risaralda.\n• Apoyo Social: MinAgricultura distribuye 4 millones de huevos a familias vulnerables.\n• Reconciliación: 29 integrantes del Clan del Golfo se concentran en zonas temporales para desmovilización.",
+    "slug": "noticia-05-05-exportaciones-de-colombia-en-marzo-por-89",
+    "title": "Exportaciones de Colombia en marzo por...",
+    "excerpt": "Exportaciones de Colombia en marzo por US$5.315,9 millones fueron 20,9% más que el mismo mes de 2025. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-05",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-06-exportaciones-de-cacao-en-grano-cerraron-90",
+    "title": "Exportaciones de cacao en grano cerraron...",
+    "excerpt": "Exportaciones de cacao en grano cerraron en 16.457 tons en 2025, 59,9% más que 2024. (Fuente: Sectorial)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-06",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-en-el-1er-trimestre-aumento-exportacion-91",
+    "title": "En el 1er trimestre aumentó exportación...",
+    "excerpt": "En el 1er trimestre aumentó exportación de vehículos 53,3% y maquinaria 21,7% y la agroindustria creció 21,1%. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-09-330-millones-de-flores-colombianas-adornan-92",
+    "title": "330 millones de flores colombianas adornan...",
+    "excerpt": "330 millones de flores colombianas adornan el Día de la Madre en EE. UU. (Fuente: Colombiano)",
     "category": "noticias-positivas",
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-09",
-    "readingTime": 3
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-03-17-minagricultura-ha-declarado-197000-has-como-93",
+    "title": "MinAgricultura ha declarado 197.000 has como...",
+    "excerpt": "MinAgricultura ha declarado 197.000 has como Áreas de Protección para la Producción de Alimentos en municipios de Antioquia y Tolima. (Fuente: Meridiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-03-17",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-09-nueva-convocatoria-de-la-comision-nacional-94",
+    "title": "Nueva convocatoria de la Comisión Nacional...",
+    "excerpt": "Nueva convocatoria de la Comisión Nacional del Servicio Civil tiene 1.000 vacantes con salarios de hasta $11 millones en 29 entidades ubicadas en Bogotá y 8 departamentos. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-09",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-multinacional-barranquillera-de-vidrio-arquitectonico-tuvo-95",
+    "title": "Multinacional barranquillera de vidrio arquitectónico tuvo...",
+    "excerpt": "Multinacional barranquillera de vidrio arquitectónico tuvo ingresos por US$249 millones en el 1er trimestre, 12% más que el mismo periodo 2025, y construirá nueva planta automatizada. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-25-la-demanda-de-energia-en-el-96",
+    "title": "La demanda de energía en el...",
+    "excerpt": "La demanda de energía en el país aumentó 5,67% en marzo, comparado al mismo mes 2025. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-25",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-multinacional-minera-colombiana-tuvo-utilidad-de-97",
+    "title": "Multinacional minera colombiana tuvo utilidad de...",
+    "excerpt": "Multinacional minera colombiana tuvo utilidad de $324.314 millones en el 1er trimestre, 104% más que el mismo periodo 2025, impulsado por el aumento en el precio del oro. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-para-mejorar-movilidad-en-el-oriente-98",
+    "title": "Para mejorar movilidad en el Oriente...",
+    "excerpt": "Para mejorar movilidad en el Oriente antioqueño se invierten $373.000 millones en infraestructura vial este año. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-04-la-ruta-barranquilla-miami-de-avianca-99",
+    "title": "La ruta Barranquilla-Miami de Avianca pasará...",
+    "excerpt": "La ruta Barranquilla-Miami de Avianca pasará de tres frecuencias semanales a una diaria. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-04",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-21-mintrabajo-ofrece-practicas-remuneradas-para-estudiantes-100",
+    "title": "MinTrabajo ofrece prácticas remuneradas para estudiantes...",
+    "excerpt": "MinTrabajo ofrece prácticas remuneradas para estudiantes hasta 5 meses en programas técnicos, tecnológicos y profesionales en las secretarías de educación del país. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-21",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-22-mineducacion-fortalece-la-educacion-ambiental-con-101",
+    "title": "MinEducación fortalece la educación ambiental con...",
+    "excerpt": "MinEducación fortalece la educación ambiental con 2.800 Centros de Interés y una apuesta STEM (Ciencia, Tecnología, Ingeniería y Matemáticas) enfocada en cambio climático. (Fuente: MinEducación)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-22",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-23-la-alcaldia-de-bogota-ofrece-lineas-102",
+    "title": "La Alcaldía de Bogotá ofrece líneas...",
+    "excerpt": "La Alcaldía de Bogotá ofrece líneas de crédito para cubrir el 100% de la matrícula en 9 universidades de la capital. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-23",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-unicordoba-tendra-un-doctorado-en-biotecnologia-103",
+    "title": "UniCórdoba tendrá un doctorado en Biotecnología...",
+    "excerpt": "UniCórdoba tendrá un doctorado en Biotecnología, el 1ro en la región Caribe. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-07-se-realiza-en-boyaca-un-curso-104",
+    "title": "Se realiza en Boyacá un curso-taller...",
+    "excerpt": "Se realiza en Boyacá un curso-taller de cooperación entre Colombia y Perú para transferir tecnología y saberes para el cultivo de la papa. (Fuente: Sie7e Días Boyacá)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-07",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-el-icetex-ofrece-150-becas-del-105",
+    "title": "El Icetex ofrece 150 becas del...",
+    "excerpt": "El Icetex ofrece 150 becas del 30% en la matrícula para profesionales colombianos interesados en cursar maestrías presenciales en la Universidad Antonio de Nebrija en España. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-construiran-en-chia-un-plantel-educativo-106",
+    "title": "Construirán en Chía un plantel educativo...",
+    "excerpt": "Construirán en Chía un plantel educativo por $20.000 millones para 1.000 estudiantes que integrará dos colegios y un preescolar privados. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-para-celebrar-los-30-anos-del-107",
+    "title": "Para celebrar los 30 años del...",
+    "excerpt": "Para celebrar los 30 años del Festival Rock al Parque de Bogotá, se lanzarán un libro, un vinilo de bandas que han pasado por el festival y una exposición por bibliotecas de la ciudad. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-03-para-celebrar-el-concierto-gratuito-con-108",
+    "title": "Para celebrar el concierto gratuito con...",
+    "excerpt": "Para celebrar el concierto gratuito con 2 millones de asistentes en Río de Janeiro y el inicio de la gira de Shakira por Brasil, se iluminó el Cristo Redentor con imágenes de Colombia. (Fuente: Infobae)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-03",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-03-el-ex-piloto-bogotano-juan-pablo-109",
+    "title": "El ex piloto bogotano Juan Pablo...",
+    "excerpt": "El ex piloto bogotano Juan Pablo Montoya realizará el Festival de Automovilismo en Barranquilla con apoyo de la Alcaldía y la empresa privada. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-03",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-la-artista-colombiana-shakira-interpretara-dai-110",
+    "title": "La artista colombiana Shakira interpretará Dai...",
+    "excerpt": "La artista colombiana Shakira interpretará Dai Dai, la canción oficial del Mundial de Fútbol 2026. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-colombia-ha-recuperado-1000-piezas-arqueologicas-111",
+    "title": "Colombia ha recuperado 1.000 piezas arqueológicas...",
+    "excerpt": "Colombia ha recuperado 1.000 piezas arqueológicas del extranjero desde 2022. (Fuente: Swissinfo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-en-unicordoba-se-realiza-foro-academico-112",
+    "title": "En UniCórdoba se realiza foro académico...",
+    "excerpt": "En UniCórdoba se realiza foro académico para estudiar escenarios de acción ante la crisis social y económica generada por el frente frío. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-07-se-realiza-en-medellin-la-exposicion-113",
+    "title": "Se realiza en Medellín la exposición...",
+    "excerpt": "Se realiza en Medellín la exposición Manifiesto Megalodón, Tiburones Colombianos, con 23 esculturas monumentales de ecosistemas del océano y la historia evolutiva de los tiburones. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-07",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-06-la-golfista-colombiana-maria-jose-marin-114",
+    "title": "La golfista colombiana María José Marín...",
+    "excerpt": "La golfista colombiana María José Marín ganó el Augusta National Women’s Amateur en EE. UU. (Fuente: Caracol Radio)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-06",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-25-el-colombiano-dilan-graciano-gano-oro-115",
+    "title": "El colombiano Dilan Graciano ganó oro...",
+    "excerpt": "El colombiano Dilan Graciano ganó oro en jabalina y rompió récord en los Juegos Suramericanos en Panamá. (Fuente: Chiva de Urabá)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-25",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-en-el-xli-abierto-de-venezuela-116",
+    "title": "En el XLI Abierto de Venezuela...",
+    "excerpt": "En el XLI Abierto de Venezuela, disputado en Caracas, obtuvieron victorias los colombianos Esteban Jaramillo en profesionales y Carlos Rodríguez en aficionados. (Fuente: Golf Colombia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-el-atleta-colombiano-diego-molano-establecio-117",
+    "title": "El atleta colombiano Diego Molano estableció...",
+    "excerpt": "El atleta colombiano Diego Molano estableció nuevo récord mundial al cruzar en cuerda floja y con los ojos vendados el Cañón del Chicamocha en Santander. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-el-pesista-vallecaucano-luis-javier-mosquera-118",
+    "title": "El pesista vallecaucano Luis Javier Mosquera...",
+    "excerpt": "El pesista vallecaucano Luis Javier Mosquera obtuvo 3 medallas de oro en la categoría 71 kgs en el Campeonato Panamericano de Mayores en Panamá. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-colombia-es-campeon-del-panamericano-de-119",
+    "title": "Colombia es campeón del Panamericano de...",
+    "excerpt": "Colombia es campeón del Panamericano de Levantamiento de Pesas 2026 en Panamá con 16 medallas de oro, 10 de plata y 12 de bronce. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-02-el-atleta-colombiano-pedro-alejandro-marin-120",
+    "title": "El atleta colombiano Pedro Alejandro Marín...",
+    "excerpt": "El atleta colombiano Pedro Alejandro Marín logró récord suramericano sub-23 en la prueba de 5.000 ms, durante el Payton Jordan Invitational, en Stanford, California. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-02",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-03-el-ciclista-colombiano-ivan-ramiro-sosa-121",
+    "title": "El ciclista colombiano Iván Ramiro Sosa...",
+    "excerpt": "El ciclista colombiano Iván Ramiro Sosa logró 2do puesto en el Tour de Turquía. (Fuente: Mundo Ciclístico)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-03",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-05-el-ciclista-boyacense-yesid-pira-logro-122",
+    "title": "El ciclista boyacense Yesid Pira logró...",
+    "excerpt": "El ciclista boyacense Yesid Pira logró 2do puesto en la Vuelta a Bantrab en Guatemala. (Fuente: Emisora Tocavita)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-05",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-la-ciclista-colombiana-manuela-loaiza-rompe-123",
+    "title": "La ciclista colombiana Manuela Loaiza rompe...",
+    "excerpt": "La ciclista colombiana Manuela Loaiza rompe el récord mundial del kilómetro en el Panamericano Juvenil de Pista en Veracruz, México. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-se-realiza-por-1ra-vez-en-124",
+    "title": "Se realiza por 1ra vez en...",
+    "excerpt": "Se realiza por 1ra vez en Medellín el Gran Prix Mundial de Esgrima con 362 deportistas de 55 naciones. (Fuente: Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-colombia-gano-la-international-cup-citta-125",
+    "title": "Colombia ganó la International Cup Città...",
+    "excerpt": "Colombia ganó la International Cup Città di Siena 2026 de Patinaje de Velocidad con 18 medallas de oro, 14 de plata y 12 de bronce. (Fuente: Comité Olímpico Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-09-el-ciclista-antioqueno-wilmar-paredes-es-126",
+    "title": "El ciclista antioqueño Wilmar Paredes es...",
+    "excerpt": "El ciclista antioqueño Wilmar Paredes es campeón de la Vuelta a São Paulo 2026 en Brasil. (Fuente: Mundo Ciclístico)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-09",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-10-colombia-gana-el-campeonato-panamericano-de-127",
+    "title": "Colombia gana el Campeonato Panamericano de...",
+    "excerpt": "Colombia gana el Campeonato Panamericano de Futsal para Sordos en Argentina y jugará por 1ra vez en los Juegos Sordolímpicos de Invierno en Austria. (Fuente: Infobae)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-10",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-la-superintendencia-de-industria-y-comercio-128",
+    "title": "La Superintendencia de Industria y Comercio...",
+    "excerpt": "La Superintendencia de Industria y Comercio otorga Denominación de Origen al mangostino de Mariquita, Tolima, donde más se cultiva esta fruta en el país. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-la-revista-forbes-destaco-a-los-129",
+    "title": "La revista Forbes destacó a los...",
+    "excerpt": "La revista Forbes destacó a los colombianos David Vélez de NuBank y Simón Borrero de Rappi como líderes que revolucionan la economía digital en Latinoamérica. (Fuente: Sueño Colombiano)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-07-gol-del-colombiano-james-rodriguez-a-130",
+    "title": "Gol del colombiano James Rodríguez a...",
+    "excerpt": "Gol del colombiano James Rodríguez a Uruguay está entre los 5 mejores en la historia de los mundiales para la publicación internacional The Athletic. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-07",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-07-en-monteria-premiaron-a-capitales-y-131",
+    "title": "En Montería premiaron a capitales y...",
+    "excerpt": "En Montería premiaron a capitales y departamentos con las mejores prácticas de seguridad vial que lograron mejoras significativas en 2025. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-07",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-09-el-aeropuerto-el-dorado-de-bogota-132",
+    "title": "El Aeropuerto El Dorado de Bogotá...",
+    "excerpt": "El Aeropuerto El Dorado de Bogotá fue reconocido como el mejor de Sudamerica y 37 en el mundo. (Fuente: República)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-09",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-02-el-buque-escuela-arc-gloria-llega-133",
+    "title": "El buque escuela ARC Gloria llega...",
+    "excerpt": "El buque escuela ARC Gloria llega a Curazao con muestras del campo colombiano en su 1ra escala internacional. (Fuente: Hoy)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-02",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-luego-de-20-anos-de-espera-134",
+    "title": "Luego de 20 años de espera...",
+    "excerpt": "Luego de 20 años de espera, se entregaron 100 títulos de propiedad para igual número de familias campesinas afectadas por la violencia en Flor del Monte, Sucre. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-09-la-agencia-nacional-de-tierras-entrega-135",
+    "title": "La Agencia Nacional de Tierras entrega...",
+    "excerpt": "La Agencia Nacional de Tierras entrega 600 has, antes de narcotraficantes, a campesinos en La Virginia, Risaralda. (Fuente: Presidencia)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-09",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-01-sentencia-de-justicia-y-paz-reconocio-136",
+    "title": "Sentencia de Justicia y Paz reconoció...",
+    "excerpt": "Sentencia de Justicia y Paz reconoció violencia basada en género como práctica paramilitar. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-22-la-jurisdiccion-especial-para-la-paz-137",
+    "title": "La Jurisdicción Especial para la Paz...",
+    "excerpt": "La Jurisdicción Especial para la Paz ordena crear espacios de memoria en sitios relacionados con la toma del Palacio de Justicia. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-22",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-la-jurisdiccion-especial-para-la-paz-138",
+    "title": "La Jurisdicción Especial para la Paz...",
+    "excerpt": "La Jurisdicción Especial para la Paz imputa a 20 exmandos de las Farc por 1.559 casos de reclutamiento de menores. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-luego-de-ultimatum-de-corte-por-139",
+    "title": "Luego de ultimatum de corte por...",
+    "excerpt": "Luego de ultimatum de corte por demoras, la Unidad de Víctimas habilitó 21.900 puntos con cobertura del 94% del país para giros a desplazados. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-30-227-familias-campesinas-victimas-del-conflicto-140",
+    "title": "227 familias campesinas víctimas del conflicto...",
+    "excerpt": "227 familias campesinas víctimas del conflicto armado en el municipio de San Onofre, Sucre, recibieron finca de 1.450 has recuperada por las autoridades. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-30",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-29-integrantes-del-clan-del-golfo-141",
+    "title": "29 integrantes del Clan del Golfo...",
+    "excerpt": "29 integrantes del Clan del Golfo se trasladarán a Zonas de Ubicación Temporal para su desmovilización y tránsito al Estado de derecho. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-confirman-condena-de-7-anos-contra-142",
+    "title": "Confirman condena de 7 años contra...",
+    "excerpt": "Confirman condena de 7 años contra exdirector de Policía por tráfico de influencias. (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-la-corte-suprema-confirma-condena-contra-143",
+    "title": "La Corte Suprema confirma condena contra...",
+    "excerpt": "La Corte Suprema confirma condena contra exmagistrado que vendió fallos por bienes y camionetas (Fuente: Espectador)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-la-sociedad-de-activos-especiales-desaloja-144",
+    "title": "La Sociedad de Activos Especiales desaloja...",
+    "excerpt": "La Sociedad de Activos Especiales desaloja a iglesia en Barranquilla que entre 2020 y abril 2026 acumuló deuda por arrendamiento de $2.227 millones. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-24-descubren-15-puntos-de-mineria-ilegal-145",
+    "title": "Descubren 15 puntos de minería ilegal...",
+    "excerpt": "Descubren 15 puntos de minería ilegal de oro en la Ciénaga de Zapatosa, Cesar, con 15 a 20 personas en cada frente de explotación. (Fuente: Diario del Norte)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-24",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-27-en-redada-contra-la-extorsion-en-146",
+    "title": "En redada contra la extorsión en...",
+    "excerpt": "En redada contra la extorsión en Barranquilla y el área metropolitana caen 9 miembros de grupo delincuencial. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-27",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-28-incautan-en-el-meta-26-tons-147",
+    "title": "Incautan en el Meta 2,6 tons...",
+    "excerpt": "Incautan en el Meta 2,6 tons de marihuana por $1.681 millones con destino a Brasil y capturan a dos personas. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-28",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-04-29-en-operativos-contra-el-contrabando-en-148",
+    "title": "En operativos contra el contrabando en...",
+    "excerpt": "En operativos contra el contrabando en el Valle de Aburrá se incautaron 17.642 unidades de confecciones deportivas alusivas a la Selección Colombia valoradas en $203.571.970. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-en-lo-corrido-de-este-ano-149",
+    "title": "En lo corrido de este año...",
+    "excerpt": "En lo corrido de este año, autoridades han realizado 11 operativos contra la minería ilegal, con 27 personas capturadas. (Fuente: Tiempo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
+  },
+  {
+    "slug": "noticia-05-08-desmantelan-megacomplejo-subterraneo-de-la-guerrilla-150",
+    "title": "Desmantelan megacomplejo subterráneo de la guerrilla...",
+    "excerpt": "Desmantelan megacomplejo subterráneo de la guerrilla en Aguachica, Cesar, capaz de producir una tonelada de cocaína al mes. (Fuente: Heraldo)",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 1
   }
 ]
