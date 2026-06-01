@@ -48,27 +48,26 @@ export function Slider({
   const trackRef   = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState(0)
 
-  /* ── Observar qué slide está visible ─────────────────────────── */
+  /* ── Sincronizar slide activo mediante scroll nativo (inmune a fraccionamiento por DPI) ── */
   useEffect(() => {
     const track = trackRef.current
     if (!track) return
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            const idx = slides.findIndex((s) => s.id === e.target.id)
-            if (idx !== -1) setActive(idx)
-          }
-        }
-      },
-      { root: track, threshold: 0.5 },
-    )
+    const onScroll = () => {
+      const width = track.clientWidth
+      if (width === 0) return
+      const idx = Math.round(track.scrollLeft / width)
+      if (idx >= 0 && idx < slides.length) {
+        setActive(idx)
+      }
+    }
 
-    const children = track.querySelectorAll<HTMLElement>('[data-slide]')
-    children.forEach((c) => observer.observe(c))
-    return () => observer.disconnect()
-  }, [slides])
+    track.addEventListener('scroll', onScroll, { passive: true })
+    // Disparar una vez al montar para asegurar consistencia
+    onScroll()
+
+    return () => track.removeEventListener('scroll', onScroll)
+  }, [slides.length])
 
   /* ── Navegar al índice ────────────────────────────────────────── */
   const goTo = useCallback((idx: number) => {

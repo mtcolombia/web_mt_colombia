@@ -106,7 +106,7 @@ export function HeroPrimary() {
             {/* H1 — POPPINS bold, impacto tipográfico */}
             <h1
               className="font-sans font-bold text-white leading-none
-                         [font-size:clamp(3rem,8vw,5.5rem)]
+                         [font-size:clamp(2.5rem,7.5vw,4.8rem)]
                          [text-shadow:0_2px_24px_rgba(0,0,0,0.35)]
                          mb-6"
             >

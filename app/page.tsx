@@ -379,20 +379,24 @@ export default function HomePage() {
         <div className="relative container-site section-y">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase">
+              <p className="text-white/70 font-sans font-semibold text-xs tracking-[0.15em] uppercase">
                 La neurociencia lo confirma
               </p>
-              <h2 className="text-azul-profundo text-4xl md:text-5xl">
+              <h2 className="text-white text-4xl md:text-5xl">
                 Respaldo científico que inspira confianza
               </h2>
-              <p className="font-sans text-azul-profundo/70 leading-relaxed">
+              <p className="font-sans text-white/90 leading-relaxed">
                 Universal y accesible: La Meditación Trascendental no pertenece a ninguna
                 religión, filosofía ni estilo de vida en particular. Es un método universal,
                 apto para cualquier persona, en cualquier cultura. Por ello, más de seis
                 millones de personas en el mundo la han integrado en su vida cotidiana.
               </p>
-              <Button href={`${routes.contacto}#formulario`} variant="secondary" className="gap-2 group">
-                Reserva tu charla gratuita
+              <Button
+                href={`${routes.contacto}#formulario`}
+                variant="secondary"
+                className="gap-2 group border-white text-white hover:bg-white/10"
+              >
+                Agenda introductoria gratuita
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>

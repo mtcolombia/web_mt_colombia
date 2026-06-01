@@ -71,6 +71,42 @@ export default function RootLayout({
       lang="es"
       className={`${playfair.variable} ${poppins.variable} ${lora.variable}`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                function handleChunkError(message, errorObject) {
+                  var errStr = (message || '') + ' ' + (errorObject ? (errorObject.stack || errorObject.toString() || '') : '');
+                  if (
+                    /ChunkLoadError|Loading chunk|Loading CSS chunk/i.test(errStr) || 
+                    errStr.indexOf('Failed to fetch dynamically imported module') !== -1
+                  ) {
+                    var lastReload = localStorage.getItem('last-chunk-reload');
+                    var now = Date.now();
+                    if (!lastReload || now - parseInt(lastReload, 10) > 10000) {
+                      localStorage.setItem('last-chunk-reload', now.toString());
+                      window.location.reload();
+                    }
+                  }
+                }
+
+                // Capturar errores de recursos síncronos (CSS, JS)
+                window.addEventListener('error', function(event) {
+                  handleChunkError(event.message, event.error);
+                }, true);
+
+                // Capturar errores de importación dinámica (Next.js Client Routing)
+                window.addEventListener('unhandledrejection', function(event) {
+                  var reason = event.reason;
+                  var message = reason ? (reason.message || reason.toString()) : '';
+                  handleChunkError(message, reason);
+                });
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>

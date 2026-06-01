@@ -9,6 +9,7 @@ import { CATEGORY_LABELS } from '@/lib/schemas'
 import { routes } from '@/lib/routes'
 import { formatDate } from '@/lib/utils'
 import type { BlogCategory } from '@/lib/schemas'
+import type React from 'react'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -18,19 +19,19 @@ export const metadata: Metadata = {
 
 // ─── Subsecciones ─────────────────────────────────────────────────────────
 const SECTIONS = [
-  { key: 'todas', label: 'Todas', categories: null },
-  { key: 'investigacion', label: 'Investigación científica', categories: ['ciencia', 'cerebro', 'estres-ansiedad'] as BlogCategory[] },
-  { key: 'noticias', label: 'Noticias positivas', categories: ['bienestar', 'sueno'] as BlogCategory[] },
-  { key: 'actividades', label: 'Actividades del centro', categories: [] as BlogCategory[] },
-  { key: 'foro', label: 'Foro', categories: null },
+  { key: 'todas',                  label: 'Todas',                     category: null as BlogCategory | null },
+  { key: 'investigacion-cientifica', label: 'Investigación científica', category: 'investigacion-cientifica' as BlogCategory },
+  { key: 'noticias-positivas',     label: 'Noticias positivas',        category: 'noticias-positivas' as BlogCategory },
+  { key: 'actividades',            label: 'Actividades del centro',    category: 'actividades' as BlogCategory },
+  { key: 'foro',                   label: 'Foro',                      category: 'foro' as BlogCategory },
 ] as const
 
-const ICON_MAP = {
-  todas: Compass,
-  investigacion: Microscope,
-  noticias: Sparkles,
-  actividades: Calendar,
-  foro: MessageSquare,
+const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+  'todas':                   Compass,
+  'investigacion-cientifica': Microscope,
+  'noticias-positivas':      Sparkles,
+  'actividades':             Calendar,
+  'foro':                    MessageSquare,
 }
 
 type SectionKey = typeof SECTIONS[number]['key']
@@ -41,14 +42,12 @@ interface BlogPageProps {
 
 export default async function BlogPage({ searchParams }: BlogPageProps) {
   const { seccion } = await searchParams
-  const activeKey: SectionKey = (SECTIONS.find(s => s.key === seccion)?.key ?? 'todas') as SectionKey
+  const activeKey: SectionKey = (SECTIONS.find(s => s.key === seccion)?.key ?? 'todas')
   const activeSection = SECTIONS.find(s => s.key === activeKey)!
 
-  const filtered = activeKey === 'todas'
+  const filtered = activeSection.category === null
     ? articles
-    : activeSection.categories && activeSection.categories.length > 0
-      ? articles.filter(a => (activeSection.categories as BlogCategory[]).includes(a.category))
-      : []
+    : articles.filter(a => a.category === activeSection.category)
 
   const featured = filtered.find(a => a.featured) ?? filtered[0]
   const rest = featured ? filtered.filter(a => a.slug !== featured.slug) : []
@@ -104,7 +103,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       </div>
 
       {/* ─── Foro placeholder ─── */}
-      {activeKey === 'foro' && (
+      {activeSection.category === 'foro' && (
         <section className="section-y bg-beige">
           <div className="container-site max-w-xl mx-auto text-center">
             <div className="w-16 h-16 rounded-full bg-dorado/10 flex items-center justify-center mx-auto mb-6">
@@ -120,7 +119,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       )}
 
       {/* ─── Actividades placeholder ─── */}
-      {activeKey === 'actividades' && (
+      {activeSection.category === 'actividades' && (
         <section className="section-y bg-beige">
           <div className="container-site max-w-xl mx-auto text-center">
             <h2 className="text-3xl mb-4">Actividades del Centro</h2>
@@ -133,7 +132,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       )}
 
       {/* ─── Artículo destacado ─── */}
-      {featured && activeKey !== 'foro' && activeKey !== 'actividades' && (
+      {featured && activeSection.category !== 'foro' && activeSection.category !== 'actividades' && (
         <section className="section-y bg-white">
           <div className="container-site">
             <Link
@@ -169,7 +168,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       )}
 
       {/* ─── Grilla ─── */}
-      {rest.length > 0 && activeKey !== 'foro' && activeKey !== 'actividades' && (
+      {rest.length > 0 && activeSection.category !== 'foro' && activeSection.category !== 'actividades' && (
         <section className="section-y bg-beige">
           <div className="container-site">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -212,7 +211,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
       )}
 
       {/* Sin artículos */}
-      {filtered.length === 0 && activeKey !== 'foro' && activeKey !== 'actividades' && (
+      {filtered.length === 0 && activeSection.category !== 'foro' && activeSection.category !== 'actividades' && (
         <section className="section-y bg-beige">
           <div className="container-site text-center">
             <p className="font-sans text-azul-profundo/50">

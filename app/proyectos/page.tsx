@@ -37,7 +37,7 @@ const projects: Project[] = [
     category:    'Educativo',
     description: 'Programa intergeneracional. Documentó reducción de ansiedad, mejora de cohesión grupal y disminución de conductas de riesgo.',
     reach:       '85 participantes',
-    img:         '/images/proyectos/cedeco-2024.jpg',
+    img:         '/images/proyectos/cedeco-2024-v2.jpg',
   },
   {
     id:          'estrella-2016',
@@ -283,7 +283,7 @@ export default function ProyectosPage() {
               </p>
             </div>
             <div className="mt-8 rounded-[16px] overflow-hidden shadow-[0_8px_32px_rgba(15,42,68,0.12)]">
-              <Image src="/images/proyectos/ebc.jpg" alt="Educación Basada en la Conciencia"
+              <Image src="/images/proyectos/diagrama-educacion-consciencia.jpeg" alt="Educación Basada en la Conciencia"
                 width={800} height={450} className="w-full h-auto object-cover" />
             </div>
           </div>

@@ -45,27 +45,27 @@ const evidenceAreas = [
   {
     title: 'Salud cardiovascular',
     body: 'Ensayos publicados en el American Journal of Hypertension y revisiones en Advances in Integrative Medicine muestran reducciones significativas de presión arterial. La American Heart Association la incluye entre las intervenciones no farmacológicas con mayor evidencia para la hipertensión.',
-    img: '/images/mt-graficos/01-percepcion-memoria.jpg',
+    img: '/images/mt-graficos/Salud cardiovascular.jpeg',
   },
   {
     title: 'Manejo del estrés, ansiedad y depresión',
     body: 'Un metaanálisis publicado en The Permanente Journal reporta reducciones del 40–55% en síntomas de ansiedad. La MT mejora la regulación del sistema nervioso autónomo, reduciendo el predominio del sistema simpático.',
-    img: '/images/mt-graficos/02-descanso-profundo.jpg',
+    img: '/images/mt-graficos/019-43-2-ind-fisio-descanso-profundo.jpg',
   },
   {
     title: 'Salud integral y prevención',
     body: 'Los estudios documentan reducción de marcadores inflamatorios (IL-6, TNF-α), regulación del cortisol y ralentización de factores epigenéticos asociados al envejecimiento prematuro.',
-    img: '/images/mt-graficos/03-reversion-envejecimiento.jpg',
+    img: '/images/mt-graficos/027-43-2-reversion-envejecimiento.jpg',
   },
   {
     title: 'Función cognitiva, inteligencia y creatividad',
     body: 'La práctica genera ondas alfa de alta amplitud sincronizadas en todo el córtex — el único estado de coherencia cerebral global documentado. Se asocia con mayor claridad mental, rendimiento cognitivo y creatividad medible.',
-    img: '/images/mt-graficos/04-wa.jpeg',
+    img: '/images/mt-graficos/Función cognitiva, inteligencia y creatividad.jpeg',
   },
   {
     title: 'Impacto en el comportamiento social',
     body: 'Los practicantes reportan menor reactividad al estrés interpersonal, mejor comunicación y mayor empatía. Los estudios poblacionales (Efecto Maharishi) muestran reducción de indicadores de violencia cuando un porcentaje crítico de la población practica.',
-    img: '/images/mt-graficos/05-wa.jpeg',
+    img: '/images/mt-graficos/Impacto en el comportamiento social.jpeg',
   },
 ]
 

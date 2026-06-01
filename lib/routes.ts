@@ -18,6 +18,13 @@ export const routes = {
   contacto:    '/contacto'                 as const,
   // Rutas dinámicas como funciones
   blogPost:    (slug: string) => `/blog/${slug}` as const,
+  // Rutas admin (protegidas por iron-session)
+  admin:            '/admin'                as const,
+  adminLogin:       '/admin/login'          as const,
+  adminBlog:        '/admin/blog'           as const,
+  adminBlogNew:     '/admin/blog/new'       as const,
+  adminTestimonios: '/admin/testimonios'    as const,
+  adminContactos:   '/admin/contactos'      as const,
 } as const
 
 /** Tipo de rutas estáticas (para <Link href={...}>) */

@@ -74,7 +74,7 @@ export const programs: Program[] = [
       { text: 'Mejora la oxigenación',    icon: 'Wind' },
       { text: 'Relajación profunda',      icon: 'Moon' },
     ],
-    image: '/images/programs/pranayama.jpg',
+    image: '/images/programs/pranayama.jpeg',
   },
   {
     id: 'aromaterapia',

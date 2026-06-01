@@ -1,10 +1,12 @@
 import { z } from 'zod'
 
 export const testimonialSchema = z.object({
+  id:      z.string(),
+  title:   z.string(),
   name:    z.string(),
   quote:   z.string(),
   photo:   z.string().optional(),
-  videoId: z.string().optional(), // YouTube video ID — ajustado a 16:9 sin espacio negro
+  videoId: z.string().optional(),
   city:    z.string().optional(),
 })
 
