@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { Brain, Droplets, Moon, TrendingUp, Shield, Heart, Users, Clock, ArrowRight } from 'lucide-react'
-import { HeroPrimary }  from '@/components/sections/HeroPrimary'
-import { CTABand }      from '@/components/sections/CTABand'
-import { VideoEmbed }   from '@/components/sections/VideoEmbed'
-import { Button }       from '@/components/ui/Button'
-import { routes }       from '@/lib/routes'
+import { Brain, Droplets, Moon, TrendingUp, Clock, ArrowRight } from 'lucide-react'
+import { HeroPrimary }    from '@/components/sections/HeroPrimary'
+import { CTABand }        from '@/components/sections/CTABand'
+import { VideoEmbed }     from '@/components/sections/VideoEmbed'
+import { Slider }         from '@/components/sections/Slider'
+import { Button }         from '@/components/ui/Button'
+import { routes }         from '@/lib/routes'
+import { researchSlidesLight }  from '@/lib/content/research-slides'
+import { GraphCarousel }        from '@/components/sections/GraphCarousel'
 
 export const metadata: Metadata = {
   title: 'Inicio',
@@ -13,197 +16,254 @@ export const metadata: Metadata = {
     'Meditación Trascendental en Colombia — técnica natural, sin esfuerzo, científicamente validada para reducir el estrés y desarrollar el pleno potencial humano.',
 }
 
-const VIDEO_ID = 'ZlSe7HxmPeQ'
-
-// ─── Beneficios (lista editorial — texto exacto del cliente) ────────────────
-const benefits = [
-  {
-    n: '01',
-    icon: <Shield size={22} />,
-    title: 'Reducción del estrés y la ansiedad',
-    body: 'Disminución significativa de los niveles de cortisol y síntomas asociados al trastorno por estrés postraumático.',
-  },
-  {
-    n: '02',
-    icon: <Brain size={22} />,
-    title: 'Mejora del funcionamiento cerebral',
-    body: 'Aumento de la coherencia neuronal, mayor integración prefrontal, incremento de la inteligencia, creatividad y mejor memoria.',
-  },
-  {
-    n: '03',
-    icon: <Moon size={22} />,
-    title: 'Calidad del sueño optimizada',
-    body: 'Reducción del insomnio y optimización de la calidad del sueño, favoreciendo un descanso más profundo y reparador.',
-  },
-  {
-    n: '04',
-    icon: <Heart size={22} />,
-    title: 'Salud cardiovascular',
-    body: 'Reducción de la presión arterial y del riesgo de eventos cardiovasculares, reconocida por la American Heart Association.',
-  },
-  {
-    n: '05',
-    icon: <Users size={22} />,
-    title: 'Impacto social — Efecto Maharishi',
-    body: 'Estudios independientes han observado descensos en las tasas de criminalidad, conflictividad y accidentes cuando un porcentaje mínimo de una población practica la Meditación Trascendental.',
-  },
-]
-
 export default function HomePage() {
   return (
     <>
       {/* ─────────────────────────────────────────
-          1.1  HERO PRINCIPAL
+          HERO PRINCIPAL
       ───────────────────────────────────────── */}
       <HeroPrimary />
 
       {/* ─────────────────────────────────────────
-          1.2  MANIFIESTO + ESTADÍSTICAS
-          Fondo: árboles y cielo al 5% — luz solar sugerida
+          STATS + VIDEO — una sola sección, un viewport
       ───────────────────────────────────────── */}
-      <section className="relative overflow-hidden bg-white">
-        {/* Textura atmosférica */}
-        <div className="absolute inset-0 pointer-events-none select-none" aria-hidden="true">
-          <Image
-            src="/images/arboles-cielo.jpg"
-            alt=""
-            fill
-            className="object-cover opacity-[0.18]"
-            sizes="100vw"
-          />
-          {/* Gradiente solar desde arriba */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
-        </div>
+      <section className="relative overflow-hidden min-h-screen flex flex-col bg-white">
 
-        <div className="relative container-site py-24 md:py-32">
-          {/* Estadísticas — las cifras hablan solas */}
-          <div className="grid grid-cols-3 divide-x divide-azul-claro/25 mb-20">
-            {[
-              { n: '800+',  label: 'estudios científicos publicados' },
-              { n: '6 M+',  label: 'practicantes en el mundo' },
-              { n: '50+',   label: 'años de investigación rigurosa' },
-            ].map((s) => (
-              <div key={s.n} className="text-center px-6 md:px-10">
-                <p className="font-display text-5xl md:text-6xl lg:text-7xl text-azul-texto leading-none mb-3">
-                  {s.n}
-                </p>
-                <p className="text-[13px] font-sans text-azul-texto/50 tracking-wide uppercase">
-                  {s.label}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Frase manifiesto — tipografía como elemento visual */}
-          <div className="max-w-3xl mx-auto text-center">
-            <p className="font-display text-2xl md:text-3xl lg:text-4xl text-azul-texto/85 leading-snug">
-              Una tecnología natural, sin esfuerzo y científicamente validada para
-              desarrollar el pleno potencial humano.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ─────────────────────────────────────────
-          1.4  VIDEO — INVITACIÓN A LA EXPERIENCIA
-          Fondo: atardecer océano al 6%
-      ───────────────────────────────────────── */}
-      <section className="relative overflow-hidden">
+        {/* Fondos combinados */}
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <Image
-            src="/images/atardecer-oceano.jpg"
-            alt=""
-            fill
-            className="object-cover opacity-[0.20]"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-white via-white/90 to-beige/80" />
+          <Image src="/images/arboles-cielo.jpg" alt="" fill
+            className="object-cover opacity-[0.14]" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-transparent to-white/60" />
         </div>
-        <div className="relative container-site py-24 md:py-32">
-          <div className="max-w-2xl mx-auto text-center mb-14">
-            <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-4">
-              Una invitación
-            </p>
-            <h2 className="text-4xl md:text-5xl mb-5">A la experiencia directa</h2>
-            <p className="font-sans text-azul-texto/65 text-lg">
-              El verdadero valor de esta práctica se confirma en la experiencia directa,
-              no en las palabras.
-            </p>
+
+        <div className="relative flex flex-col flex-1">
+
+          {/* Bloque superior: stats + manifiesto */}
+          <div className="container-site pt-14 md:pt-20 pb-8">
+            <div className="grid grid-cols-3 divide-x divide-azul-claro/25 mb-10">
+              {[
+                { n: '800+', label: 'estudios científicos publicados' },
+                { n: '6 M+', label: 'practicantes en el mundo' },
+                { n: '50+',  label: 'años de investigación rigurosa' },
+              ].map((s) => (
+                <div key={s.n} className="text-center px-4 md:px-10">
+                  <p className="font-display text-4xl md:text-5xl lg:text-6xl text-azul-texto leading-none mb-2">
+                    {s.n}
+                  </p>
+                  <p className="text-[11px] md:text-[13px] font-sans text-azul-texto/50 tracking-wide uppercase">
+                    {s.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <p className="font-display text-xl md:text-2xl lg:text-3xl text-azul-texto/85 leading-snug">
+                Una tecnología natural, sin esfuerzo y científicamente validada para
+                desarrollar el pleno potencial humano.
+              </p>
+            </div>
           </div>
-          <VideoEmbed
-            videoSrc="/videos/tony-nader-intro.mp4"
-            title="Introducción a la Meditación Trascendental por el Dr. Tony Nader"
-            className="max-w-4xl mx-auto shadow-[0_40px_100px_rgba(15,42,68,0.20)] rounded-[20px]"
-          />
+
+          {/* Divisor */}
+          <div className="container-site">
+            <div className="border-t border-azul-profundo/[0.07]" />
+          </div>
+
+          {/* Bloque inferior: video */}
+          <div className="flex-1 container-site py-8 flex flex-col justify-center">
+            <div className="max-w-xl mx-auto text-center mb-6">
+              <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-2">
+                Una invitación
+              </p>
+              <h2 className="text-3xl md:text-4xl mb-3">A la experiencia directa</h2>
+              <p className="font-sans text-azul-texto/60 text-base">
+                El verdadero valor de esta práctica se confirma en la experiencia directa,
+                no en las palabras.
+              </p>
+            </div>
+            <VideoEmbed
+              videoSrc="/videos/tony-nader-intro.mp4"
+              posterSrc="/images/hombre-meditando-cielo.png"
+              title="Introducción a la Meditación Trascendental por el Dr. Tony Nader"
+              className="max-w-3xl mx-auto shadow-[0_24px_80px_rgba(15,42,68,0.16)] rounded-[20px]"
+            />
+          </div>
+
         </div>
       </section>
 
       {/* ─────────────────────────────────────────
-          1.5  BENEFICIOS — LISTA EDITORIAL 2026
-          No tarjetas iguales. Numeración + separadores.
+          BENEFICIOS — fondo blanco, letra azul
       ───────────────────────────────────────── */}
-      <section className="bg-white section-y">
-        <div className="container-site">
-
-          {/* Header editorial */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-10
-                          border-b border-azul-profundo/10">
+      <div className="bg-white border-b border-azul-profundo/10">
+        <div className="container-site pt-14 pb-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4
+                          pb-8 border-b border-azul-profundo/[0.08]">
             <div>
-              <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-3">
+              <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-2">
                 Respaldado por la ciencia
               </p>
-              <h2 className="text-4xl md:text-5xl">Beneficios documentados</h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl text-azul-profundo">Beneficios documentados</h2>
             </div>
-            <p className="font-sans text-azul-texto/55 text-sm max-w-xs leading-relaxed md:text-right">
-              Más de 800 estudios en 250 universidades de 35 países, publicados en
-              <em className="not-italic text-azul-texto/80"> Science</em>,{' '}
-              <em className="not-italic text-azul-texto/80">American Journal of Cardiology</em>{' '}
+            <p className="font-sans text-azul-profundo/50 text-sm max-w-xs leading-relaxed md:text-right">
+              Publicados en{' '}
+              <em className="not-italic text-azul-profundo/80">American Journal of Hypertension</em>,{' '}
+              <em className="not-italic text-azul-profundo/80">Journal of Clinical Psychology</em>{' '}
               y otras revistas de referencia.
             </p>
           </div>
+        </div>
+      </div>
+      <div className="bg-white h-[70vh] max-h-[70vh] flex flex-col border-b border-azul-profundo/10">
+        <Slider
+          slides={researchSlidesLight}
+          gradientFrom="white"
+          fillHeight={true}
+          className="flex-1 min-h-0"
+        />
+      </div>
 
-          {/* Lista editorial */}
-          <div className="divide-y divide-azul-profundo/[0.07]">
-            {benefits.map((b) => (
-              <div
-                key={b.n}
-                className="group grid grid-cols-[3rem_2rem_1fr] md:grid-cols-[4rem_2.5rem_1fr_2fr]
-                           gap-x-4 md:gap-x-8 items-center py-6 md:py-8
-                           -mx-4 px-4 md:-mx-6 md:px-6
-                           hover:bg-azul-profundo/[0.025] transition-colors rounded-xl"
-              >
-                {/* Número */}
-                <span className="font-display text-2xl md:text-3xl text-dorado/35
-                                 group-hover:text-dorado/70 transition-colors select-none">
-                  {b.n}
-                </span>
-                {/* Icono */}
-                <span className="text-dorado/70 group-hover:text-dorado transition-colors">
-                  {b.icon}
-                </span>
-                {/* Título */}
-                <h3 className="font-sans font-semibold text-[16px] md:text-[18px] text-azul-texto">
-                  {b.title}
-                </h3>
-                {/* Descripción — solo desktop */}
-                <p className="hidden md:block font-sans text-[14px] text-azul-texto/55 leading-relaxed">
-                  {b.body}
-                </p>
-              </div>
-            ))}
+      {/* ─────────────────────────────────────────
+          7 PASOS — ¿Cómo aprender MT?
+      ───────────────────────────────────────── */}
+      <section className="section-y bg-beige overflow-hidden">
+        <div className="container-site">
+
+          <div className="max-w-3xl mx-auto mb-14">
+            <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-3">
+              El proceso de aprendizaje
+            </p>
+            <h2 className="text-4xl md:text-5xl mb-6">¿Cómo puedo aprender la Meditación Trascendental?</h2>
+            <p className="font-sans text-azul-texto/70 text-lg leading-relaxed mb-4">
+              Cualquiera puede aprender Meditación Trascendental. Es fácil y agradable de practicar,
+              y ofrece resultados inmediatos.
+            </p>
+            <p className="font-sans text-azul-texto/70 leading-relaxed mb-4">
+              La MT se enseña según métodos probados que permiten a la mente experimentar de forma
+              natural el estado más pleno de su verdadera naturaleza. No se requiere un largo periodo
+              de aprendizaje, ya que el proceso es natural e intuitivo. Cualquier persona puede
+              aprender MT, independientemente de su origen cultural, religioso o educativo, y los
+              resultados suelen notarse de inmediato. Veinte minutos, dos veces al día, son
+              suficientes para obtener los efectos deseados.
+            </p>
+            <p className="font-sans text-azul-texto/70 leading-relaxed mb-4">
+              Si bien la práctica básica de la MT es la misma para todos, cada individuo es único.
+              Por ello, es necesaria la guía personalizada de un profesor de MT capacitado. Cuando
+              la meditación se enseña de forma correcta y personalizada, el proceso se desarrolla
+              de manera natural y sin esfuerzo, y así se obtienen los mayores beneficios.
+            </p>
+            <p className="font-sans text-azul-texto/70 leading-relaxed mb-4">
+              Una vez que hayamos aprendido esta técnica completamente natural, podremos practicarla
+              por nuestra cuenta, pero si necesitamos orientación adicional, podemos obtenerla en
+              cualquier centro de MT del mundo. La necesidad de orientación varía de persona a
+              persona, pero lo importante es que siempre está disponible.
+            </p>
           </div>
+
+          {/* Fase 1 — 7 pasos */}
+          <div className="max-w-3xl mx-auto">
+            <h3 className="font-sans font-semibold text-azul-profundo text-sm uppercase tracking-widest mb-8
+                           pb-4 border-b border-azul-profundo/10">
+              Fase 1 del curso de MT — Aprendizaje de la técnica
+            </h3>
+            <p className="font-sans text-azul-texto/65 text-sm mb-10 leading-relaxed">
+              El aprendizaje se desarrolla en 7 pasos, repartidos a lo largo de 4 o 5 días consecutivos.
+            </p>
+
+            <div className="space-y-0 divide-y divide-azul-profundo/[0.07]">
+              {[
+                {
+                  n: '01',
+                  title: 'Conferencia introductoria',
+                  body: 'Panorama general de los beneficios y estudios científicos. Toda la información necesaria para decidir si aprender MT, con sesión de preguntas y respuestas.',
+                  detail: 'Gratuito · 1,5 horas',
+                },
+                {
+                  n: '02',
+                  title: 'Charla preparatoria',
+                  body: 'Más detalles sobre la mecánica exacta de la técnica, sus diferencias con otros tipos de meditación y cómo se aprende y practica.',
+                  detail: '45 minutos',
+                },
+                {
+                  n: '03',
+                  title: 'Entrevista personal',
+                  body: 'Reunión individual con tu profesor de MT y oportunidad para plantear cualquier duda.',
+                  detail: '10–15 minutos',
+                },
+                {
+                  n: '04',
+                  title: 'Instrucción personalizada',
+                  body: 'Instrucción personalizada propiamente dicha en la técnica de Meditación Trascendental.',
+                  detail: '1,5 horas',
+                },
+                {
+                  n: '05',
+                  title: 'Primera sesión de seguimiento',
+                  body: 'Verificación de la correcta práctica de la técnica MT y adquisición de más conocimientos.',
+                  detail: '1,5 horas',
+                },
+                {
+                  n: '06',
+                  title: 'Segunda sesión de seguimiento',
+                  body: 'Profundización en los conocimientos basados en la experiencia creciente en Meditación Trascendental.',
+                  detail: '1,5 horas',
+                },
+                {
+                  n: '07',
+                  title: 'Tercera sesión de seguimiento',
+                  body: 'Consolidación de la práctica y apertura al camino de desarrollo continuo de la conciencia.',
+                  detail: '1,5 horas',
+                },
+              ].map((step) => (
+                <div
+                  key={step.n}
+                  className="group grid grid-cols-[3rem_1fr] md:grid-cols-[4rem_1fr_auto]
+                             gap-x-5 md:gap-x-8 items-start py-5 md:py-6
+                             hover:bg-azul-profundo/[0.025] -mx-4 px-4 md:-mx-6 md:px-6
+                             transition-colors rounded-xl"
+                >
+                  <span className="font-display text-2xl md:text-3xl text-dorado/40
+                                   group-hover:text-dorado/70 transition-colors select-none mt-0.5">
+                    {step.n}
+                  </span>
+                  <div>
+                    <h4 className="font-sans font-semibold text-[15px] md:text-[17px] text-azul-profundo mb-1">
+                      {step.title}
+                    </h4>
+                    <p className="font-sans text-sm text-azul-texto/60 leading-relaxed">{step.body}</p>
+                  </div>
+                  <span className="hidden md:block font-sans text-xs text-dorado/70 font-medium
+                                   whitespace-nowrap mt-1">
+                    {step.detail}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
+              <Button href={`${routes.contacto}#formulario`} className="group gap-2 text-base px-8 py-4">
+                Agenda tu charla introductoria{' '}
+                <span className="text-dorado font-bold underline underline-offset-2">gratuita</span>
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <p className="font-sans text-xs text-azul-texto/45">
+                Sin compromiso · Virtual · 90 minutos
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
       {/* ─────────────────────────────────────────
-          1.3  SPLIT — CIENCIA + PERSONA MEDITANDO
-          Ancla: /#meditacion-trascendental (nav)
+          SPLIT — CIENCIA APLICADA
       ───────────────────────────────────────── */}
       <section id="meditacion-trascendental" className="section-y bg-beige overflow-hidden scroll-mt-20">
         <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          {/* Imagen atmosférica — mujer meditando */}
-          <div className="relative h-[500px] lg:h-[620px] rounded-[20px] overflow-hidden shadow-[0_32px_80px_rgba(15,42,68,0.18)]">
+          <div className="relative h-[500px] lg:h-[620px] rounded-[20px] overflow-hidden
+                          shadow-[0_32px_80px_rgba(15,42,68,0.18)]">
             <Image
               src="/images/home-ciencia-aplicada.jpeg"
               alt="Meditación Trascendental — práctica personal"
@@ -211,9 +271,7 @@ export default function HomePage() {
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            {/* Vignette sutil */}
             <div className="absolute inset-0 bg-gradient-to-t from-azul-profundo/30 via-transparent to-transparent" />
-            {/* Badge flotante */}
             <div className="absolute bottom-6 left-6 flex items-center gap-2.5
                             bg-white/90 backdrop-blur-sm rounded-full px-4 py-2.5 shadow-lg">
               <Clock size={16} className="text-dorado" />
@@ -223,7 +281,6 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Contenido */}
           <div className="space-y-6">
             <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase">
               Ciencia aplicada al desarrollo humano
@@ -233,18 +290,15 @@ export default function HomePage() {
             </h2>
             <p className="font-sans text-azul-texto/70 text-lg leading-relaxed">
               En un contexto donde el estrés crónico impacta la salud y el desempeño,
-              la Meditación Trascendental ofrece un enfoque basado en evidencia científica
-              para restablecer el equilibrio fisiológico y potenciar el rendimiento humano.
-            </p>
-            <p className="font-sans text-azul-texto/65 font-semibold text-sm">
-              La práctica regular de la Meditación Trascendental se asocia con:
+              la MT ofrece un enfoque basado en evidencia científica para restablecer
+              el equilibrio fisiológico y potenciar el rendimiento humano.
             </p>
             <ul className="space-y-3">
               {[
-                { icon: <Brain size={16} />,      text: 'Mayor coherencia cerebral, indicador de un funcionamiento más integrado del cerebro' },
-                { icon: <Droplets size={16} />,   text: 'Reducción de cortisol y marcadores de estrés' },
-                { icon: <Moon size={16} />,        text: 'Mejora en la calidad del sueño y recuperación fisiológica' },
-                { icon: <TrendingUp size={16} />,  text: 'Incremento de la capacidad cognitiva, creatividad y enfoque' },
+                { icon: <Brain size={16} />,     text: 'Mayor coherencia cerebral, indicador de funcionamiento más integrado' },
+                { icon: <Droplets size={16} />,  text: 'Reducción de cortisol y marcadores de estrés' },
+                { icon: <Moon size={16} />,       text: 'Mejora en la calidad del sueño y recuperación fisiológica' },
+                { icon: <TrendingUp size={16} />, text: 'Incremento de la capacidad cognitiva, creatividad y enfoque' },
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 font-sans text-[14px] text-azul-texto/80">
                   <span className="w-6 h-6 rounded-full bg-dorado/10 flex items-center justify-center text-dorado shrink-0 mt-0.5">
@@ -254,11 +308,6 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
-            <p className="font-sans text-azul-texto/60 text-sm leading-relaxed">
-              Este conjunto de beneficios posiciona a la Meditación Trascendental como una
-              herramienta eficaz para el desarrollo integral del individuo, tanto en el
-              ámbito personal como profesional.
-            </p>
             <div className="pt-2">
               <Button href={routes.mt} variant="secondary" className="group gap-2">
                 Conoce la evidencia científica
@@ -271,8 +320,7 @@ export default function HomePage() {
       </section>
 
       {/* ─────────────────────────────────────────
-          1.6  ¿QUÉ ES LA MT? — Split con imagen
-          Hombre bajo el cielo como fondo impactante
+          ¿QUÉ LA HACE DIFERENTE? — imagen desplazada a la derecha
       ───────────────────────────────────────── */}
       <section className="section-y bg-beige overflow-hidden">
         <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -303,14 +351,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Imagen impactante */}
+          {/* Imagen: sujeto desplazado a la derecha del encuadre */}
           <div className="relative h-[520px] lg:h-[680px] rounded-[20px] overflow-hidden
                           shadow-[0_32px_80px_rgba(15,42,68,0.20)]">
             <Image
               src="/images/home-que-la-hace-diferente.jpeg"
               alt="Hombre meditando bajo el cielo abierto"
               fill
-              className="object-cover object-center"
+              className="object-cover object-[30%_center]"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-azul-profundo/40 via-transparent to-transparent" />
@@ -320,59 +368,50 @@ export default function HomePage() {
       </section>
 
       {/* ─────────────────────────────────────────
-          1.7  CIENCIA + VIDEO — Full bleed oscuro
+          NEUROCIENCIA + VIDEO
       ───────────────────────────────────────── */}
-      <section className="relative bg-azul-profundo overflow-hidden">
-        {/* Fondo paisaje Tayrona muy sutil */}
+      <section className="relative bg-azul-accion overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <Image
-            src="/images/hero/tayrona.jpg"
-            alt=""
-            fill
-            className="object-cover opacity-[0.28] scale-105"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-azul-profundo/75" />
+          <Image src="/images/hero/tayrona.jpg" alt="" fill
+            className="object-cover opacity-[0.10] scale-105" sizes="100vw" />
+          <div className="absolute inset-0 bg-white/15" />
         </div>
-
         <div className="relative container-site section-y">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase">
                 La neurociencia lo confirma
               </p>
-              <h2 className="text-white text-4xl md:text-5xl">
+              <h2 className="text-azul-profundo text-4xl md:text-5xl">
                 Respaldo científico que inspira confianza
               </h2>
-              <p className="font-sans text-white/65 leading-relaxed">
-                Universal y accesible: La Meditación Trascendental no pertenece a ninguna religión, filosofía ni estilo de vida en particular. Es un método universal, apto para cualquier persona, en cualquier cultura.Por ello, más de seis millones de personas en el mundo la han integrado en su vida cotidiana, y numerosas instituciones educativas, empresas y gobiernos la han incorporado como una herramienta de alto rendimiento, bienestar y paz social.
+              <p className="font-sans text-azul-profundo/70 leading-relaxed">
+                Universal y accesible: La Meditación Trascendental no pertenece a ninguna
+                religión, filosofía ni estilo de vida en particular. Es un método universal,
+                apto para cualquier persona, en cualquier cultura. Por ello, más de seis
+                millones de personas en el mundo la han integrado en su vida cotidiana.
               </p>
-              <Button href={`${routes.contacto}#formulario`} variant="light" className="gap-2 group">
+              <Button href={`${routes.contacto}#formulario`} variant="secondary" className="gap-2 group">
                 Reserva tu charla gratuita
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
             <VideoEmbed
               videoSrc="/videos/fred-travis-brainwaves.mp4"
+              posterSrc="/images/mt-fondo-cerebro.jpeg"
               title="Ondas cerebrales — Dr. Fred Travis"
-              className="shadow-[0_32px_80px_rgba(0,0,0,0.40)]"
+              className="shadow-[0_32px_80px_rgba(15,42,68,0.22)]"
             />
           </div>
         </div>
       </section>
 
       {/* ─────────────────────────────────────────
-          1.8  GRUPO MEDITANDO — Transición visual
+          BANNER COMUNIDAD
       ───────────────────────────────────────── */}
       <section className="relative h-[55vh] min-h-[360px] overflow-hidden">
-        <Image
-          src="/images/home-comunidad-banner.jpg"
-          alt="Grupo practicando Meditación Trascendental"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        {/* Overlay narrativo */}
+        <Image src="/images/home-comunidad-banner.jpg" alt="Grupo practicando MT"
+          fill className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/70 via-azul-profundo/30 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="container-site">
@@ -387,11 +426,15 @@ export default function HomePage() {
       </section>
 
       {/* ─────────────────────────────────────────
-          1.9  VIDEO + TEXTO — ¿Qué sucede?
+          ¿QUÉ SUCEDE CUANDO MEDITAMOS?
       ───────────────────────────────────────── */}
       <section className="section-y bg-white">
         <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <VideoEmbed videoSrc="/videos/what-happens-when-we-meditate.mp4" title="¿Qué sucede cuando meditamos?" />
+          <VideoEmbed
+            videoSrc="/videos/what-happens-when-we-meditate.mp4"
+            posterSrc="/images/grupo-meditando.jpg"
+            title="¿Qué sucede cuando meditamos?"
+          />
           <div className="space-y-5">
             <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase">
               La fisiología de la MT
@@ -412,12 +455,10 @@ export default function HomePage() {
       </section>
 
       {/* ─────────────────────────────────────────
-          1.10  UNA HERRAMIENTA EFECTIVA PARA EL ESTRÉS
-          Split: video + texto, fondo beige
+          HERRAMIENTA EFECTIVA PARA EL ESTRÉS
       ───────────────────────────────────────── */}
       <section className="section-y bg-beige overflow-hidden">
         <div className="container-site">
-
           <div className="max-w-3xl mb-16">
             <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-4">
               Estrés y salud
@@ -428,36 +469,22 @@ export default function HomePage() {
             <p className="font-sans text-azul-texto/70 text-lg leading-relaxed">
               El estrés crónico es uno de los principales factores que afectan la salud,
               la felicidad y el rendimiento en la vida moderna. La investigación científica
-              ha demostrado que la Meditación Trascendental reduce el estrés de manera
-              efectiva y sostenible, permitiendo que el cuerpo libere tensiones acumuladas
-              y restablezca su equilibrio natural.
+              ha demostrado que la MT reduce el estrés de manera efectiva y sostenible.
             </p>
           </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <VideoEmbed
               videoSrc="/videos/effective-stress-tool.mp4"
+              posterSrc="/images/home-stress-grafico.jpg"
               title="Una herramienta efectiva para disminuir el estrés"
               className="shadow-[0_24px_64px_rgba(15,42,68,0.18)] rounded-[20px]"
             />
-            <div className="space-y-6">
-              {/* Placeholder gráfico científico — asset pendiente del Drive */}
-              <div className="relative h-64 rounded-[16px] overflow-hidden bg-azul-profundo/[0.04]
-                              border border-azul-profundo/[0.08] flex flex-col items-center justify-center gap-3">
-                <Image
-                  src="/images/home-stress-grafico.jpg"
-                  alt="Gráfico científico de manejo del estrés"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
+            <div className="space-y-5">
+              <GraphCarousel />
               <div className="space-y-3 font-sans text-azul-texto/70 leading-relaxed text-sm">
                 <p>
                   La práctica regular crea un estado de descanso profundo que supera al del
-                  sueño ordinario, liberando la tensión acumulada capa por capa. Con el tiempo,
-                  el sistema nervioso alcanza un nivel de funcionamiento más ordenado, resiliente
-                  y libre de reactividad.
+                  sueño ordinario, liberando la tensión acumulada capa por capa.
                 </p>
                 <p>
                   No exige cambios en el estilo de vida. Se integra en cualquier rutina,
@@ -469,9 +496,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─────────────────────────────────────────
-          CTA FINAL
-      ───────────────────────────────────────── */}
       <CTABand
         title="Descubre cómo la Meditación Trascendental puede transformar tu vida"
         subtitle="Únete a la charla informativa gratuita y virtual. Sin costo, sin experiencia previa."

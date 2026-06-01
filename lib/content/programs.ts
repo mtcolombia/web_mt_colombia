@@ -162,6 +162,6 @@ export const programs: Program[] = [
       { text: 'Plenitud y realización personal',  icon: 'Heart' },
     ],
     image: '/images/programs/sidhis-mt.jpg',
-    videoId: '5zyLbvXyZDY',
+    videoId: 'dHy43GSabtA',
   },
 ]

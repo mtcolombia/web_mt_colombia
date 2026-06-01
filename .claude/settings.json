@@ -11,7 +11,13 @@
       "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" show 2ecff54:storage/empresa-2/db/items_variante.json)",
       "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" show 4e8b02b --name-only)",
       "Bash(git -C \"c:/Users/javir/Documents/DEVs/agnostic system\" check-ignore -v \"storage/empresa-2/db/items_variante.json\")",
-      "Bash(powershell -Command ' *)"
+      "Bash(powershell -Command ' *)",
+      "Bash(Get-ChildItem -Path . -Recurse -Directory)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(Get-ChildItem \"c:\\\\Users\\\\javir\\\\Documents\\\\DEVs\\\\web_centro_mt\\\\public\\\\images\\\\programs\")",
+      "Bash(Select-Object Name, Length, LastWriteTime)",
+      "Bash(Sort-Object LastWriteTime -Descending)",
+      "Bash(npm install *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\javir\\Documents\\DEVs\\agnostic system\\src\\server\\strategies"

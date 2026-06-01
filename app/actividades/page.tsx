@@ -71,7 +71,21 @@ export default function ActividadesPage() {
               <span className="chip"><MapPin size={12} className="text-dorado" />Bogotá, D.C.</span>
               <span className="chip">Virtual disponible</span>
             </div>
-            <div className="pt-2">
+            <div className="space-y-4 pt-2">
+              <div className="font-sans text-azul-profundo/70 leading-relaxed text-sm space-y-2">
+                <p className="font-semibold text-azul-profundo text-base">
+                  Centro de Meditación Trascendental Colombia
+                </p>
+                <p className="text-dorado font-medium text-xs tracking-wide uppercase">
+                  Formación, práctica y desarrollo integral de la conciencia.
+                </p>
+                <p>
+                  El Centro de Meditación Trascendental en Colombia ofrece un enfoque estructurado
+                  y profesional para el desarrollo del pleno potencial humano, integrando la
+                  Técnica de Meditación Trascendental (MT) con tecnologías védicas complementarias
+                  orientadas al bienestar, la salud y el rendimiento integral.
+                </p>
+              </div>
               <Button href={`${routes.contacto}#formulario`} variant="secondary" className="group gap-2">
                 Reserva tu charla informativa
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />

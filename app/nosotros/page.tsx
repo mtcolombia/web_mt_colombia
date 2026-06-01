@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { Brain, Zap, TrendingUp, Smile, Award, MapPin } from 'lucide-react'
-import { HeroSecondary } from '@/components/sections/HeroSecondary'
-import { CTABand }       from '@/components/sections/CTABand'
-import { teachers }      from '@/lib/content/teachers'
+import { Brain, Zap, TrendingUp, Smile, Award, MapPin, Phone } from 'lucide-react'
+import { HeroSecondary }      from '@/components/sections/HeroSecondary'
+import { CTABand }            from '@/components/sections/CTABand'
+import { TeachersMapClient }  from '@/components/sections/TeachersMapClient'
+import { teachers }           from '@/lib/content/teachers'
 
 export const metadata: Metadata = {
   title: 'Nosotros',
@@ -297,7 +298,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* ─── EQUIPO — Lista elegante sin fotos ─── */}
+      {/* ─── MAPA + EQUIPO ─── */}
       <section className="section-y bg-beige">
         <div className="container-site">
 
@@ -305,9 +306,9 @@ export default function NosotrosPage() {
                           mb-14 pb-10 border-b border-azul-profundo/10">
             <div>
               <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-3">
-                Instructores
+                Instructores certificados
               </p>
-              <h2 className="text-4xl md:text-5xl">Equipo certificado</h2>
+              <h2 className="text-4xl md:text-5xl">Equipo en Colombia</h2>
             </div>
             <p className="font-sans text-azul-profundo/55 text-sm max-w-xs leading-relaxed md:text-right">
               Formados por la Maharishi European Research University y la Maharishi
@@ -315,30 +316,68 @@ export default function NosotrosPage() {
             </p>
           </div>
 
-          <div className="divide-y divide-azul-profundo/[0.07]">
-            {teachers.map((t, i) => (
-              <div
-                key={t.name}
-                className="flex items-center gap-6 py-5 md:py-6"
-              >
-                <span className="font-display text-2xl text-dorado/30 select-none w-10 shrink-0 text-right">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <div className="w-10 h-10 rounded-full bg-azul-profundo/8 border border-azul-profundo/12
-                                flex items-center justify-center shrink-0">
-                  <span className="font-sans font-semibold text-sm text-azul-profundo/60">
-                    {t.name.split(' ').map(w => w[0]).slice(0, 2).join('')}
-                  </span>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <p className="font-sans font-semibold text-[16px] md:text-[17px] text-azul-profundo">
-                    {t.name}
-                  </p>
-                  <p className="font-sans text-sm text-azul-profundo/50 mt-0.5">{t.role}</p>
+          {/* Mapa interactivo — clic en marcador para ver profesores y contacto */}
+          <div className="mb-14">
+            <p className="font-sans text-xs text-azul-profundo/40 mb-4 flex items-center gap-1.5">
+              <MapPin size={12} className="text-dorado" />
+              Haz clic en cada marcador para ver los profesores disponibles en esa ciudad
+            </p>
+            <TeachersMapClient teachers={teachers} />
+          </div>
+
+          {/* Lista agrupada por ciudad */}
+          {(['Directora Nacional', 'Bogotá', 'Medellín', 'Bucaramanga', 'Barichara'] as const).map((group) => {
+            const isNational = group === 'Directora Nacional'
+            const list = isNational
+              ? teachers.filter((t) => t.tag === 'directivo')
+              : teachers.filter((t) => t.city === group && t.tag !== 'directivo')
+            if (!list.length) return null
+            return (
+              <div key={group} className="mb-10 last:mb-0">
+                <h3 className="font-sans font-semibold text-xs text-azul-profundo/55 uppercase
+                               tracking-widest mb-4 pb-3 border-b border-azul-profundo/10
+                               flex items-center gap-2">
+                  {!isNational && <MapPin size={11} className="text-dorado" />}
+                  {group}
+                </h3>
+                <div className="divide-y divide-azul-profundo/[0.06]">
+                  {list.map((t) => {
+                    const initials = t.name.split(' ').slice(0, 2).map((w) => w[0]).join('')
+                    return (
+                      <div key={t.name} className="flex items-center gap-5 py-4 md:py-5">
+                        {/* Avatar — placeholder listo para foto */}
+                        <div className="w-11 h-11 rounded-full bg-azul-profundo/[0.07]
+                                        border border-azul-profundo/10 shrink-0 overflow-hidden
+                                        flex items-center justify-center">
+                          <span className="font-sans font-semibold text-sm text-azul-profundo/50
+                                           select-none">
+                            {initials}
+                          </span>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="font-sans font-semibold text-[15px] md:text-[16px] text-azul-profundo leading-snug">
+                            {t.name}
+                          </p>
+                          <p className="font-sans text-xs text-azul-profundo/45 mt-0.5">{t.role}</p>
+                        </div>
+                        {t.phone && (
+                          <a
+                            href={`tel:+57${t.phone.replace(/\s/g, '')}`}
+                            className="flex items-center gap-1.5 font-sans text-sm text-dorado
+                                       hover:text-azul-profundo transition-colors shrink-0"
+                            aria-label={`Llamar a ${t.name}`}
+                          >
+                            <Phone size={13} />
+                            <span className="hidden sm:inline">{t.phone}</span>
+                          </a>
+                        )}
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
-            ))}
-          </div>
+            )
+          })}
 
         </div>
       </section>

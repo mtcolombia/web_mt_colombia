@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Compass, Microscope, Sparkles, Calendar, MessageSquare } from 'lucide-react'
-import { HeroSecondary } from '@/components/sections/HeroSecondary'
-import { CTABand } from '@/components/sections/CTABand'
+import { HeroSecondary }  from '@/components/sections/HeroSecondary'
+import { CTABand }        from '@/components/sections/CTABand'
 import { articles, featuredArticle } from '@/lib/content/blog'
 import { CATEGORY_LABELS } from '@/lib/schemas'
-import { routes } from '@/lib/routes'
-import { formatDate } from '@/lib/utils'
+import { routes }          from '@/lib/routes'
+import { formatDate }      from '@/lib/utils'
 import type { BlogCategory } from '@/lib/schemas'
 
 export const metadata: Metadata = {
@@ -18,19 +18,19 @@ export const metadata: Metadata = {
 
 // ─── Subsecciones ─────────────────────────────────────────────────────────
 const SECTIONS = [
-  { key: 'todas', label: 'Todas', categories: null },
-  { key: 'investigacion', label: 'Investigación científica', categories: ['ciencia', 'cerebro', 'estres-ansiedad'] as BlogCategory[] },
-  { key: 'noticias', label: 'Noticias positivas', categories: ['bienestar', 'sueno'] as BlogCategory[] },
-  { key: 'actividades', label: 'Actividades del centro', categories: [] as BlogCategory[] },
-  { key: 'foro', label: 'Foro', categories: null },
+  { key: 'todas',          label: 'Todas',                       categories: null },
+  { key: 'investigacion',  label: 'Investigación científica',    categories: ['ciencia', 'cerebro', 'estres-ansiedad'] as BlogCategory[] },
+  { key: 'noticias',       label: 'Noticias positivas',          categories: ['bienestar', 'sueno'] as BlogCategory[] },
+  { key: 'actividades',    label: 'Actividades del centro',      categories: [] as BlogCategory[] },
+  { key: 'foro',           label: 'Foro',                        categories: null },
 ] as const
 
 const ICON_MAP = {
-  todas: Compass,
+  todas:         Compass,
   investigacion: Microscope,
-  noticias: Sparkles,
-  actividades: Calendar,
-  foro: MessageSquare,
+  noticias:      Sparkles,
+  actividades:   Calendar,
+  foro:          MessageSquare,
 }
 
 type SectionKey = typeof SECTIONS[number]['key']
@@ -59,13 +59,13 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         title="Blog"
         subtitle="Artículos sobre Meditación Trascendental, ciencia y bienestar"
         breadcrumbs={[{ label: 'Blog' }]}
-        imageSrc="/images/hero-blog.jpeg"
+        imageSrc="/images/hero-blog.jpg"
       />
 
       {/* ─── Pestañas de subsección / Temas ─── */}
       <div className="bg-white/95 backdrop-blur-md border-b border-azul-profundo/[0.06] sticky top-16 z-20 transition-all duration-300">
         <div className="container-site">
-
+          
           {/* Encabezado del filtro */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pt-4 pb-2">
             <div className="flex items-center gap-2">
@@ -90,9 +90,9 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                   className={`group shrink-0 flex items-center gap-2 px-4 py-2 rounded-full font-sans text-xs font-semibold
                              transition-all duration-200 border
                              ${isActive
-                      ? 'bg-azul-claro border-azul-claro text-white shadow-md shadow-azul-claro/15 scale-[1.02]'
-                      : 'bg-white border-azul-profundo/[0.08] text-azul-profundo/65 hover:border-azul-claro/40 hover:text-azul-claro hover:bg-azul-claro/[0.01]'
-                    }`}
+                               ? 'bg-azul-claro border-azul-claro text-white shadow-md shadow-azul-claro/15 scale-[1.02]'
+                               : 'bg-white border-azul-profundo/[0.08] text-azul-profundo/65 hover:border-azul-claro/40 hover:text-azul-claro hover:bg-azul-claro/[0.01]'
+                             }`}
                 >
                   <Icon size={14} className={isActive ? 'text-white' : 'text-azul-profundo/45 group-hover:text-azul-claro transition-colors'} />
                   {s.label}

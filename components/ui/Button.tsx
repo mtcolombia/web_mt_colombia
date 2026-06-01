@@ -31,9 +31,9 @@ const base =
   'disabled:opacity-50 disabled:cursor-not-allowed'
 
 const variants: Record<ButtonVariant, string> = {
-  // Fondo azul profundo — para fondos claros (blanco, beige)
+  // Fondo azul acción (#6FA8DC) — para fondos claros (blanco, beige)
   primary:
-    'bg-azul-profundo text-white hover:bg-azul-profundo/85 active:scale-[0.99] shadow-sm',
+    'bg-azul-accion text-white hover:bg-azul-accion/85 active:scale-[0.99] shadow-sm',
 
   // Fondo blanco — para fondos oscuros (hero con overlay, CTABand)
   light:

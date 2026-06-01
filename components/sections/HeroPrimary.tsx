@@ -105,13 +105,13 @@ export function HeroPrimary() {
 
             {/* H1 — POPPINS bold, impacto tipográfico */}
             <h1
-              className="font-sans font-bold text-white leading-[0.92] mb-7
-                         [font-size:clamp(3.25rem,8.5vw,6.5rem)]
-                         [text-shadow:0_2px_28px_rgba(0,0,0,0.25)]"
+              className="font-sans font-bold text-white leading-none
+                         [font-size:clamp(3rem,8vw,5.5rem)]
+                         [text-shadow:0_2px_24px_rgba(0,0,0,0.35)]
+                         mb-6"
             >
-              Reduce<br />
-              el estrés.<br />
-              <span className="text-azul-claro">Vive más.</span>
+              La paz interior es <br />
+              <span className="text-azul-claro">el nuevo éxito.</span>
             </h1>
 
             {/* Subtítulo — PLAYFAIR itálico, elegancia editorial */}

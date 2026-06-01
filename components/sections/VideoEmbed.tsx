@@ -13,11 +13,12 @@ import { cn } from '@/lib/utils'
 interface VideoEmbedProps {
   videoId?:   string
   videoSrc?:  string
+  posterSrc?: string   // thumbnail para videos locales (.mp4)
   title:     string
   className?: string
 }
 
-export function VideoEmbed({ videoId, videoSrc, title, className }: VideoEmbedProps) {
+export function VideoEmbed({ videoId, videoSrc, posterSrc, title, className }: VideoEmbedProps) {
   const [active, setActive] = useState(false)
 
   const finalVideoSrc = videoId 
@@ -50,10 +51,10 @@ export function VideoEmbed({ videoId, videoSrc, title, className }: VideoEmbedPr
           aria-label={`Reproducir: ${title}`}
           className="absolute inset-0 w-full h-full group"
         >
-          {/* Thumbnail */}
-          {videoId && (
+          {/* Thumbnail — YouTube o poster local */}
+          {(videoId || posterSrc) && (
             <Image
-              src={ytThumbnail(videoId)}
+              src={videoId ? ytThumbnail(videoId) : posterSrc!}
               alt={title}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

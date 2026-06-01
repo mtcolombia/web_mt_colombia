@@ -8,7 +8,8 @@
   /* Paleta */
   --color-azul-profundo: #0F2A44;
   --color-azul-texto:    #1E40AF;
-  --color-azul-claro:    #3DAEE9;  /* sky blue — actualizado */
+  --color-azul-claro:    #3DAEE9;
+  --color-azul-accion:   #6FA8DC;  /* color botones primarios (CTA) */
   --color-dorado:        #C9A85D;
   --color-beige:         #F5F1E8;
 

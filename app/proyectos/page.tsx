@@ -1,14 +1,13 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { MapPin, Tag, ExternalLink, Shield, BookOpen, ArrowRight } from 'lucide-react'
-import { HeroSecondary } from '@/components/sections/HeroSecondary'
-import { CTABand }       from '@/components/sections/CTABand'
-import { VideoEmbed }    from '@/components/sections/VideoEmbed'
-import { Slider }        from '@/components/sections/Slider'
-import type { SliderSlide } from '@/components/sections/Slider'
-import { AnimateIn }     from '@/components/ui/AnimateIn'
-import { Button }        from '@/components/ui/Button'
-import { routes }        from '@/lib/routes'
+import { HeroSecondary }   from '@/components/sections/HeroSecondary'
+import { CTABand }         from '@/components/sections/CTABand'
+import { VideoEmbed }      from '@/components/sections/VideoEmbed'
+import { AnimateIn }       from '@/components/ui/AnimateIn'
+import { Button }          from '@/components/ui/Button'
+import { ImageLightbox }   from '@/components/ui/ImageLightbox'
+import { routes }          from '@/lib/routes'
 
 export const metadata: Metadata = {
   title: 'Proyectos',
@@ -38,7 +37,7 @@ const projects: Project[] = [
     category:    'Educativo',
     description: 'Programa intergeneracional. Documentó reducción de ansiedad, mejora de cohesión grupal y disminución de conductas de riesgo.',
     reach:       '85 participantes',
-    img:         '/images/proyectos/ninos-meditando-salon.jpg',
+    img:         '/images/proyectos/cedeco-2024.jpg',
   },
   {
     id:          'estrella-2016',
@@ -68,167 +67,8 @@ const projects: Project[] = [
     category:    'Educativo',
     description: 'Primera intervención híbrida durante pandemia. Mejoras en regulación emocional y adherencia escolar.',
     reach:       '180 estudiantes',
-    img:         '/images/proyectos/japon-2020.jpg',
+    img:         '/images/proyectos/colegio-japon.jpg',
   },
-]
-
-/* ── Contenido de los 2 slides EBC ──────────────────────────────────────────
-   Se definen fuera del componente para evitar recreación en cada render.
-   Son ReactNode simples (sin hooks), serializables como RSC payload.
-─────────────────────────────────────────────────────────────────────────── */
-
-const ebcSlide1: React.ReactNode = (
-  <div className="container-site">
-    <div className="max-w-[680px] mx-auto text-center">
-
-      <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-8">
-        Misión educativa
-      </p>
-
-      <div className="space-y-5 font-sans text-azul-profundo/75 leading-[1.85] text-justify
-                      hyphens-auto" lang="es">
-        <p>
-          <strong className="text-azul-profundo font-semibold">
-            La Educación Basada en la Conciencia
-          </strong>{' '}
-          es una ciencia fundada por Maharishi Mahesh Yogi en 1972, orientada
-          a satisfacer la necesidad de una estructura unificada del conocimiento
-          humano que integre todos los campos de estudio.
-        </p>
-        <p>
-          Su objetivo es implementar un sistema educativo innovador mediante
-          técnicas científicamente validadas que promueven el bienestar emocional,
-          la salud mental y el rendimiento académico de los estudiantes. Además,
-          contribuye a reducir los niveles de estrés, ansiedad, insomnio y fatiga
-          crónica en directivos y docentes.
-        </p>
-        <p>
-          La práctica diaria de la Meditación Trascendental en instituciones
-          educativas disminuye la ansiedad y crea un campo de máxima coherencia
-          en la actividad del cerebro, que permite desarrollar mayor concentración,
-          atención, rendimiento intelectual y desarrollo de inteligencia emocional.
-        </p>
-      </div>
-
-      {/* Badge CONPES */}
-      <div className="mt-8 inline-flex items-start gap-3 bg-white/70 backdrop-blur-sm
-                      border border-azul-profundo/[0.08] rounded-[14px] px-5 py-4
-                      shadow-[0_4px_20px_rgba(15,42,68,0.07)] text-left">
-        <BookOpen size={15} className="text-dorado shrink-0 mt-0.5" />
-        <p className="font-sans text-sm text-azul-profundo/70 leading-relaxed">
-          <strong className="text-azul-profundo">Alineado con políticas nacionales:</strong>{' '}
-          CONPES 140 de 2019 · PTAFI 3.0 · CRESE — Ministerio de Educación Nacional.
-        </p>
-      </div>
-
-      {/* Imagen EBC */}
-      <div className="mt-8 relative w-full rounded-[16px] overflow-hidden
-                      shadow-[0_8px_32px_rgba(15,42,68,0.12)]">
-        <Image
-          src="/images/proyectos/ebc.jpg"
-          alt="Educación Basada en la Conciencia — proyectos en Colombia"
-          width={800}
-          height={450}
-          className="w-full h-auto object-cover"
-        />
-      </div>
-
-    </div>
-  </div>
-)
-
-const ebcSlide2: React.ReactNode = (
-  <div className="container-site">
-    <div className="max-w-[680px] mx-auto">
-
-      <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-8 text-center">
-        Misión educativa
-      </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8">
-
-        <div>
-          <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase
-                         tracking-widest mb-4 pb-3 border-b border-azul-profundo/10">
-            Beneficios en estudiantes y docentes
-          </h4>
-          <ul className="space-y-3 mb-6">
-            {[
-              'Mejora de atención, memoria, inteligencia y creatividad',
-              'Regulación emocional y rendimiento académico',
-              'Mejora la calidad del sueño',
-              'Mejora en la comunicación y relaciones interpersonales',
-            ].map((b) => (
-              <li key={b} className="flex items-start gap-3 font-sans text-sm text-azul-profundo/75">
-                <span className="w-4 h-4 rounded-full bg-dorado/15 flex items-center justify-center shrink-0 mt-0.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-dorado" />
-                </span>
-                {b}
-              </li>
-            ))}
-          </ul>
-          <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase
-                         tracking-widest mb-3">
-            Se disminuye significativamente:
-          </h4>
-          <ul className="space-y-2">
-            {['Estrés crónico', 'Hipertensión', 'Trastornos de ansiedad', 'Depresión e insomnio'].map((b) => (
-              <li key={b} className="flex items-center gap-2.5 font-sans text-sm text-azul-profundo/65">
-                <Shield size={11} className="text-dorado/70 shrink-0" />
-                {b}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase
-                         tracking-widest mb-4 pb-3 border-b border-azul-profundo/10">
-            El cerebro en máxima integración
-          </h4>
-          <p className="font-sans text-sm text-azul-profundo/60 leading-relaxed mb-5">
-            El programa EBC desarrolla la capacidad del cerebro de operar con
-            máxima integración, mínima interferencia y alta adaptabilidad:
-          </p>
-          <div className="space-y-3">
-            {[
-              { n: '01', title: 'Mayor creatividad',  desc: 'Interacción flexible de redes neuronales' },
-              { n: '02', title: 'Mejor aprendizaje',  desc: 'Plasticidad cerebral optimizada' },
-              { n: '03', title: 'Mayor autocontrol',  desc: 'Dominancia prefrontal desarrollada' },
-              { n: '04', title: 'Mayor resiliencia',  desc: 'Regulación emocional estable' },
-            ].map((item) => (
-              <div key={item.n} className="flex items-center gap-3 py-2.5 border-b border-azul-profundo/[0.06] last:border-0">
-                <span className="font-display text-lg text-dorado/30 select-none w-7 shrink-0">{item.n}</span>
-                <div>
-                  <p className="font-sans font-semibold text-sm text-azul-profundo">{item.title}</p>
-                  <p className="font-sans text-xs text-azul-profundo/50">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-      </div>
-
-      <div className="mt-10 flex justify-center">
-        <a
-          href={`${routes.mt}#evidencia-detallada`}
-          className="inline-flex items-center gap-2 font-sans text-sm font-semibold
-                     text-dorado hover:text-azul-profundo transition-colors
-                     border-b border-dorado/40 hover:border-azul-profundo/40 pb-0.5"
-        >
-          Ver estudios científicos detallados
-          <ArrowRight size={12} />
-        </a>
-      </div>
-
-    </div>
-  </div>
-)
-
-const ebcSlides: SliderSlide[] = [
-  { id: 'ebc-slide-1', content: ebcSlide1 },
-  { id: 'ebc-slide-2', content: ebcSlide2 },
 ]
 
 /* ── Página ─────────────────────────────────────────────────────────────── */
@@ -400,21 +240,128 @@ export default function ProyectosPage() {
       </section>
 
       {/* ─────────────────────────────────────────
-          2. MISIÓN EDUCATIVA — Slider canónico
-          Fondo: valle del cocora a 32% visibilidad
-          Slide 1: manifiesto periodístico centrado
-          Slide 2: beneficios en dos columnas
-          Altura fija para evitar saltos entre slides
+          2a. MISIÓN EDUCATIVA — Manifiesto
       ───────────────────────────────────────── */}
-      <Slider
-        id="educacion-conciencia"
-        slides={ebcSlides}
-        backgroundSrc="/images/hero/valle-del-cocora.jpg"
-        backgroundOpacity={0.32}
-        gradientFrom="beige"
-        className="scroll-mt-20"
-        slideClassName="py-24 md:py-28 min-h-[560px] md:min-h-[620px] flex flex-col justify-center"
-      />
+      <section id="educacion-conciencia" className="relative overflow-hidden scroll-mt-20">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <Image src="/images/hero/valle-del-cocora.jpg" alt="" fill
+            className="object-cover opacity-[0.30]" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-beige via-beige/90 to-beige" />
+        </div>
+        <div className="relative container-site py-20 md:py-24">
+          <div className="max-w-[680px] mx-auto text-center">
+            <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-8">
+              Misión educativa
+            </p>
+            <div className="space-y-5 font-sans text-azul-profundo/75 leading-[1.85] text-justify
+                            hyphens-auto" lang="es">
+              <p>
+                <strong className="text-azul-profundo font-semibold">La Educación Basada en la Conciencia</strong>{' '}
+                es una ciencia fundada por Maharishi Mahesh Yogi en 1972, orientada a satisfacer la
+                necesidad de una estructura unificada del conocimiento humano que integre todos los
+                campos de estudio.
+              </p>
+              <p>
+                Su objetivo es implementar un sistema educativo innovador mediante técnicas
+                científicamente validadas que promueven el bienestar emocional, la salud mental y el
+                rendimiento académico de los estudiantes. Además, contribuye a reducir los niveles de
+                estrés, ansiedad, insomnio y fatiga crónica en directivos y docentes.
+              </p>
+              <p>
+                La práctica diaria de la MT en instituciones educativas disminuye la ansiedad y crea
+                un campo de máxima coherencia en la actividad del cerebro, que permite desarrollar
+                mayor concentración, atención, rendimiento intelectual e inteligencia emocional.
+              </p>
+            </div>
+            <div className="mt-8 inline-flex items-start gap-3 bg-white/70 backdrop-blur-sm
+                            border border-azul-profundo/[0.08] rounded-[14px] px-5 py-4
+                            shadow-[0_4px_20px_rgba(15,42,68,0.07)] text-left">
+              <BookOpen size={15} className="text-dorado shrink-0 mt-0.5" />
+              <p className="font-sans text-sm text-azul-profundo/70 leading-relaxed">
+                <strong className="text-azul-profundo">Alineado con políticas nacionales:</strong>{' '}
+                CONPES 140 de 2019 · PTAFI 3.0 · CRESE — Ministerio de Educación Nacional.
+              </p>
+            </div>
+            <div className="mt-8 rounded-[16px] overflow-hidden shadow-[0_8px_32px_rgba(15,42,68,0.12)]">
+              <Image src="/images/proyectos/ebc.jpg" alt="Educación Basada en la Conciencia"
+                width={800} height={450} className="w-full h-auto object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────
+          2b. MISIÓN EDUCATIVA — Beneficios y cerebro
+      ───────────────────────────────────────── */}
+      <section className="section-y bg-white">
+        <div className="container-site">
+          <div className="max-w-[680px] mx-auto">
+            <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-8 text-center">
+              Beneficios documentados en el aula
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8">
+              <div>
+                <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase
+                               tracking-widest mb-4 pb-3 border-b border-azul-profundo/10">
+                  En estudiantes y docentes
+                </h4>
+                <ul className="space-y-3 mb-6">
+                  {['Mejora de atención, memoria, inteligencia y creatividad',
+                    'Regulación emocional y rendimiento académico',
+                    'Mejora la calidad del sueño',
+                    'Mejora en la comunicación y relaciones interpersonales'].map((b) => (
+                    <li key={b} className="flex items-start gap-3 font-sans text-sm text-azul-profundo/75">
+                      <span className="w-4 h-4 rounded-full bg-dorado/15 flex items-center justify-center shrink-0 mt-0.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-dorado" />
+                      </span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+                <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase tracking-widest mb-3">
+                  Se disminuye significativamente:
+                </h4>
+                <ul className="space-y-2">
+                  {['Estrés crónico', 'Hipertensión', 'Trastornos de ansiedad', 'Depresión e insomnio'].map((b) => (
+                    <li key={b} className="flex items-center gap-2.5 font-sans text-sm text-azul-profundo/65">
+                      <Shield size={11} className="text-dorado/70 shrink-0" />{b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase
+                               tracking-widest mb-4 pb-3 border-b border-azul-profundo/10">
+                  El cerebro en máxima integración
+                </h4>
+                <div className="space-y-3">
+                  {[{ n: '01', title: 'Mayor creatividad',  desc: 'Interacción flexible de redes neuronales' },
+                    { n: '02', title: 'Mejor aprendizaje',  desc: 'Plasticidad cerebral optimizada' },
+                    { n: '03', title: 'Mayor autocontrol',  desc: 'Dominancia prefrontal desarrollada' },
+                    { n: '04', title: 'Mayor resiliencia',  desc: 'Regulación emocional estable' }].map((item) => (
+                    <div key={item.n} className="flex items-center gap-3 py-2.5 border-b border-azul-profundo/[0.06] last:border-0">
+                      <span className="font-display text-lg text-dorado/30 select-none w-7 shrink-0">{item.n}</span>
+                      <div>
+                        <p className="font-sans font-semibold text-sm text-azul-profundo">{item.title}</p>
+                        <p className="font-sans text-xs text-azul-profundo/50">{item.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <div className="mt-10 flex justify-center">
+              <a href={`${routes.mt}#evidencia-detallada`}
+                className="inline-flex items-center gap-2 font-sans text-sm font-semibold
+                           text-dorado hover:text-azul-profundo transition-colors
+                           border-b border-dorado/40 hover:border-azul-profundo/40 pb-0.5">
+                Ver estudios científicos detallados
+                <ArrowRight size={12} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ─────────────────────────────────────────
           3. COHERENCIA SOCIAL + EFECTO MAHARISHI
@@ -423,11 +370,24 @@ export default function ProyectosPage() {
         <div className="container-site">
 
           <AnimateIn variant="fade-up">
-            <div className="mb-14 pb-10 border-b border-azul-profundo/10">
-              <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-3">
-                Escala social
-              </p>
-              <h2 className="text-4xl md:text-5xl">Programas de Coherencia Social</h2>
+            <div className="mb-14 pb-10 border-b border-azul-profundo/10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+              <div>
+                <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-3">
+                  Escala social
+                </p>
+                <h2 className="text-4xl md:text-5xl">Programas de Coherencia Social</h2>
+              </div>
+              <a
+                href="https://www.cursos-programasmaharishi.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-sans text-sm font-semibold
+                           text-azul-profundo hover:text-dorado transition-colors
+                           border-b border-azul-profundo/20 hover:border-dorado pb-0.5 shrink-0"
+              >
+                cursos-programasmaharishi.org
+                <ExternalLink size={12} />
+              </a>
             </div>
           </AnimateIn>
 
@@ -463,30 +423,22 @@ export default function ProyectosPage() {
                     ))}
                   </ul>
 
-                  {/* Gráficos Meisner + Efecto Maharishi */}
+                  {/* Gráficos — click para ampliar */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="relative rounded-[16px] overflow-hidden
-                                    shadow-[0_8px_32px_rgba(15,42,68,0.12)]">
-                      <Image
-                        src="/images/grafico-meisner.jpg"
-                        alt="Gráfico del Efecto Meisner"
-                        width={600}
-                        height={400}
-                        className="w-full h-auto object-contain"
-                        style={{ background: 'rgba(15,42,68,0.03)' }}
-                      />
-                    </div>
-                    <div className="relative rounded-[16px] overflow-hidden
-                                    shadow-[0_8px_32px_rgba(15,42,68,0.12)]">
-                      <Image
-                        src="/images/proyectos/efecto-maharishi.jpeg"
-                        alt="Gráfico del Efecto Maharishi"
-                        width={600}
-                        height={400}
-                        className="w-full h-auto object-contain"
-                        style={{ background: 'rgba(15,42,68,0.03)' }}
-                      />
-                    </div>
+                    <ImageLightbox
+                      src="/images/grafico-meisner.jpg"
+                      alt="Gráfico del Efecto Meisner"
+                      width={600}
+                      height={400}
+                      className="shadow-[0_8px_32px_rgba(15,42,68,0.12)] bg-white/5"
+                    />
+                    <ImageLightbox
+                      src="/images/proyectos/efecto-maharishi.jpeg"
+                      alt="Gráfico del Efecto Maharishi"
+                      width={600}
+                      height={400}
+                      className="shadow-[0_8px_32px_rgba(15,42,68,0.12)] bg-white/5"
+                    />
                   </div>
                 </div>
 
