@@ -76,44 +76,55 @@ export default async function BlogPage() {
     }))
   }
 
-  // Helper para generar los slides de actividades (con imagen arriba, al estilo de tu screenshot)
+  // Helper para generar los slides de actividades (con imagen a un lado y texto al otro, ocupando el ancho completo)
   const generateActivitySlides = (sectionArticles: typeof articles) => {
     return sectionArticles.map((article) => ({
       id: article.slug,
       content: (
-        <div className="px-4 md:px-6 py-6 max-w-sm mx-auto snap-start select-none">
+        <div className="px-4 md:px-12 py-6 max-w-5xl mx-auto snap-start select-none">
           <div className="bg-white rounded-[24px] border border-azul-profundo/[0.08] 
                           shadow-[0_16px_48px_rgba(15,42,68,0.05)] hover:shadow-[0_24px_64px_rgba(15,42,68,0.08)] 
-                          transition-all duration-500 overflow-hidden flex flex-col justify-between h-[480px]
+                          transition-all duration-500 overflow-hidden flex flex-col md:flex-row min-h-[420px]
                           group">
-            <div className="flex-1 flex flex-col">
-              {/* Imagen superior */}
-              <div className="relative h-[200px] w-full overflow-hidden bg-azul-profundo/5">
-                <Image
-                  src={article.coverImage}
-                  alt={article.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              
-              {/* Contenido textual */}
-              <div className="p-6 text-center space-y-3 flex-1 flex flex-col justify-center">
-                <h3 className="text-lg md:text-xl font-sans font-bold text-azul-profundo leading-snug tracking-tight">
+            
+            {/* Contenedor de la Imagen (Lado Izquierdo) */}
+            <div className="relative w-full md:w-1/2 h-[240px] md:h-auto shrink-0 overflow-hidden bg-azul-profundo/5">
+              <Image
+                src={article.coverImage}
+                alt={article.title}
+                fill
+                className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                sizes="(max-w-768px) 100vw, 50vw"
+              />
+            </div>
+            
+            {/* Contenedor del Texto (Lado Derecho) */}
+            <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-between text-left">
+              <div className="space-y-4">
+                <span className="inline-block bg-dorado/15 text-dorado font-sans text-[10px] font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">
+                  Actividad Programada
+                </span>
+                
+                <h3 className="text-2xl md:text-3xl font-sans font-bold text-azul-profundo leading-snug tracking-tight">
                   {article.title}
                 </h3>
-                <p className="font-sans text-sm text-azul-profundo/70 leading-relaxed">
+                
+                <p className="font-sans text-sm md:text-base text-azul-profundo/70 leading-relaxed">
                   {article.excerpt}
                 </p>
               </div>
+              
+              {/* Pie de tarjeta */}
+              <div className="mt-8 pt-5 border-t border-azul-profundo/[0.06] flex items-center justify-between">
+                <span className="text-[11px] font-sans text-azul-profundo/40 font-medium tracking-wide">
+                  Centro de Meditación Trascendental
+                </span>
+                <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dorado bg-dorado/5 px-2.5 py-1 rounded">
+                  Vigente
+                </span>
+              </div>
             </div>
 
-            {/* Pie de tarjeta */}
-            <div className="px-6 pb-6 pt-3 text-center border-t border-azul-profundo/[0.04] shrink-0">
-              <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dorado bg-dorado/5 px-3.5 py-1.5 rounded-full">
-                Actividad Programada
-              </span>
-            </div>
           </div>
         </div>
       )
