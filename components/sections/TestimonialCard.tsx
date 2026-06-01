@@ -16,10 +16,10 @@ export function TestimonialCard({ name, role, img, videoId }: TestimonialCardPro
 
   return (
     <div className="group">
-      {/* Contenedor 9:16 — aspecto nativo de YouTube Shorts */}
-      <div className="relative aspect-[9/16] rounded-[16px] overflow-hidden
+      {/* Contenedor aspect-square (1:1) — aspect nativo de los recursos estáticos 1080x1080 */}
+      <div className="relative aspect-square rounded-[16px] overflow-hidden
                       shadow-[0_8px_32px_rgba(15,42,68,0.14)]">
-
+ 
         {playing ? (
           <iframe
             className="absolute inset-0 w-full h-full"
@@ -38,7 +38,7 @@ export function TestimonialCard({ name, role, img, videoId }: TestimonialCardPro
               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
             />
             {/* Gradiente inferior */}
-            <div className="absolute inset-0 bg-gradient-to-t from-azul-profundo/85 via-azul-profundo/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-azul-profundo/70 via-transparent to-transparent" />
 
             {/* Botón play */}
             <button
