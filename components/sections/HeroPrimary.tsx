@@ -110,7 +110,7 @@ export function HeroPrimary() {
                          [text-shadow:0_2px_24px_rgba(0,0,0,0.35)]
                          mb-6"
             >
-              La paz interior es <br />
+              La paz interior <br />
               <span className="text-azul-claro">el nuevo éxito.</span>
             </h1>
 
