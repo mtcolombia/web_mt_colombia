@@ -1376,5 +1376,50 @@
     "coverImage": "/images/hero-blog.jpeg",
     "publishedAt": "2026-05-08",
     "readingTime": 1
+  },
+  {
+    "slug": "curso-de-residencia-fusagasuga",
+    "title": "Curso de Residencia en Fusagasugá",
+    "excerpt": "Disfruta de una inmersión profunda y rejuvenecimiento del 5 al 8 de junio de 2026. Un espacio dedicado a la meditación prolongada, el descanso profundo y la integración del conocimiento completo.",
+    "category": "actividades",
+    "coverImage": "/images/blog/curso-residencia.jpg",
+    "publishedAt": "2026-06-05",
+    "readingTime": 3
+  },
+  {
+    "slug": "terapia-de-luz-con-gemas",
+    "title": "Terapia de Luz con Gemas",
+    "excerpt": "Experimenta la tecnología ayurvédica que utiliza la frecuencia luminosa y el orden molecular de las piedras preciosas para restablecer el equilibrio físico y mental. Agendar cita previa.",
+    "category": "actividades",
+    "coverImage": "/images/blog/terapia-gemas.jpeg",
+    "publishedAt": "2026-06-01",
+    "readingTime": 2
+  },
+  {
+    "slug": "terapias-reconexion-mente-cuerpo",
+    "title": "Terapias de Reconexión Mente-Cuerpo",
+    "excerpt": "Sesiones integrales del Ayurveda Maharishi diseñadas para disolver tensiones profundas y activar los mecanismos naturales de autocuración del cuerpo. Agendar cita previa.",
+    "category": "actividades",
+    "coverImage": "/images/blog/maharishi-ayurveda.jpeg",
+    "publishedAt": "2026-06-01",
+    "readingTime": 2
+  },
+  {
+    "slug": "conferencia-introductoria-curso-mt",
+    "title": "Conferencia Introductoria sobre el Curso de MT",
+    "excerpt": "Todos los miércoles a las 7:00 p.m. vía Zoom. Descubre el origen científico de la técnica, sus beneficios documentados y cómo aprenderla. Inscribirse vía WhatsApp para recibir el enlace de conexión.",
+    "category": "actividades",
+    "coverImage": "/images/blog/hombre-meditando.png",
+    "publishedAt": "2026-06-01",
+    "readingTime": 1
+  },
+  {
+    "slug": "jornada-bienestar-centro-trascendental",
+    "title": "Jornada de Bienestar en el Centro Trascendental",
+    "excerpt": "Ven a compartir una experiencia de coherencia y recarga el sábado 20 de junio de 2026 a las 9:00 a.m. Práctica en grupo, charlas avanzadas y comunidad.",
+    "category": "actividades",
+    "coverImage": "/images/blog/equipo-blanco.jpeg",
+    "publishedAt": "2026-06-20",
+    "readingTime": 4
   }
 ]

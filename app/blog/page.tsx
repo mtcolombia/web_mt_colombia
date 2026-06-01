@@ -76,9 +76,58 @@ export default async function BlogPage() {
     }))
   }
 
+  // Helper para generar los slides de actividades (con imagen arriba, al estilo de tu screenshot)
+  const generateActivitySlides = (sectionArticles: typeof articles) => {
+    return sectionArticles.map((article) => ({
+      id: article.slug,
+      content: (
+        <div className="px-4 md:px-6 py-6 max-w-sm mx-auto snap-start select-none">
+          <div className="bg-white rounded-[24px] border border-azul-profundo/[0.08] 
+                          shadow-[0_16px_48px_rgba(15,42,68,0.05)] hover:shadow-[0_24px_64px_rgba(15,42,68,0.08)] 
+                          transition-all duration-500 overflow-hidden flex flex-col justify-between h-[480px]
+                          group">
+            <div className="flex-1 flex flex-col">
+              {/* Imagen superior */}
+              <div className="relative h-[200px] w-full overflow-hidden bg-azul-profundo/5">
+                <Image
+                  src={article.coverImage}
+                  alt={article.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              
+              {/* Contenido textual */}
+              <div className="p-6 text-center space-y-3 flex-1 flex flex-col justify-center">
+                <h3 className="text-lg md:text-xl font-sans font-bold text-azul-profundo leading-snug tracking-tight">
+                  {article.title}
+                </h3>
+                <p className="font-sans text-sm text-azul-profundo/70 leading-relaxed">
+                  {article.excerpt}
+                </p>
+              </div>
+            </div>
+
+            {/* Pie de tarjeta */}
+            <div className="px-6 pb-6 pt-3 text-center border-t border-azul-profundo/[0.04] shrink-0">
+              <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dorado bg-dorado/5 px-3.5 py-1.5 rounded-full">
+                Actividad Programada
+              </span>
+            </div>
+          </div>
+        </div>
+      )
+    }))
+  }
+
   const investigacionSlides = generateSlides(investigacionArticles)
   const noticiasSlides = generateSlides(noticiasArticles)
-  const actividadesSlides = generateSlides(actividadesArticles)
+  const actividadesSlides = generateActivitySlides(actividadesArticles)
+
+  const noticiasSearchList = noticiasArticles.map((art) => ({
+    title: art.title,
+    date: formatDate(art.publishedAt)
+  }))
 
   return (
     <div id="inicio-blog" className="scroll-mt-16">
@@ -272,6 +321,7 @@ export default async function BlogPage() {
                 gradientFrom="beige"
                 lightGradient={true}
                 className="overflow-visible"
+                searchList={noticiasSearchList}
               />
             ) : (
               <p className="text-center font-sans text-azul-profundo/50 text-sm py-8">
@@ -289,7 +339,7 @@ export default async function BlogPage() {
         {/* Banner de Sección */}
         <div className="relative h-[180px] md:h-[220px] overflow-hidden bg-azul-profundo flex items-center">
           <Image
-            src="/images/blog/portada-actividades.jpeg"
+            src="/images/blog/portada-actividades.jpg"
             alt="Actividades del Centro de MT"
             fill
             className="object-cover"
