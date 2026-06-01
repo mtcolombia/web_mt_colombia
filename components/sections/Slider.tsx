@@ -23,6 +23,7 @@ export interface SliderSlide {
 interface SearchItem {
   title: string
   date?: string
+  source?: string
 }
 
 interface SliderProps {
@@ -300,11 +301,21 @@ export function Slider({
                     )}
                   >
                     <div className="flex items-center justify-between gap-3">
-                      {item.date && (
-                        <span className="text-[10px] font-sans font-bold text-azul-claro uppercase tracking-wider">
-                          {item.date}
-                        </span>
-                      )}
+                      <div className="flex items-center gap-2 flex-wrap">
+                        {item.date && (
+                          <span className="text-[10px] font-sans font-bold text-azul-claro uppercase tracking-wider">
+                            {item.date}
+                          </span>
+                        )}
+                        {item.source && (
+                          <>
+                            <span className="text-[10px] text-azul-profundo/20 font-sans font-bold">•</span>
+                            <span className="text-[10px] font-sans font-bold text-dorado uppercase tracking-wider">
+                              {item.source}
+                            </span>
+                          </>
+                        )}
+                      </div>
                       <span className={cn(
                         "text-[9px] font-sans font-bold px-2 py-0.5 rounded",
                         active === item.index

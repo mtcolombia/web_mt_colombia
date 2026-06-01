@@ -63,9 +63,19 @@ export default async function BlogPage() {
             
             {/* Metadata inferior */}
             <div className="mt-8 pt-5 border-t border-azul-profundo/[0.06] flex items-center justify-between">
-              <span className="text-[11px] font-sans text-azul-profundo/40 font-medium tracking-wide">
-                Cápsula de lectura · {article.readingTime} min
-              </span>
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="text-[11px] font-sans text-azul-profundo/40 font-medium tracking-wide">
+                  Cápsula de lectura · {article.readingTime} min
+                </span>
+                {article.source && (
+                  <>
+                    <span className="text-[11px] text-azul-profundo/20 font-sans font-medium">•</span>
+                    <span className="inline-flex items-center gap-1 text-[11px] font-sans text-dorado font-bold uppercase tracking-wider">
+                      Fuente: {article.source}
+                    </span>
+                  </>
+                )}
+              </div>
               <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dorado bg-dorado/5 px-2.5 py-1 rounded">
                 Completa
               </span>
@@ -137,7 +147,8 @@ export default async function BlogPage() {
 
   const noticiasSearchList = noticiasArticles.map((art) => ({
     title: art.title,
-    date: formatDate(art.publishedAt)
+    date: formatDate(art.publishedAt),
+    source: art.source
   }))
 
   return (

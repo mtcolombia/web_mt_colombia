@@ -22,6 +22,7 @@ export const blogArticleSchema = z.object({
   readingTime: z.number().int(),
   featured:    z.boolean().optional(),
   body:        z.string().optional(),
+  source:      z.string().optional(),
 })
 
 export type BlogCategory = z.infer<typeof blogCategorySchema>
