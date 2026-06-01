@@ -53,5 +53,50 @@
     "coverImage": "/images/blog/insomnio-ansiedad.jpg",
     "publishedAt": "2024-10-30",
     "readingTime": 6
+  },
+  {
+    "slug": "colombia-prohibicion-mineria-petroleo-amazonia",
+    "title": "Colombia se convierte en el primer país en prohibir la minería y el petróleo en la Amazonía",
+    "excerpt": "En un hito histórico de conservación ambiental, Colombia ha decretado la prohibición absoluta de toda actividad petrolera y minera en la región de la Amazonía, protegiendo activamente millones de hectáreas de bosque tropical y fuentes hídricas.",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-03-14",
+    "readingTime": 2
+  },
+  {
+    "slug": "concesion-forestal-amazonas-campesinos",
+    "title": "Entregan primera concesión forestal para aprovechamiento sostenible en la Amazonía",
+    "excerpt": "El Ministerio de Ambiente ha entregado la primera concesión forestal para que familias campesinas co-administren de forma sostenible 23.000 hectáreas de bosque en la Amazonía. Una apuesta comunitaria que frena la deforestación y estimula la economía forestal sostenible.",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 2
+  },
+  {
+    "slug": "inversion-mil-millones-parques-solares-colombia",
+    "title": "Fondo internacional invertirá US$1.000 millones en infraestructura solar en el país",
+    "excerpt": "Un fondo de inversión latinoamericano anunció la inyección de 1.000 millones de dólares destinados exclusivamente a la construcción y puesta en marcha de parques solares en el territorio nacional, acelerando la transición energética limpia.",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-05-08",
+    "readingTime": 3
+  },
+  {
+    "slug": "denominacion-origen-mangostino-mariquita",
+    "title": "Otorgan Denominación de Origen al mangostino de Mariquita como sello de excelencia",
+    "excerpt": "La Superintendencia de Industria y Comercio otorgó la Denominación de Origen al mangostino cultivado en Mariquita, Tolima. Este reconocimiento exalta las propiedades únicas de esta súper fruta nacional, protegiendo y empoderando a las familias productoras locales.",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-29",
+    "readingTime": 2
+  },
+  {
+    "slug": "complejo-universitario-san-juan-de-dios-salud",
+    "title": "Rehabilitan el complejo histórico San Juan de Dios para el cuidado de adultos mayores",
+    "excerpt": "Los 24 edificios del complejo universitario San Juan de Dios en Bogotá serán rehabilitados como un centro especializado de salud y bienestar integral para adultos mayores, devolviendo valor social a esta joya de la infraestructura médica.",
+    "category": "noticias-positivas",
+    "coverImage": "/images/hero-blog.jpeg",
+    "publishedAt": "2026-04-24",
+    "readingTime": 2
   }
 ]

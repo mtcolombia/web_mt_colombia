@@ -162,13 +162,15 @@ export default async function BlogPage() {
       <div id="investigacion-cientifica" className="scroll-mt-32">
         {/* Banner de Sección */}
         <div className="relative h-[180px] md:h-[220px] overflow-hidden bg-azul-profundo flex items-center">
-          <Image
-            src="/images/mt-fondo-cerebro.jpeg"
-            alt="Investigación Científica"
-            fill
-            className="object-cover"
-            priority
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/images/blog/portada-investigacion.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/90 via-azul-profundo/60 to-transparent" />
           <div className="relative container-site text-white z-10 space-y-2">
             <span className="inline-block bg-dorado text-azul-profundo text-[8px] font-sans font-bold tracking-[0.15em] uppercase px-2.5 py-0.5 rounded shadow-sm">
