@@ -67,6 +67,11 @@ const evidenceAreas = [
     body: 'Los practicantes reportan menor reactividad al estrés interpersonal, mejor comunicación y mayor empatía. Los estudios poblacionales (Efecto Maharishi) muestran reducción de indicadores de violencia cuando un porcentaje crítico de la población practica.',
     img: '/images/mt-graficos/Impacto en el comportamiento social.jpeg',
   },
+  {
+    title: 'Comparación con otras técnicas',
+    body: 'La Meditación Trascendental se diferencia de otras técnicas porque se practica sin esfuerzo ni concentración. Mientras el mindfulness requiere observar pensamientos y la concentración exige enfoque, la MT permite trascender naturalmente al descanso profundo. Estudios de EEG muestran que la MT genera ondas alfa (relajación y bienestar), a diferencia de otras técnicas que activan ondas theta o beta.',
+    img: '/images/mt-graficos/comparacion-tecnicas.jpg',
+  },
 ]
 
 // ─── Slides: slide 1 beneficios + slides 2-6 evidencia por área ───────────
