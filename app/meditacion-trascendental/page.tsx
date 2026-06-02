@@ -1,11 +1,17 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { Clock } from 'lucide-react'
+import { Clock, Brain, Droplets, Moon, TrendingUp, ArrowRight } from 'lucide-react'
 import { HeroSecondary }  from '@/components/sections/HeroSecondary'
 import { CTABand }        from '@/components/sections/CTABand'
 import { Slider }         from '@/components/sections/Slider'
 import { TestimonialCard } from '@/components/sections/TestimonialCard'
+import { Button }         from '@/components/ui/Button'
+import { VideoEmbed }     from '@/components/sections/VideoEmbed'
 import { researchSlidesLight } from '@/lib/content/research-slides'
+import { socialLinks }    from '@/lib/content/navigation'
+import { routes }         from '@/lib/routes'
+
+const instagramLink = socialLinks.find((s) => s.platform === 'Instagram')?.url ?? 'https://instagram.com/meditacion_trascendental_col'
 
 export const metadata: Metadata = {
   title: 'Meditación Trascendental',
@@ -14,7 +20,6 @@ export const metadata: Metadata = {
 }
 
 // ─── Testimonios — colombianos arriba, extranjeros abajo ─────────────────
-// Fila 1: colombianos | Fila 2: figuras internacionales reconocidas
 const testimonials = [
   // ── Fila 1: Colombia ──────────────────────────────────────────────────
   { name: 'Padre Gabriel Mejía', role: 'Sacerdote y educador',      img: '/images/testimonios/padre-gabriel-mejia.png', videoId: 'H_x5WFqoDns' },
@@ -79,19 +84,53 @@ export default function MTPage() {
       />
 
       {/* ─────────────────────────────────────────
-          ¿QUÉ ES? — Split editorial con imagen
+          1. ¿QUÉ ES LA MEDITACIÓN TRASCENDENTAL? — Nueva Sección de Entrada
       ───────────────────────────────────────── */}
-      <section className="section-y bg-white overflow-hidden">
+      <section className="section-y bg-beige/30 overflow-hidden">
+        <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-6">
+            <p className="text-[#8a6e2d] font-sans font-semibold text-xs tracking-[0.15em] uppercase">
+              La Tecnología
+            </p>
+            <h2 className="text-4xl md:text-5xl leading-tight">
+              ¿Qué es la Meditación Trascendental?
+            </h2>
+            <div className="space-y-4 font-sans text-azul-profundo leading-relaxed text-base md:text-lg">
+              <p>
+                La MT es una tecnología de la conciencia para el desarrollo integral del ser humano. Al enriquecer la experiencia interior, promueve bienestar, creatividad y armonía en todas las dimensiones de la vida personal y colectiva.
+              </p>
+              <p>
+                Es una técnica universal, accesible a cualquier persona, sin importar sus creencias, experiencia previa o nivel educativo. No es una religión ni una filosofía; se integra naturalmente en cualquier estilo de vida, respetando plenamente la individualidad de cada persona.
+              </p>
+              <p className="font-semibold text-[#8a6e2d]">
+                No requiere esfuerzo ni cambios en las costumbres. Su práctica favorece que el crecimiento y la evolución surjan espontáneamente desde el potencial ilimitado que existe en el interior de cada ser humano.
+              </p>
+            </div>
+          </div>
+          <div className="w-full">
+            <VideoEmbed
+              videoId="QoFkC5onnVw"
+              title="¿Qué es la Meditación Trascendental?"
+              className="shadow-[0_24px_80px_rgba(15,42,68,0.16)] rounded-[20px]"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────
+          2. UNA TÉCNICA COMPLETAMENTE NATURAL — Split editorial con imagen
+      ───────────────────────────────────────── */}
+      <section className="section-y bg-white overflow-hidden border-t border-azul-profundo/[0.04]">
         <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           <div className="space-y-6">
-            <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase">
-              La técnica
+            <p className="text-[#8a6e2d] font-sans font-semibold text-xs tracking-[0.15em] uppercase">
+              El Funcionamiento
             </p>
             <h2 className="text-4xl md:text-5xl leading-tight">
               Una técnica completamente natural
             </h2>
-            <div className="space-y-4 font-sans text-azul-profundo/70 leading-relaxed">
+            <div className="space-y-4 font-sans text-azul-profundo/80 leading-relaxed">
               <p>
                 La Meditación Trascendental (MT) es una técnica ampliamente estudiada dentro del campo
                 de la medicina mente-cuerpo. Durante más de cinco décadas, ha sido objeto de investigación
@@ -105,7 +144,7 @@ export default function MTPage() {
             </div>
             <div className="flex flex-wrap gap-2.5 pt-2">
               <span className="chip">
-                <Clock size={12} className="text-dorado" />
+                <Clock size={12} className="text-[#8a6e2d]" />
                 20 min · 2 veces al día
               </span>
               <span className="chip">Ojos cerrados</span>
@@ -129,15 +168,46 @@ export default function MTPage() {
       </section>
 
       {/* ─────────────────────────────────────────
-          BENEFICIOS — mismo módulo que HOME
+          3. ¿QUÉ SUCEDE CUANDO MEDITAMOS? — Fisiología
       ───────────────────────────────────────── */}
-      <section id="evidencia-detallada" className="scroll-mt-20">
+      <section className="section-y bg-beige/10 overflow-hidden border-t border-azul-profundo/[0.04]">
+        <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="w-full">
+            <VideoEmbed
+              videoId="OPvMpMeQOWY"
+              title="¿Qué sucede cuando meditamos?"
+              className="shadow-[0_24px_80px_rgba(15,42,68,0.16)] rounded-[20px]"
+            />
+          </div>
+          <div className="space-y-5">
+            <p className="text-[#8a6e2d] font-sans font-semibold text-xs tracking-[0.15em] uppercase">
+              La fisiología de la MT
+            </p>
+            <h2 className="text-4xl md:text-5xl text-azul-profundo">¿Qué sucede cuando meditamos?</h2>
+            <p className="font-sans text-azul-profundo leading-relaxed text-base md:text-lg">
+              Durante la práctica ocurre un proceso de trascendencia: la mente se asienta
+              naturalmente hasta alcanzar la conciencia pura — un estado de completo
+              silencio interior con plena alerta.
+            </p>
+            <p className="font-sans text-azul-profundo/85 leading-relaxed text-base md:text-lg">
+              El cuerpo entra en un reposo más profundo que el sueño, el cerebro alcanza
+              su mayor grado de coherencia, y el resultado es claridad mental y energía
+              genuinamente renovada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────
+          4. BENEFICIOS DOCUMENTADOS — Slider de investigación
+      ───────────────────────────────────────── */}
+      <section id="evidencia-detallada" className="scroll-mt-20 border-t border-azul-profundo/[0.04]">
         <div className="bg-white border-b border-azul-profundo/10">
           <div className="container-site pt-14 pb-8">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4
                             pb-8 border-b border-azul-profundo/[0.08]">
               <div>
-                <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-2">
+                <p className="text-[#8a6e2d] font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-2">
                   Respaldado por la ciencia
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-azul-profundo">Beneficios documentados</h2>
@@ -162,10 +232,144 @@ export default function MTPage() {
       </section>
 
       {/* ─────────────────────────────────────────
+          5. ¿CÓMO PUEDO APRENDER LA MT? — Los 7 pasos moved from Home
+      ───────────────────────────────────────── */}
+      <section className="section-y bg-beige/40 overflow-hidden border-t border-b border-azul-profundo/[0.04]">
+        <div className="container-site">
+
+          <div className="max-w-3xl mx-auto mb-14">
+            <p className="text-[#8a6e2d] font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-3">
+              El proceso de aprendizaje
+            </p>
+            <h2 className="text-4xl md:text-5xl text-azul-profundo mb-6">¿Cómo puedo aprender la Meditación Trascendental?</h2>
+            <div className="space-y-4 font-sans text-azul-profundo leading-relaxed text-base md:text-lg">
+              <p>
+                Cualquiera puede aprender Meditación Trascendental. Es fácil y agradable de practicar,
+                y ofrece resultados inmediatos.
+              </p>
+              <p>
+                La MT se enseña según métodos probados que permiten a la mente experimentar de forma
+                natural el estado más pleno de su verdadera naturaleza. No se requiere un largo periodo
+                de aprendizaje, ya que el proceso es natural e intuitivo. Cualquier persona puede
+                aprender MT, independientemente de su origen cultural, religioso o educativo, y los
+                resultados suelen notarse de inmediato. Veinte minutos, dos veces al día, son
+                suficientes para obtener los efectos deseados.
+              </p>
+              <p>
+                Si bien la práctica básica de la MT es la misma para todos, cada individuo es único.
+                Por ello, es necesaria la guía personalizada de un profesor de MT capacitado. Cuando
+                la meditación se enseña de forma correcta y personalizada, el proceso se desarrolla
+                de manera natural y sin esfuerzo, y así se obtienen los mayores beneficios.
+              </p>
+              <p>
+                Una vez que hayamos aprendido esta técnica completamente natural, podremos practicarla
+                por nuestra cuenta, pero si necesitamos orientación adicional, podemos obtenerla en
+                cualquier centro de MT del mundo. La necesidad de orientación varía de persona a
+                persona, pero lo importante es que siempre está disponible.
+              </p>
+            </div>
+          </div>
+
+          {/* Fase 1 — 7 pasos */}
+          <div className="max-w-3xl mx-auto">
+            <h3 className="font-sans font-semibold text-azul-profundo text-sm uppercase tracking-widest mb-8
+                           pb-4 border-b border-azul-profundo/10">
+              Fase 1 del curso de MT — Aprendizaje de la técnica
+            </h3>
+            <p className="font-sans text-azul-profundo/70 text-sm mb-10 leading-relaxed">
+              El aprendizaje se desarrolla en 7 pasos, repartidos a lo largo de 4 días consecutivos.
+            </p>
+
+            <div className="space-y-0 divide-y divide-azul-profundo/[0.07]">
+              {[
+                {
+                  n: '01',
+                  title: 'Conferencia introductoria',
+                  body: 'Panorama general de los beneficios y estudios científicos. Toda la información necesaria para decidir si aprender MT, con sesión de preguntas y respuestas.',
+                  detail: 'Gratuito · 1,5 horas',
+                },
+                {
+                  n: '02',
+                  title: 'Charla preparatoria',
+                  body: 'Más detalles sobre la mecánica exacta de la técnica, sus diferencias con otros tipos de meditación y cómo se aprende y practica.',
+                  detail: '45 minutos',
+                },
+                {
+                  n: '03',
+                  title: 'Entrevista personal',
+                  body: 'Reunión individual con tu profesor de MT y oportunidad para plantear cualquier duda.',
+                  detail: '10–15 minutos',
+                },
+                {
+                  n: '04',
+                  title: 'Instrucción personalizada',
+                  body: 'Instrucción personalizada propiamente dicha en la técnica de Meditación Trascendental.',
+                  detail: '1,5 horas',
+                },
+                {
+                  n: '05',
+                  title: 'Primera sesión de seguimiento',
+                  body: 'Verificación de la correcta práctica de la técnica MT y adquisición de más conocimientos.',
+                  detail: '1,5 horas',
+                },
+                {
+                  n: '06',
+                  title: 'Segunda sesión de seguimiento',
+                  body: 'Profundización en los conocimientos basados en la experiencia creciente en Meditación Trascendental.',
+                  detail: '1,5 horas',
+                },
+                {
+                  n: '07',
+                  title: 'Tercera sesión de seguimiento',
+                  body: 'Consolidación de la práctica y apertura al camino de desarrollo continuo de la conciencia.',
+                  detail: '1,5 horas',
+                },
+              ].map((step) => (
+                <div
+                  key={step.n}
+                  className="group grid grid-cols-[3rem_1fr] md:grid-cols-[4rem_1fr_auto]
+                             gap-x-5 md:gap-x-8 items-start py-5 md:py-6
+                             hover:bg-azul-profundo/[0.025] -mx-4 px-4 md:-mx-6 md:px-6
+                             transition-colors rounded-xl"
+                >
+                  <span className="font-display text-2xl md:text-3xl text-[#8a6e2d]/50
+                                   group-hover:text-[#8a6e2d]/90 transition-colors select-none mt-0.5">
+                    {step.n}
+                  </span>
+                  <div>
+                    <h4 className="font-sans font-semibold text-[15px] md:text-[17px] text-azul-profundo mb-1">
+                      {step.title}
+                    </h4>
+                    <p className="font-sans text-sm text-azul-profundo/70 leading-relaxed">{step.body}</p>
+                  </div>
+                  <span className="hidden md:block font-sans text-xs text-[#8a6e2d] font-medium
+                                   whitespace-nowrap mt-1">
+                    {step.detail}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <div className="mt-12 flex flex-col sm:flex-row items-center gap-4">
+              <Button href={`${routes.contacto}#formulario`} className="group gap-2 text-base px-8 py-4 text-white bg-azul-accion hover:bg-azul-accion/90 border-0">
+                Agenda tu charla introductoria{' '}
+                <span className="text-white font-bold underline underline-offset-2">gratuita</span>
+                <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform text-white" />
+              </Button>
+              <p className="font-sans text-xs text-azul-profundo/50">
+                Sin compromiso · Virtual · 90 minutos
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────
           REFERENCIAS — fondo azul-accion + capa blanca de 80%
       ───────────────────────────────────────── */}
       <section className="relative bg-azul-accion py-20 overflow-hidden">
-        {/* Capa de blanco con opacidad al 80% para dejar un fondo hiper claro de azul-accion */}
         <div className="absolute inset-0 bg-white/80 pointer-events-none" />
 
         <div className="relative z-10 container-site prose-width">
@@ -248,7 +452,7 @@ export default function MTPage() {
       </section>
 
       {/* ─────────────────────────────────────────
-          TESTIMONIOS — practicantes famosos y locales
+          6. LO QUE DICEN LOS PRACTICANTES — Testimonios
       ───────────────────────────────────────── */}
       <section className="section-y bg-beige overflow-hidden">
         <div className="container-site">
@@ -256,10 +460,10 @@ export default function MTPage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6
                           mb-12 pb-10 border-b border-azul-profundo/10">
             <div>
-              <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-3">
+              <p className="text-[#8a6e2d] font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-3">
                 Testimonios
               </p>
-              <h2 className="text-4xl md:text-5xl">Lo que dicen los practicantes</h2>
+              <h2 className="text-4xl md:text-5xl text-azul-profundo">Lo que dicen los practicantes</h2>
             </div>
             <p className="font-sans text-azul-profundo/50 text-sm max-w-xs leading-relaxed md:text-right">
               Más de 6 millones de personas en el mundo han integrado la MT en su vida cotidiana.
@@ -277,6 +481,19 @@ export default function MTPage() {
                 videoId={t.videoId}
               />
             ))}
+          </div>
+
+          {/* Botón Ver más en Instagram */}
+          <div className="flex justify-center mt-12">
+            <Button
+              href={instagramLink}
+              variant="secondary"
+              external
+              className="group gap-2 border-azul-claro/50 text-azul-profundo hover:bg-azul-claro/10 transition-all duration-200"
+            >
+              <span>Ver más testimonios en Instagram</span>
+              <span className="text-xs group-hover:translate-x-0.5 transition-transform duration-200">↗</span>
+            </Button>
           </div>
 
         </div>

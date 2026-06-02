@@ -262,17 +262,8 @@ export default async function BlogPage() {
       ──────────────────────────────────────────────────────── */}
       <div id="investigacion-cientifica" className="scroll-mt-32">
         {/* Banner de Sección */}
-        <div className="relative h-[180px] md:h-[220px] overflow-hidden bg-azul-profundo flex items-center">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/images/blog/portada-investigacion.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/90 via-azul-profundo/60 to-transparent" />
+        <div className="relative h-[180px] md:h-[220px] overflow-hidden bg-azul-profundo flex items-center shadow-md">
+          <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo via-azul-profundo/85 to-azul-profundo/95" />
           <div className="relative container-site text-white z-10 space-y-2">
             <span className="inline-block bg-dorado text-azul-profundo text-[8px] font-sans font-bold tracking-[0.15em] uppercase px-2.5 py-0.5 rounded shadow-sm">
               Sección Científica
@@ -280,7 +271,7 @@ export default async function BlogPage() {
             <h2 className="text-2xl md:text-3xl font-display text-white">
               Evidencia Científica de la Trascendencia
             </h2>
-            <p className="text-white/70 font-sans text-xs md:text-sm max-w-xl leading-relaxed">
+            <p className="text-white/80 font-sans text-xs md:text-sm max-w-xl leading-relaxed">
               Descubrimientos clínicos y neurocientíficos sobre la salud cerebral y cardiovascular.
             </p>
           </div>
@@ -310,26 +301,17 @@ export default async function BlogPage() {
       ──────────────────────────────────────────────────────── */}
       <div id="noticias-positivas" className="scroll-mt-32">
         {/* Banner de Sección */}
-        <div className="relative h-[180px] md:h-[220px] overflow-hidden bg-azul-profundo flex items-center">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/images/blog/portada-noticias.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/90 via-azul-profundo/60 to-transparent" />
+        <div className="relative h-[180px] md:h-[220px] overflow-hidden bg-azul-profundo flex items-center shadow-md">
+          <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo via-azul-profundo/85 to-azul-profundo/95" />
           <div className="relative container-site text-white z-10 space-y-2">
             <span className="inline-block bg-dorado text-azul-profundo text-[8px] font-sans font-bold tracking-[0.15em] uppercase px-2.5 py-0.5 rounded shadow-sm">
               Noticias
             </span>
             <h2 className="text-2xl md:text-3xl font-display text-white">
-              Noticias de Bienestar y Sueño
+              Noticias positivas Colombia
             </h2>
-            <p className="text-white/70 font-sans text-xs md:text-sm max-w-xl leading-relaxed">
-              Historias de éxito, resiliencia y el impacto de un mejor descanso en el bienestar.
+            <p className="text-white/80 font-sans text-xs md:text-sm max-w-2xl leading-relaxed">
+              Esta recopilación de buenas noticias de prensa y redes sociales solo tiene como propósito resaltar los esfuerzos de muchos colombianos.
             </p>
           </div>
         </div>

@@ -13,6 +13,7 @@ interface HeroSecondaryProps {
   breadcrumbs: Breadcrumb[]
   imageSrc?:   string
   videoSrc?:   string
+  bgPosition?: string
 }
 
 /**
@@ -25,6 +26,7 @@ export function HeroSecondary({
   breadcrumbs,
   imageSrc = '/images/hero-secondary-default.jpg',
   videoSrc,
+  bgPosition = 'center',
 }: HeroSecondaryProps) {
   return (
     <section
@@ -32,7 +34,7 @@ export function HeroSecondary({
       style={videoSrc ? undefined : {
         backgroundImage:    `url(${imageSrc})`,
         backgroundSize:     'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: bgPosition,
       }}
     >
       {/* Video de fondo */}

@@ -21,12 +21,11 @@ export function Footer() {
           <div className="space-y-4">
             <Link href={routes.home} className="flex items-center gap-3">
               <Image
-                src="/images/logo-fmc-white.svg"
+                src="/images/logo-arbol-dorado.png"
                 alt="Fundación Maharishi de Colombia"
                 width={40}
                 height={40}
-                unoptimized
-                className="h-10 w-auto object-contain"
+                className="h-10 w-10 object-contain rounded-full bg-white p-0.5"
               />
               <span className="font-display text-sm font-semibold text-white leading-tight">
                 Meditación<br/>Trascendental

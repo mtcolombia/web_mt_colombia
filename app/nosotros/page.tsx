@@ -12,29 +12,6 @@ export const metadata: Metadata = {
     'La Fundación Maharishi de Colombia es una entidad oficial sin ánimo de lucro dedicada al desarrollo del pleno potencial humano.',
 }
 
-const misionItems = [
-  {
-    n: '01', icon: <Brain size={20} />,
-    title: 'Expansión del potencial cerebral',
-    body: 'Desarrollar el funcionamiento total del cerebro mediante tecnologías probadas de la Ciencia de la Inteligencia Creativa.',
-  },
-  {
-    n: '02', icon: <Zap size={20} />,
-    title: 'Estados superiores de conciencia',
-    body: 'Guiar a cada individuo hacia estados de conciencia más elevados, despertando el potencial latente de la mente humana.',
-  },
-  {
-    n: '03', icon: <TrendingUp size={20} />,
-    title: 'Creatividad e inteligencia',
-    body: 'Incrementar de forma medible la creatividad, la inteligencia fluida y la felicidad en todos los ámbitos de la vida.',
-  },
-  {
-    n: '04', icon: <Smile size={20} />,
-    title: 'Vida libre de estrés y conflicto',
-    body: 'Construir comunidades libres de estrés, violencia y conflicto a través del Efecto Maharishi demostrado científicamente.',
-  },
-]
-
 const benefitCards = [
   {
     img:   '/images/nosotros-card-cerebral.jpeg',
@@ -64,7 +41,7 @@ export default function NosotrosPage() {
         imageSrc="/images/nosotros-banner.jpeg"
       />
 
-      {/* ─── QUIÉNES SOMOS — Split editorial ─── */}
+      {/* ─── 1. QUIÉNES SOMOS — Split editorial ─── */}
       <section className="section-y bg-white overflow-hidden">
         <div className="container-site grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -123,68 +100,75 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* ─── MISIÓN — fondo claro ─── */}
+      {/* ─── 2a. MISIÓN — fondo claro ─── */}
       <section className="relative bg-beige overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <Image
             src="/images/hero/valle-del-cocora.jpg"
             alt=""
             fill
-            className="object-cover opacity-[0.12]"
+            className="object-cover opacity-[0.10]"
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-beige via-beige/95 to-beige" />
         </div>
 
-        <div className="relative container-site section-y">
-          <div className="max-w-3xl mb-16">
-            <h2 className="font-sans text-dorado text-lg md:text-xl font-semibold tracking-wider uppercase mb-6">
+        <div className="relative container-site py-20">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase">
               Misión
+            </p>
+            <h2 className="text-3xl md:text-4xl text-azul-profundo font-display leading-tight">
+              Propósito fundamental de la Fundación Maharishi de Colombia
             </h2>
-            <blockquote>
-              <p className="font-display text-3xl md:text-4xl lg:text-5xl text-azul-profundo leading-snug">
-                "Desarrollar el pleno potencial humano promoviendo una vida en armonía
-                con las leyes de la naturaleza."
+            <div className="font-sans text-azul-profundo/75 leading-relaxed space-y-4 text-base md:text-lg">
+              <p>
+                La Fundación Maharishi de Colombia tiene como propósito fundamental el desarrollo del pleno potencial humano, promoviendo una vida en armonía con las leyes de la naturaleza y contribuyendo a la superación de los problemas que generan sufrimiento en el individuo y la sociedad.
               </p>
-            </blockquote>
-          </div>
-
-          <div className="divide-y divide-azul-profundo/[0.08]">
-            {misionItems.map((item) => (
-              <div
-                key={item.n}
-                className="group grid grid-cols-[3rem_2rem_1fr] md:grid-cols-[4rem_2.5rem_1fr_2fr]
-                           gap-x-4 md:gap-x-8 items-center py-6 md:py-7
-                           -mx-4 px-4 md:-mx-6 md:px-6
-                           hover:bg-azul-profundo/[0.04] transition-colors rounded-xl"
-              >
-                <span className="font-display text-2xl md:text-3xl text-dorado/40
-                                 group-hover:text-dorado/70 transition-colors select-none">
-                  {item.n}
-                </span>
-                <span className="text-dorado/70 group-hover:text-dorado transition-colors">
-                  {item.icon}
-                </span>
-                <h3 className="font-sans font-semibold text-[16px] md:text-[18px] text-azul-profundo">
-                  {item.title}
-                </h3>
-                <p className="hidden md:block font-sans text-[14px] text-azul-profundo/60 leading-relaxed">
-                  {item.body}
-                </p>
-              </div>
-            ))}
+              <p>
+                Para ello, ofrece tecnologías orientadas al desarrollo de la conciencia y al bienestar físico y mental, como la técnica de Meditación Trascendental, técnicas avanzadas, el programa Sidhis MT, Yoga Maharishi, aromaterapia, consultas ayurvédicas y convivencias fuera de la ciudad.
+              </p>
+              <p className="font-semibold text-azul-profundo pt-2 border-t border-azul-profundo/[0.06]">
+                Fundada sobre la Ciencia de la Inteligencia Creativa, desarrollada por Maharishi Mahesh Yogi, la Fundación es la única entidad oficial en Colombia autorizada para impartir estos conocimientos.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ─── MAHARISHI — Fundador, foto HD ─── */}
-      <section className="relative overflow-hidden">
+      {/* ─── 2b. VISIÓN — fondo blanco limpio ─── */}
+      <section className="relative bg-white overflow-hidden">
+        <div className="relative container-site py-20 border-t border-azul-profundo/[0.06]">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase">
+              Visión
+            </p>
+            <h2 className="text-3xl md:text-4xl text-azul-profundo font-display leading-tight">
+              Hacia un impacto integral y coherente en la sociedad
+            </h2>
+            <div className="font-sans text-azul-profundo/75 leading-relaxed space-y-4 text-base md:text-lg">
+              <p>
+                La Fundación Maharishi de Colombia aspira a contribuir al desarrollo integral del individuo y de la sociedad, promoviendo una vida en equilibrio con las leyes naturales, orientada hacia una paz estable y duradera.
+              </p>
+              <p>
+                A través de programas en educación, salud y tecnologías de la conciencia respaldados por más de 800 investigaciones científicas publicadas en revistas académicas internacionales, la Fundación Maharishi impulsa un enfoque basado en evidencia para optimizar el funcionamiento humano.
+              </p>
+              <p>
+                Este modelo favorece el desarrollo del potencial cerebral y la evolución de la conciencia, permitiendo a cada persona acceder a mayores niveles de claridad mental, creatividad, estabilidad emocional y bienestar. Asimismo, busca generar un impacto positivo en la sociedad, promoviendo entornos más coherentes, saludables y armónicos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 3. MAHARISHI — Fundador ─── */}
+      <section className="relative overflow-hidden bg-beige/30 border-t border-azul-profundo/[0.04]">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <Image src="/images/arboles-cielo.jpg" alt="" fill
-            className="object-cover opacity-[0.14]" sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-br from-beige via-beige/92 to-beige" />
+            className="object-cover opacity-[0.10]" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-beige/20 via-transparent to-beige/20" />
         </div>
-        <div className="relative container-site py-24 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="relative container-site py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative h-[440px] lg:h-[520px] rounded-[20px] overflow-hidden
                           shadow-[0_32px_80px_rgba(15,42,68,0.18)]">
             <Image
@@ -196,7 +180,7 @@ export default function NosotrosPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-azul-profundo/50 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6">
-              <span className="chip-light">Maharishi Mahesh Yogi · 1917–2008</span>
+              <span className="chip-light">Maharishi Mahesh Yogi · 1918–2008</span>
             </div>
           </div>
           <div className="space-y-6">
@@ -206,51 +190,23 @@ export default function NosotrosPage() {
             <h2 className="text-4xl md:text-5xl leading-tight">Maharishi Mahesh Yogi</h2>
             <blockquote className="border-l-[3px] border-dorado pl-5">
               <p className="font-display text-xl md:text-2xl text-azul-profundo/85 italic leading-relaxed">
-                "La vida es bienaventuranza. El sufrimiento no es el destino del hombre."
+                "La vida es bienavenurarse. El sufrimiento no es el destino del hombre."
               </p>
             </blockquote>
-            <p className="font-sans text-azul-profundo/70 leading-relaxed">
-              Fundador de la Ciencia de la Inteligencia Creativa y padre del movimiento
-              mundial de la Meditación Trascendental. Bajo su guía se establecieron centros
-              en más de 100 países y se generaron más de 800 estudios científicos sobre los
-              efectos de su técnica en la fisiología, la psicología y la sociedad.
-            </p>
+            <div className="font-sans text-azul-profundo/70 leading-relaxed space-y-4 text-sm md:text-base">
+              <p>
+                Maharishi Mahesh Yogi (1918–2008) fue un maestro de la tradición védica de la India, graduado en Física y matemática por la Universidad de Allahabad y fundador de la Ciencia de la Inteligencia Creativa, una disciplina que propone que la conciencia es el campo fundamental de la inteligencia y el orden en la naturaleza.
+              </p>
+              <p>
+                A partir de la década de 1950, introdujo la Meditación Trascendental (MT) en todo el mundo y estableció centros de enseñanza, investigación y educación en más de 120 países.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ─── VISIÓN — fondo paisajístico transparente ─── */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-          <Image
-            src="/images/hero/valle-del-cocora.jpg"
-            alt=""
-            fill
-            className="object-cover opacity-[0.22]"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white/90" />
-        </div>
-        <div className="relative container-site py-24 md:py-32 prose-width text-center">
-          <h2 className="font-sans text-dorado text-lg md:text-xl font-semibold tracking-wider uppercase mb-6">
-            Visión
-          </h2>
-          <p className="font-display text-2xl md:text-3xl lg:text-4xl text-azul-profundo/90 leading-snug mb-10">
-            Contribuir al desarrollo integral del individuo y de la sociedad, promoviendo
-            una vida en equilibrio con las leyes naturales, orientada hacia una paz estable
-            y duradera.
-          </p>
-          <p className="font-sans text-azul-profundo/65 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-            A través de programas en educación, salud y tecnologías de la conciencia —
-            respaldados por más de 800 investigaciones científicas publicadas en revistas
-            académicas internacionales — la Fundación Maharishi impulsa un enfoque basado
-            en evidencia para optimizar el funcionamiento humano.
-          </p>
-        </div>
-      </section>
-
-      {/* ─── BENEFICIOS — Cards con nuevas imágenes ─── */}
-      <section className="section-y bg-white">
+      {/* ─── 4. BENEFICIOS — Cards con nuevas imágenes ─── */}
+      <section className="section-y bg-white border-t border-azul-profundo/[0.04]">
         <div className="container-site">
 
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6
@@ -298,7 +254,7 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* ─── MAPA + EQUIPO ─── */}
+      {/* ─── 5. MAPA + EQUIPO ─── */}
       <section className="section-y bg-beige">
         <div className="container-site">
 
@@ -345,7 +301,7 @@ export default function NosotrosPage() {
                     const initials = t.name.split(' ').slice(0, 2).map((w) => w[0]).join('')
                     return (
                       <div key={t.name} className="flex items-center gap-5 py-4 md:py-5">
-                        {/* Avatar — placeholder listo para foto */}
+                        {/* Avatar ── */}
                         <div className="w-11 h-11 rounded-full bg-azul-profundo/[0.07]
                                         border border-azul-profundo/10 shrink-0 overflow-hidden
                                         flex items-center justify-center">

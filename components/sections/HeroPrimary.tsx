@@ -64,7 +64,7 @@ export function HeroPrimary() {
   }, [])
 
   return (
-    <section className="relative h-[92vh] min-h-[600px] overflow-hidden bg-azul-profundo">
+    <section className="relative h-[92vh] h-[92dvh] min-h-[600px] overflow-hidden bg-azul-profundo">
 
       {/* ── Slides ───────────────────────────────────────────────── */}
       <div ref={trackRef} className="carousel-track absolute inset-0">
@@ -79,13 +79,13 @@ export function HeroPrimary() {
               sizes="100vw"
             />
 
-            {/* Gradiente asimétrico: izquierda opaco → derecha limpia */}
+            {/* Gradiente asimétrico: izquierda opaco → derecha limpia (reducido para claridad radiante) */}
             <div className="absolute inset-0
-              bg-[linear-gradient(to_right,_rgba(15,42,68,0.92)_0%,_rgba(15,42,68,0.70)_35%,_rgba(15,42,68,0.30)_60%,_rgba(15,42,68,0.08)_100%)]" />
+              bg-[linear-gradient(to_right,_rgba(15,42,68,0.45)_0%,_rgba(15,42,68,0.25)_40%,_rgba(15,42,68,0.05)_75%,_transparent_100%)]" />
 
-            {/* Vignette inferior leve para contraste de badges */}
+            {/* Vignette inferior leve para contraste de badges (suave) */}
             <div className="absolute inset-0
-              bg-[linear-gradient(to_top,_rgba(15,42,68,0.55)_0%,_transparent_30%)]" />
+              bg-[linear-gradient(to_top,_rgba(15,42,68,0.15)_0%,_transparent_25%)]" />
           </div>
         ))}
       </div>
@@ -107,7 +107,7 @@ export function HeroPrimary() {
             <h1
               className="font-sans font-bold text-white leading-none
                          [font-size:clamp(2.5rem,7.5vw,4.8rem)]
-                         [text-shadow:0_2px_24px_rgba(0,0,0,0.35)]
+                         [text-shadow:0_2px_24px_rgba(0,0,0,0.40)]
                          mb-6"
             >
               La paz interior <br />
@@ -116,9 +116,9 @@ export function HeroPrimary() {
 
             {/* Subtítulo — PLAYFAIR itálico, elegancia editorial */}
             <p
-              className="font-display italic text-white/80 leading-relaxed mb-10
+              className="font-display italic text-white/90 leading-relaxed mb-10
                          [font-size:clamp(1.05rem,2.2vw,1.35rem)]
-                         [text-shadow:0_1px_14px_rgba(0,0,0,0.30)]
+                         [text-shadow:0_1px_14px_rgba(0,0,0,0.35)]
                          max-w-[520px]"
             >
               Una tecnología natural, sin esfuerzo y científicamente validada
@@ -129,18 +129,17 @@ export function HeroPrimary() {
             <div className="flex flex-wrap items-center gap-4">
               <Button
                 href={`${routes.contacto}#formulario`}
-                variant="light"
-                className="text-sm md:text-base px-8 py-3.5 font-sans font-semibold"
+                className="text-sm md:text-base px-8 py-3.5 font-sans font-semibold bg-azul-claro hover:bg-azul-claro/90 border-0 text-white shadow-md active:scale-[0.99] transition-all duration-200"
               >
                 Aprende Meditación Trascendental
               </Button>
               <a
                 href="/#meditacion-trascendental"
                 className="group flex items-center gap-2 font-sans text-sm font-medium
-                           text-white/70 hover:text-white transition-colors"
+                           text-white hover:text-[#3DAEE9] transition-colors [text-shadow:0_1px_4px_rgba(0,0,0,0.2)]"
               >
                 Conoce la ciencia
-                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-[#3DAEE9]" />
               </a>
             </div>
 
@@ -175,14 +174,14 @@ export function HeroPrimary() {
         ))}
       </div>
 
-      {/* ── Flechas de navegación ────────────────────────────────── */}
+      {/* ── Flechas de navegación — ocultas en móvil ───────────────── */}
       <button
         onClick={() => goTo(current - 1)}
         aria-label="Slide anterior"
-        className="absolute left-5 top-1/2 -translate-y-1/2 z-10
+        className="hidden md:flex absolute left-5 top-1/2 -translate-y-1/2 z-10
                    w-11 h-11 rounded-full
                    border border-white/[0.18] bg-white/[0.07] backdrop-blur-sm
-                   flex items-center justify-center text-white/70
+                   items-center justify-center text-white/70
                    hover:border-dorado hover:text-dorado
                    transition-all duration-200"
       >
@@ -191,10 +190,10 @@ export function HeroPrimary() {
       <button
         onClick={() => goTo(current + 1)}
         aria-label="Slide siguiente"
-        className="absolute right-5 top-1/2 -translate-y-1/2 z-10
+        className="hidden md:flex absolute right-5 top-1/2 -translate-y-1/2 z-10
                    w-11 h-11 rounded-full
                    border border-white/[0.18] bg-white/[0.07] backdrop-blur-sm
-                   flex items-center justify-center text-white/70
+                   items-center justify-center text-white/70
                    hover:border-dorado hover:text-dorado
                    transition-all duration-200"
       >

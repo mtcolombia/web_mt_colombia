@@ -1,10 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
-import { FileText, Quote, Mail, ArrowRight } from 'lucide-react'
+import { FileText, Quote, Mail, MessageSquare, ArrowRight } from 'lucide-react'
 import type { BlogArticle } from '@/lib/schemas'
 import type { Testimonial } from '@/lib/schemas'
 import type { ContactSubmission } from '@/lib/schemas'
+import type { ForumQuestion } from '@/lib/schemas'
 
 function readJSON<T>(file: string, fallback: T): T {
   try {
@@ -16,12 +17,16 @@ export default function AdminDashboard() {
   const articles  = readJSON<BlogArticle[]>('public/data/blog.json', [])
   const testimonials = readJSON<Testimonial[]>('public/data/testimonials.json', [])
   const contacts  = readJSON<ContactSubmission[]>('data/contacts.json', [])
+  const forum     = readJSON<ForumQuestion[]>('public/data/forum.json', [])
+  
   const newContacts = contacts.filter(c => c.status === 'nuevo').length
+  const pendingQuestions = forum.filter(q => !q.answer).length
 
   const cards = [
-    { href: '/admin/blog',        icon: FileText, label: 'Artículos',    count: articles.length,     badge: null },
-    { href: '/admin/testimonios', icon: Quote,    label: 'Testimonios',  count: testimonials.length, badge: null },
-    { href: '/admin/contactos',   icon: Mail,     label: 'Contactos',    count: contacts.length,     badge: newContacts || null },
+    { href: '/admin/blog',        icon: FileText,      label: 'Artículos',    count: articles.length,     badge: null },
+    { href: '/admin/testimonios', icon: Quote,         label: 'Testimonios',  count: testimonials.length, badge: null },
+    { href: '/admin/foro',        icon: MessageSquare, label: 'Foro (Q&A)',   count: forum.length,        badge: pendingQuestions || null },
+    { href: '/admin/contactos',   icon: Mail,          label: 'Contactos',    count: contacts.length,     badge: newContacts || null },
   ]
 
   return (
@@ -30,7 +35,7 @@ export default function AdminDashboard() {
       <p className="font-sans text-sm text-azul-profundo/50 mb-8">
         Gestión de contenido del sitio web de la Fundación Maharishi de Colombia.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {cards.map(({ href, icon: Icon, label, count, badge }) => (
           <Link
             key={href}

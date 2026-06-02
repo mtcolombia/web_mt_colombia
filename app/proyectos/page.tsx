@@ -36,7 +36,7 @@ const projects: Project[] = [
     territory:   'Piedecuesta, Santander',
     category:    'Educativo',
     description: 'Programa intergeneracional. Documentó reducción de ansiedad, mejora de cohesión grupal y disminución de conductas de riesgo.',
-    reach:       '85 participantes',
+    reach:       '1.750 estudiantes',
     img:         '/images/proyectos/cedeco-2024-v2.jpg',
   },
   {
@@ -46,7 +46,7 @@ const projects: Project[] = [
     territory:   'Antioquia',
     category:    'Educativo',
     description: 'Primer programa escolar de MT en Antioquia. Mejora del clima escolar y reducción de conflictos.',
-    reach:       '210 estudiantes · 18 docentes',
+    reach:       '800 estudiantes',
     img:         '/images/proyectos/estrella-2016.jpg',
   },
   {
@@ -56,7 +56,7 @@ const projects: Project[] = [
     territory:   'Cúcuta, Norte de Santander',
     category:    'Educativo',
     description: 'Intervención en zona de alta tensión social. Reducción del ausentismo y mejora en rendimiento académico.',
-    reach:       '320 estudiantes',
+    reach:       '1.200 estudiantes',
     img:         '/images/proyectos/cucuta-2018.jpg',
   },
   {
@@ -66,7 +66,7 @@ const projects: Project[] = [
     territory:   'Bogotá, D.C.',
     category:    'Educativo',
     description: 'Primera intervención híbrida durante pandemia. Mejoras en regulación emocional y adherencia escolar.',
-    reach:       '180 estudiantes',
+    reach:       '350 estudiantes',
     img:         '/images/proyectos/colegio-japon.jpg',
   },
 ]
@@ -104,7 +104,7 @@ export default function ProyectosPage() {
                 <div className="flex gap-6">
                   {[
                     { n: '4',    label: 'instituciones' },
-                    { n: '795+', label: 'participantes' },
+                    { n: '4.100+', label: 'participantes' },
                     { n: '4',    label: 'departamentos' },
                   ].map((s) => (
                     <div key={s.label} className="text-center">

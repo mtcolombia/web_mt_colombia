@@ -36,7 +36,7 @@ export function Header() {
             priority
             className="h-[38px] w-[38px] rounded-full object-cover
                        ring-1 ring-azul-profundo/10 group-hover:ring-dorado/50
-                       transition-all duration-300"
+                       transition-all duration-300 bg-white"
           />
         </Link>
 

@@ -48,6 +48,7 @@ export default function ActividadesPage() {
         subtitle="Centro de Meditación Trascendental Colombia — Bogotá"
         breadcrumbs={[{ label: 'Actividades' }]}
         imageSrc="/images/hero-actividades.jpg"
+        bgPosition="center 18%"
       />
 
       {/* ─── INTRO — Centro en Bogotá ─── */}
@@ -135,11 +136,11 @@ export default function ActividadesPage() {
                            -mx-4 px-4 md:-mx-6 md:px-6
                            hover:bg-azul-profundo/[0.025] transition-colors rounded-xl"
               >
-                <span className="font-display text-2xl md:text-3xl text-dorado/35
-                                 group-hover:text-dorado/70 transition-colors select-none">
+                <span className="font-display text-2xl md:text-3xl text-[#8a6e2d]/50
+                                 group-hover:text-[#8a6e2d]/90 transition-colors select-none">
                   {a.n}
                 </span>
-                <span className="text-dorado/70 group-hover:text-dorado transition-colors">
+                <span className="text-[#8a6e2d]/80 group-hover:text-[#8a6e2d] transition-colors">
                   {a.icon}
                 </span>
                 <h3 className="font-sans font-semibold text-[16px] md:text-[18px] text-azul-profundo">

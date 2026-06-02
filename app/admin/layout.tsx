@@ -2,7 +2,7 @@ import { getSession } from '@/lib/session'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import { logout } from '@/app/actions/auth'
-import { LayoutDashboard, FileText, Quote, Mail, LogOut } from 'lucide-react'
+import { LayoutDashboard, FileText, Quote, Mail, MessageSquare, LogOut } from 'lucide-react'
 
 export const metadata = { title: 'Admin · FMC', robots: 'noindex' }
 
@@ -10,6 +10,7 @@ const NAV = [
   { href: '/admin',             label: 'Dashboard',    icon: LayoutDashboard },
   { href: '/admin/blog',        label: 'Blog',         icon: FileText },
   { href: '/admin/testimonios', label: 'Testimonios',  icon: Quote },
+  { href: '/admin/foro',        label: 'Foro (Q&A)',   icon: MessageSquare },
   { href: '/admin/contactos',   label: 'Contactos',    icon: Mail },
 ]
 

@@ -97,15 +97,15 @@ export default function ProgramasPage() {
               )}
 
               <div>
-                <h3 className="text-2xl md:text-3xl mb-2">{program.name}</h3>
-                <p className="text-dorado font-sans font-medium mb-4">{program.tagline}</p>
-                <p className="font-serif text-azul-profundo/80 mb-6">{program.description}</p>
+                <h3 className="text-2xl md:text-3xl mb-2 text-azul-profundo">{program.name}</h3>
+                <p className="text-[#8a6e2d] font-sans font-medium mb-4">{program.tagline}</p>
+                <p className="font-serif text-azul-profundo mb-6">{program.description}</p>
 
-                <h4 className="font-sans font-semibold mb-3">Beneficios</h4>
-                <ul className="space-y-2">
+                <h4 className="font-sans font-semibold mb-3 text-azul-profundo">Beneficios</h4>
+                <ul className="space-y-2.5">
                   {program.benefits.map((b, j) => (
-                    <li key={j} className="flex items-center gap-3 font-serif text-sm text-azul-profundo/80">
-                      <span className="text-dorado shrink-0">
+                    <li key={j} className="flex items-start gap-3 font-serif text-base text-azul-profundo leading-relaxed">
+                      <span className="text-[#8a6e2d] shrink-0 mt-1">
                         <DynamicIcon name={b.icon} size={16} />
                       </span>
                       {b.text}

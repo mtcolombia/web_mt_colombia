@@ -15,6 +15,7 @@ export const routes = {
   proyectos:   '/proyectos'                as const,
   actividades: '/actividades'              as const,
   blog:        '/blog'                     as const,
+  foro:        '/foro'                     as const,
   contacto:    '/contacto'                 as const,
   // Rutas dinámicas como funciones
   blogPost:    (slug: string) => `/blog/${slug}` as const,
@@ -25,6 +26,7 @@ export const routes = {
   adminBlogNew:     '/admin/blog/new'       as const,
   adminTestimonios: '/admin/testimonios'    as const,
   adminContactos:   '/admin/contactos'      as const,
+  adminForo:        '/admin/foro'           as const,
 } as const
 
 /** Tipo de rutas estáticas (para <Link href={...}>) */
