@@ -76,7 +76,7 @@ export default function MTPage() {
           HERO — video de fondo
       ───────────────────────────────────────── */}
       <HeroSecondary
-        title="Meditación Trascendental"
+        title={<>Meditación Trascendental<sup className="text-xl md:text-2xl lg:text-3xl ml-1.5 font-light align-super">®</sup></>}
         subtitle="Natural · Sin esfuerzo · Científicamente validada"
         breadcrumbs={[{ label: 'Meditación Trascendental' }]}
         videoSrc="/videos/mt-hero-banner.mp4"
@@ -487,9 +487,8 @@ export default function MTPage() {
           <div className="flex justify-center mt-12">
             <Button
               href={instagramLink}
-              variant="secondary"
               external
-              className="group gap-2 border-azul-claro/50 text-azul-profundo hover:bg-azul-claro/10 transition-all duration-200"
+              className="group gap-2 bg-azul-claro hover:bg-[#2fa0dd] text-white shadow-md border-0 transition-all duration-200"
             >
               <span>Ver más testimonios en Instagram</span>
               <span className="text-xs group-hover:translate-x-0.5 transition-transform duration-200">↗</span>

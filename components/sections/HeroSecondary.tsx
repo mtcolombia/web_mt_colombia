@@ -8,7 +8,7 @@ interface Breadcrumb {
 }
 
 interface HeroSecondaryProps {
-  title:       string
+  title:       React.ReactNode
   subtitle?:   string
   breadcrumbs: Breadcrumb[]
   imageSrc?:   string
