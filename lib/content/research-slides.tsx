@@ -74,14 +74,14 @@ export const researchSlides: SliderSlide[] = [
   {
     id: 'slide-beneficios',
     content: (
-      <div className="h-full flex flex-col justify-center overflow-y-auto">
-        <div className="container-site py-6">
+      <div className="h-full flex flex-col overflow-y-auto">
+        <div className="container-site py-6 my-auto">
           <div className="divide-y divide-white/[0.07]">
             {benefits.map((b) => (
               <div
                 key={b.n}
-                className="grid grid-cols-[3rem_2rem_1fr] md:grid-cols-[4rem_2.5rem_1fr_2fr]
-                           gap-x-4 md:gap-x-8 items-center py-4 md:py-5"
+                className="grid grid-cols-[2rem_2rem_1fr] md:grid-cols-[3rem_2rem_1.2fr_3fr]
+                           gap-x-3 md:gap-x-6 items-center py-2 md:py-2.5"
               >
                 <span className="font-display text-xl md:text-2xl text-dorado/40 select-none">{b.n}</span>
                 <span className="text-dorado/70">{b.icon}</span>
@@ -97,8 +97,8 @@ export const researchSlides: SliderSlide[] = [
   ...evidenceAreas.map((area, i) => ({
     id: `slide-evidencia-${i}`,
     content: (
-      <div className="h-full flex flex-col justify-center overflow-y-auto">
-        <div className="container-site py-6">
+      <div className="h-full flex flex-col overflow-y-auto">
+        <div className="container-site py-6 my-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="space-y-4">
               <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase">
@@ -129,14 +129,14 @@ export const researchSlidesLight: SliderSlide[] = [
   {
     id: 'slide-beneficios-light',
     content: (
-      <div className="h-full flex flex-col justify-center overflow-y-auto">
-        <div className="container-site py-6">
+      <div className="h-full flex flex-col overflow-y-auto">
+        <div className="container-site py-6 my-auto">
           <div className="divide-y divide-azul-profundo/[0.07]">
             {benefits.map((b) => (
               <div
                 key={b.n}
-                className="grid grid-cols-[3rem_2rem_1fr] md:grid-cols-[4rem_2.5rem_1fr_2fr]
-                           gap-x-4 md:gap-x-8 items-center py-4 md:py-5"
+                className="grid grid-cols-[2rem_2rem_1fr] md:grid-cols-[3rem_2rem_1.2fr_3fr]
+                           gap-x-3 md:gap-x-6 items-center py-2 md:py-2.5"
               >
                 <span className="font-display text-xl md:text-2xl text-dorado/50 select-none">{b.n}</span>
                 <span className="text-dorado/80">{b.icon}</span>
@@ -152,8 +152,8 @@ export const researchSlidesLight: SliderSlide[] = [
   ...evidenceAreas.map((area, i) => ({
     id: `slide-evidencia-light-${i}`,
     content: (
-      <div className="h-full flex flex-col justify-center overflow-y-auto">
-        <div className="container-site py-6">
+      <div className="h-full flex flex-col overflow-y-auto">
+        <div className="container-site py-6 my-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="space-y-4">
               <p className="text-dorado font-sans font-semibold text-xs tracking-[0.15em] uppercase">
