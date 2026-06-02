@@ -5,16 +5,15 @@ import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const graphs = [
-  { src: '/images/mt-graficos/01-percepcion-memoria.jpg', alt: 'Mejora percepción y memoria' },
-  { src: '/images/mt-graficos/02-descanso-profundo.jpg',  alt: 'Indicadores de descanso profundo' },
-  { src: '/images/mt-graficos/03-reversion-envejecimiento.jpg', alt: 'Reversión del envejecimiento' },
-  { src: '/images/mt-graficos/04-wa.jpeg', alt: 'Gráfico de investigación MT' },
-  { src: '/images/mt-graficos/05-wa.jpeg', alt: 'Gráfico de investigación MT' },
-  { src: '/images/mt-graficos/06-wa.jpeg', alt: 'Gráfico de investigación MT' },
-  { src: '/images/mt-graficos/07-wa.jpeg', alt: 'Gráfico de investigación MT' },
-  { src: '/images/mt-graficos/08-wa.jpeg', alt: 'Gráfico de investigación MT' },
-  { src: '/images/mt-graficos/09-wa.jpeg', alt: 'Gráfico de investigación MT' },
-  { src: '/images/home-stress-grafico.jpg', alt: 'Gráfico científico de manejo del estrés' },
+  { src: '/images/mt-graficos/nivel-activo-mente.jpg', alt: 'Nivel activo de la mente y trascendencia sin esfuerzo' },
+  { src: '/images/mt-graficos/campo-unificado-conciencia.jpg', alt: 'Campo Unificado de las leyes físicas y Conciencia Pura' },
+  { src: '/images/mt-graficos/01-percepcion-memoria.jpg', alt: 'Mejora de la percepción y memoria' },
+  { src: '/images/mt-graficos/02-descanso-profundo.jpg',  alt: 'Indicadores fisiológicos de descanso profundo' },
+  { src: '/images/mt-graficos/03-reversion-envejecimiento.jpg', alt: 'Reversión del envejecimiento biológico' },
+  { src: '/images/mt-graficos/disminucion-depresion.jpg', alt: 'Disminución de la depresión en estudiantes' },
+  { src: '/images/mt-graficos/relaciones-laborales.jpg', alt: 'Mejora de las relaciones laborales y personales' },
+  { src: '/images/mt-graficos/rendimiento-trabajo.jpg', alt: 'Mejoras del rendimiento en el trabajo' },
+  { src: '/images/home-stress-grafico.jpg', alt: 'Gráfico científico de reducción de ansiedad y estrés' },
 ]
 
 interface GraphCarouselProps {

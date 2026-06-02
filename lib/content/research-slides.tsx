@@ -15,12 +15,12 @@ export const benefits = [
   },
   {
     n: '02', icon: <Moon size={20} />,
-    title: 'Calidad del sueño mejorada',
+    title: 'Sueño más profundo y reparador',
     body: 'Reducción del insomnio y mejora profunda de la fase de descanso reparador, documentadas en estudios clínicos controlados.',
   },
   {
     n: '03', icon: <Brain size={20} />,
-    title: 'Coherencia cerebral global',
+    title: 'Mayor coherencia cerebral',
     body: 'El único estado de sincronización alfa en todo el córtex documentado por la neurociencia. Mayor claridad, rendimiento y creatividad.',
   },
   {
@@ -35,7 +35,7 @@ export const benefits = [
   },
   {
     n: '06', icon: <Leaf size={20} />,
-    title: 'Ralentización del envejecimiento',
+    title: 'Favorece la longevidad',
     body: 'Marcadores biológicos como la longitud de los telómeros muestran una edad fisiológica significativamente menor en practicantes de largo plazo.',
   },
 ]

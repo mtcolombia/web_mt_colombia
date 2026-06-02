@@ -39,9 +39,9 @@ const variants: Record<ButtonVariant, string> = {
   light:
     'bg-white text-azul-profundo hover:bg-white/90 active:scale-[0.99] shadow-sm',
 
-  // Contorno azul claro — acción secundaria
+  // Fondo azul claro sólido — acción secundaria sin transparencia
   secondary:
-    'border-[1.5px] border-azul-claro text-azul-texto bg-transparent hover:bg-azul-claro/10',
+    'bg-azul-claro text-white hover:bg-[#2fa0dd] active:scale-[0.99] shadow-sm',
 }
 
 export function Button({

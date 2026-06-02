@@ -95,13 +95,7 @@ export function HeroPrimary() {
         <div className="container-site w-full">
           <div className="max-w-[640px]">
 
-            {/* Eyebrow — Poppins small caps con línea decorativa */}
-            <div className="flex items-center gap-3 mb-9">
-              <span className="w-7 h-px bg-dorado flex-shrink-0" aria-hidden="true" />
-              <p className="font-sans text-dorado font-semibold text-xs tracking-[0.24em] uppercase">
-                Fundación Maharishi de Colombia
-              </p>
-            </div>
+
 
             {/* H1 — POPPINS bold, impacto tipográfico */}
             <h1

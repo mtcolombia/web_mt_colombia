@@ -17,7 +17,7 @@ export function whatsappLink(number: string, message = ''): string {
 
 /** Genera URL de thumbnail de YouTube */
 export function ytThumbnail(videoId: string): string {
-  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
+  return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`
 }
 
 /** Combina clases condicionalmente (alternativa mínima a clsx) */

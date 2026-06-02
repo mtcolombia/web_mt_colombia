@@ -17,7 +17,7 @@ export const mainNav: Nav = [
 /** Datos de contacto rápido — footer y página Contacto */
 export const contactInfo = {
   whatsappOficina:  { number: '573152155586', label: '315 215 55 86' },
-  whatsappBusiness: { number: '573152155586', label: '315 215 55 86' },
+  whatsappBusiness: { number: '573126742612', label: '312 674 26 12' },
   email:            'meditaciontrascendental1917@gmail.com',
 } as const
 
