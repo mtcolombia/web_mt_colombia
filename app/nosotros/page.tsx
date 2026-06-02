@@ -39,6 +39,7 @@ export default function NosotrosPage() {
         subtitle="Desarrollando el pleno potencial humano desde 1973"
         breadcrumbs={[{ label: 'Nosotros' }]}
         imageSrc="/images/portada-equipo-nosotros.jpg"
+        bgPosition="top"
       />
 
       {/* ─── 1. QUIÉNES SOMOS — Split editorial ─── */}
