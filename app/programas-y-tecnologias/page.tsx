@@ -54,13 +54,6 @@ export default function ProgramasPage() {
         const imageRight = i % 2 !== 0
         const bg: 'white' | 'beige' = i % 2 === 0 ? 'white' : 'beige'
         const hasRealVideo = program.videoId && !program.videoId.startsWith('PLACEHOLDER')
-        // Infogramas verticales: contain en lugar de cover
-        // Imágenes que no deben recortarse (infogramas o fotos landscape)
-        const isInfographic = [
-          'sidhis-mt', 'aromaterapia', 'diagnostico-pulso',
-          'pranayama', 'ayurveda', 'jyotish-yagya',
-        ].includes(program.id)
-
         return (
           <section
             key={program.id}
@@ -73,28 +66,15 @@ export default function ProgramasPage() {
                 imageRight && 'lg:[&>*:first-child]:order-last',
               )}
             >
-              {isInfographic ? (
-                <div className="rounded-[var(--radius-img)] shadow-card bg-white p-4">
-                  <Image
-                    src={program.image}
-                    alt={program.name}
-                    width={1200}
-                    height={1600}
-                    className="w-full h-auto object-center"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                </div>
-              ) : (
-                <div className="relative h-72 sm:h-96 lg:h-[420px] rounded-[var(--radius-img)] overflow-hidden shadow-card">
-                  <Image
-                    src={program.image}
-                    alt={program.name}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                </div>
-              )}
+              <div className="relative aspect-[3/4] w-full max-w-[320px] rounded-[var(--radius-img)] overflow-hidden shadow-card bg-white mx-auto">
+                <Image
+                  src={program.image}
+                  alt={program.name}
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 320px"
+                />
+              </div>
 
               <div>
                 <h3 className="text-2xl md:text-3xl mb-2 text-azul-profundo">{program.name}</h3>

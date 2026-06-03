@@ -34,3 +34,7 @@ next-env.d.ts
 
 # VS Code Local History
 .history/
+
+# Videos (alojados en Cloudflare R2)
+public/videos/
+

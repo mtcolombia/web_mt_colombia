@@ -33,7 +33,7 @@ export default async function BlogPage() {
   const actividadesArticles = articles.filter(a => a.category === 'actividades')
 
   // Helper para generar los slides de texto amplio sin imágenes
-  const generateSlides = (sectionArticles: typeof articles) => {
+  const generateSlides = (sectionArticles: typeof articles, showCompletaBadge = true) => {
     return sectionArticles.map((article) => ({
       id: article.slug,
       content: (
@@ -78,9 +78,11 @@ export default async function BlogPage() {
                   </>
                 )}
               </div>
-              <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dorado bg-dorado/5 px-2.5 py-1 rounded">
-                Completa
-              </span>
+              {showCompletaBadge && (
+                <span className="text-[10px] font-sans font-bold uppercase tracking-widest text-dorado bg-dorado/5 px-2.5 py-1 rounded">
+                  Completa
+                </span>
+              )}
             </div>
           </div>
         </div>
@@ -164,8 +166,8 @@ export default async function BlogPage() {
     }))
   }
 
-  const investigacionSlides = generateSlides(investigacionArticles)
-  const noticiasSlides = generateSlides(noticiasArticles)
+  const investigacionSlides = generateSlides(investigacionArticles, true)
+  const noticiasSlides = generateSlides(noticiasArticles, false)
   const actividadesSlides = generateActivitySlides(actividadesArticles)
 
   const noticiasSearchList = noticiasArticles.map((art) => ({
@@ -343,7 +345,7 @@ export default async function BlogPage() {
             src="/images/blog/portada-actividades.jpg"
             alt="Actividades del Centro de MT"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/90 via-azul-profundo/60 to-transparent" />

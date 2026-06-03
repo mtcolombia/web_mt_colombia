@@ -85,9 +85,9 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={pending}
-        className="w-full bg-dorado text-azul-profundo font-sans font-semibold text-base
+        className="w-full bg-[#f4e8cc] hover:bg-[#eedcb4] text-azul-profundo font-sans font-semibold text-base
                    px-7 py-3.5 rounded-[8px] transition-all duration-200
-                   hover:brightness-95 disabled:opacity-60 disabled:cursor-not-allowed
+                   shadow-sm disabled:opacity-60 disabled:cursor-not-allowed
                    flex items-center justify-center gap-2"
       >
         {pending ? (

@@ -79,7 +79,7 @@ export default function MTPage() {
         title={<>Meditación Trascendental<sup className="text-xl md:text-2xl lg:text-3xl ml-1.5 font-light align-super">®</sup></>}
         subtitle="Natural · Sin esfuerzo · Científicamente validada"
         breadcrumbs={[{ label: 'Meditación Trascendental' }]}
-        videoSrc="/videos/mt-hero-banner.mp4"
+        videoSrc="https://pub-ed94eef34f7d40649b4f4f5c32a420fd.r2.dev/videos/mt-hero-banner.mp4"
         imageSrc="/images/hero-mt.jpg"
       />
 

@@ -33,23 +33,26 @@ export default function HomePage() {
             </p>
             <h2 className="text-4xl md:text-5xl text-azul-profundo">¿Qué la hace diferente?</h2>
             <blockquote className="border-l-[3px] border-[#8a6e2d] pl-5">
-              <p className="font-display text-xl md:text-2xl text-azul-texto/85 italic leading-relaxed">
+              <p className="font-display text-xl md:text-2xl text-azul-profundo/85 italic leading-relaxed">
                 "Es una técnica natural, sin esfuerzo y científicamente validada para
                 nutrir todos los aspectos de la vida."
               </p>
             </blockquote>
-            <p className="font-sans text-azul-texto/70 leading-relaxed">
+            <p className="font-sans text-azul-profundo/70 leading-relaxed">
               A diferencia de las técnicas de concentración o control mental, la MT permite
               que la mente se aquiete de forma espontánea. No se requiere guía continua,
               música ni visualización. Es universal y accesible a cualquier persona.
             </p>
-            <div className="flex flex-wrap gap-2.5 pt-2">
-              <span className="chip">
-                <Clock size={12} className="text-[#8a6e2d]" />
-                20 min · 2 veces al día
+            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-sm font-sans text-azul-profundo/85">
+              <span className="flex items-center gap-1.5 select-none">
+                ⏱️ 20 min · 2 veces al día
               </span>
-              <span className="chip">Sin experiencia previa</span>
-              <span className="chip">Universal — sin creencias</span>
+              <span className="flex items-center gap-1.5 select-none">
+                ✨ Sin experiencia previa
+              </span>
+              <span className="flex items-center gap-1.5 select-none">
+                🌐 Universal — sin creencias
+              </span>
             </div>
           </div>
 
@@ -84,23 +87,21 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-5xl leading-tight">
               Un enfoque basado en evidencia científica
             </h2>
-            <p className="font-sans text-azul-texto/70 text-lg leading-relaxed">
+            <p className="font-sans text-azul-profundo/70 text-lg leading-relaxed">
               En un contexto donde el estrés crónico impacta la salud y el desempeño,
               la MT ofrece un enfoque basado en evidencia científica para restablecer
               el equilibrio fisiológico y potenciar el rendimiento humano.
             </p>
             <ul className="space-y-3">
               {[
-                { icon: <Brain size={16} />,     text: 'Mayor coherencia cerebral, indicador de funcionamiento más integrado' },
-                { icon: <Droplets size={16} />,  text: 'Reducción de cortisol y marcadores de estrés' },
-                { icon: <Moon size={16} />,       text: 'Mejora en la calidad del sueño y recuperación fisiológica' },
-                { icon: <TrendingUp size={16} />, text: 'Incremento de la capacidad cognitiva, creatividad y enfoque' },
+                { emoji: '🧠', text: 'Mayor coherencia cerebral, indicador de funcionamiento más integrado' },
+                { emoji: '💧', text: 'Reducción de cortisol y marcadores de estrés' },
+                { emoji: '🌙', text: 'Mejora en la calidad del sueño y recuperación fisiológica' },
+                { emoji: '📈', text: 'Incremento de la capacidad cognitiva, creatividad y enfoque' },
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 font-sans text-[14px] text-azul-texto/80">
-                  <span className="w-6 h-6 rounded-full bg-[#8a6e2d]/10 flex items-center justify-center text-[#8a6e2d] shrink-0 mt-0.5">
-                    {item.icon}
-                  </span>
-                  {item.text}
+                <li key={i} className="flex items-start gap-3.5 font-sans text-[14px] text-azul-profundo/80">
+                  <span className="text-[18px] shrink-0 select-none leading-none mt-0.5">{item.emoji}</span>
+                  <span>{item.text}</span>
                 </li>
               ))}
             </ul>
@@ -121,7 +122,7 @@ export default function HomePage() {
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <p className="font-sans text-azul-texto/70 text-lg leading-relaxed">
+              <p className="font-sans text-azul-profundo/70 text-lg leading-relaxed">
                 Universal y accesible: La Meditación Trascendental no pertenece a ninguna
                 religión, filosofía ni estilo de vida en particular. Es un método universal,
                 apto para cualquier persona, en cualquier cultura. Por ello, más de seis
@@ -149,11 +150,10 @@ export default function HomePage() {
       {/* ─────────────────────────────────────────
           4. UNA HERRAMIENTA EFECTIVA PARA DISMINUIR EL ESTRÉS — (Fondo Azul Tayrona)
       ───────────────────────────────────────── */}
-      <section className="relative bg-azul-accion overflow-hidden">
+      <section className="relative bg-gradient-to-br from-[#071421] via-[#0B1F33] to-[#071421] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
           <Image src="/images/hero/tayrona.jpg" alt="" fill
-            className="object-cover opacity-[0.10] scale-105" sizes="100vw" />
-          <div className="absolute inset-0 bg-white/15" />
+            className="object-cover opacity-[0.06] scale-105" sizes="100vw" />
         </div>
         <div className="relative container-site section-y">
           <div className="max-w-3xl mb-16">
@@ -173,7 +173,7 @@ export default function HomePage() {
             <VideoEmbed
               videoId="H5oQBPJaFpA"
               title="Una herramienta efectiva para disminuir el estrés"
-              className="shadow-[0_24px_64px_rgba(15,42,68,0.18)] rounded-[20px]"
+              className="shadow-[0_24px_64px_rgba(0,0,0,0.40)] rounded-[20px]"
             />
             
             <div className="space-y-8 lg:pl-4">
@@ -181,8 +181,8 @@ export default function HomePage() {
                 
                 {/* Beneficio 1 */}
                 <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-dorado shrink-0 mt-1 shadow-sm">
-                    <Moon size={20} />
+                  <div className="text-white shrink-0 mt-1 select-none">
+                    <Moon size={24} className="text-white" />
                   </div>
                   <div>
                     <h3 className="font-sans font-bold text-white text-lg mb-1">
@@ -197,8 +197,8 @@ export default function HomePage() {
 
                 {/* Beneficio 2 */}
                 <div className="flex gap-4 items-start">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-dorado shrink-0 mt-1 shadow-sm">
-                    <Clock size={20} />
+                  <div className="text-white shrink-0 mt-1 select-none">
+                    <Clock size={24} className="text-white" />
                   </div>
                   <div>
                     <h3 className="font-sans font-bold text-white text-lg mb-1">

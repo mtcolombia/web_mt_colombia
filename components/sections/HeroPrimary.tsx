@@ -79,13 +79,13 @@ export function HeroPrimary() {
               sizes="100vw"
             />
 
-            {/* Gradiente asimétrico: izquierda opaco → derecha limpia (reducido para claridad radiante) */}
+            {/* Gradiente asimétrico: izquierda muy oscura y azulada para legibilidad del texto */}
             <div className="absolute inset-0
-              bg-[linear-gradient(to_right,_rgba(15,42,68,0.45)_0%,_rgba(15,42,68,0.25)_40%,_rgba(15,42,68,0.05)_75%,_transparent_100%)]" />
+              bg-[linear-gradient(to_right,_rgba(11,31,51,0.85)_0%,_rgba(11,31,51,0.60)_35%,_rgba(11,31,51,0.20)_70%,_transparent_100%)]" />
 
             {/* Vignette inferior leve para contraste de badges (suave) */}
             <div className="absolute inset-0
-              bg-[linear-gradient(to_top,_rgba(15,42,68,0.15)_0%,_transparent_25%)]" />
+              bg-[linear-gradient(to_top,_rgba(11,31,51,0.25)_0%,_transparent_25%)]" />
           </div>
         ))}
       </div>
@@ -105,7 +105,7 @@ export function HeroPrimary() {
                          mb-6"
             >
               La paz interior <br />
-              <span className="text-dorado">el nuevo éxito.</span>
+              <span className="text-azul-accion">el nuevo éxito.</span>
             </h1>
 
             {/* Subtítulo — PLAYFAIR itálico, elegancia editorial */}
@@ -123,7 +123,7 @@ export function HeroPrimary() {
             <div className="flex flex-wrap items-center gap-4">
               <Button
                 href={`${routes.contacto}#formulario`}
-                variant="light"
+                variant="primary"
                 className="text-sm md:text-base px-8 py-3.5"
               >
                 Aprende Meditación Trascendental
@@ -133,7 +133,7 @@ export function HeroPrimary() {
                 className="group flex items-center gap-2 font-sans text-sm font-medium
                            text-white hover:text-dorado transition-colors [text-shadow:0_1px_4px_rgba(0,0,0,0.2)]"
               >
-                Conoce la ciencia
+                Conoce la técnica
                 <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-dorado" />
               </a>
             </div>
