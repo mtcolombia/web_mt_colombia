@@ -42,7 +42,7 @@ export default function ContactoPage() {
                       'Hola, me interesa información sobre Meditación Trascendental')}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-sans text-azul-profundo hover:text-azul-claro transition-colors"
+                    className="flex items-center gap-3 font-sans text-azul-profundo hover:text-dorado transition-colors"
                   >
                     <MessageCircle size={20} className="text-dorado shrink-0" />
                     <div>
@@ -56,7 +56,7 @@ export default function ContactoPage() {
                     href={whatsappLink(contactInfo.whatsappBusiness.number)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 font-sans text-azul-profundo hover:text-azul-claro transition-colors"
+                    className="flex items-center gap-3 font-sans text-azul-profundo hover:text-dorado transition-colors"
                   >
                     <MessageCircle size={20} className="text-dorado shrink-0" />
                     <div>
@@ -68,9 +68,9 @@ export default function ContactoPage() {
                 <li>
                   <a
                     href={`mailto:${contactInfo.email}`}
-                    className="flex items-center gap-3 font-sans text-azul-profundo hover:text-azul-claro transition-colors"
+                    className="flex items-center gap-3 font-sans text-azul-profundo hover:text-dorado transition-colors"
                   >
-                    <Mail size={20} className="text-dorado shrink-0" />
+                    <Mail size={20} className="text-dorado shrink-0" strokeWidth={1.5} />
                     <div>
                       <p className="font-semibold">Correo electrónico</p>
                       <p className="text-sm text-azul-profundo/60 break-all">{contactInfo.email}</p>
@@ -122,7 +122,7 @@ export default function ContactoPage() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-1.5 font-sans text-sm text-azul-profundo hover:text-azul-claro transition-colors"
+                      className="flex items-center gap-1.5 font-sans text-sm text-azul-profundo hover:text-dorado transition-colors"
                     >
                       <ExternalLink size={14} />
                       {link.label}

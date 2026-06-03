@@ -386,7 +386,7 @@ export default function MTPage() {
               <p className="font-sans font-semibold text-azul-profundo text-xs tracking-[0.20em] uppercase mb-1">
                 Referencias científicas seleccionadas
               </p>
-              <p className="font-sans text-azul-profundo/60 text-xs leading-relaxed">
+              <p className="font-sans text-azul-profundo/80 text-xs leading-relaxed">
                 Estudios publicados en revistas peer-reviewed · indexados en PubMed, JSTOR y Scopus
               </p>
             </div>
@@ -408,17 +408,17 @@ export default function MTPage() {
                                hover:bg-azul-profundo/[0.05] -mx-4 px-4 rounded-xl
                                transition-colors duration-150"
                   >
-                    <span className="font-display text-azul-profundo/50 group-hover:text-azul-profundo
+                    <span className="font-display text-azul-profundo/70 group-hover:text-azul-profundo
                                      text-sm leading-none mt-1 w-6 shrink-0 text-right
                                      transition-colors select-none font-bold">
                       [{String(i + 1).padStart(2, '0')}]
                     </span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-serif text-sm text-azul-profundo leading-snug">
+                      <p className="font-serif text-sm font-bold text-azul-profundo leading-snug">
                         {authorYear}
                       </p>
                       {journal && (
-                        <p className="font-sans text-[11px] text-azul-profundo/60
+                        <p className="font-sans text-[11px] text-azul-profundo/80
                                       mt-0.5 tracking-wide italic">
                           {journal}
                         </p>

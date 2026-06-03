@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Poppins, Lora } from 'next/font/google'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
+import { GlobalImageLightbox } from '@/components/ui/ImageLightbox'
 import './globals.css'
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -111,6 +112,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <GlobalImageLightbox />
       </body>
     </html>
   )

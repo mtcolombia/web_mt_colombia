@@ -222,8 +222,8 @@ export default async function BlogPage() {
         <div className="container-site max-w-4xl mx-auto text-center space-y-6">
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-azul-claro animate-pulse" />
-              <p className="text-[10px] font-sans font-bold tracking-[0.2em] text-azul-claro uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-dorado animate-pulse" />
+              <p className="text-[10px] font-sans font-bold tracking-[0.2em] text-dorado uppercase">
                 Dimensiones de Sabiduría
               </p>
             </div>
@@ -242,9 +242,9 @@ export default async function BlogPage() {
                 <a
                   key={s.key}
                   href={s.target}
-                  className="group flex items-center gap-2.5 px-6 py-3 rounded-full bg-white border border-azul-profundo/[0.1] text-azul-profundo/75 hover:border-azul-claro hover:text-azul-claro hover:bg-azul-claro/[0.01] shadow-[0_4px_12px_rgba(15,42,68,0.02)] hover:shadow-[0_8px_20px_rgba(15,42,68,0.05)] hover:scale-[1.03] transition-all duration-300 font-sans text-xs font-semibold"
+                  className="group flex items-center gap-2.5 px-6 py-3 rounded-full bg-white border border-azul-profundo/[0.1] text-azul-profundo/75 hover:border-dorado hover:text-dorado hover:bg-dorado/[0.01] shadow-[0_4px_12px_rgba(15,42,68,0.02)] hover:shadow-[0_8px_20px_rgba(15,42,68,0.05)] hover:scale-[1.03] transition-all duration-300 font-sans text-xs font-semibold"
                 >
-                  <Icon size={14} className="text-azul-profundo/45 group-hover:text-azul-claro transition-colors" />
+                  <Icon size={14} className="text-azul-profundo/45 group-hover:text-dorado transition-colors" />
                   {s.label}
                 </a>
               )

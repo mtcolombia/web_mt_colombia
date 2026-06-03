@@ -105,7 +105,7 @@ export function HeroPrimary() {
                          mb-6"
             >
               La paz interior <br />
-              <span className="text-azul-claro">el nuevo éxito.</span>
+              <span className="text-dorado">el nuevo éxito.</span>
             </h1>
 
             {/* Subtítulo — PLAYFAIR itálico, elegancia editorial */}
@@ -123,17 +123,18 @@ export function HeroPrimary() {
             <div className="flex flex-wrap items-center gap-4">
               <Button
                 href={`${routes.contacto}#formulario`}
-                className="text-sm md:text-base px-8 py-3.5 font-sans font-semibold bg-azul-claro hover:bg-azul-claro/90 border-0 text-white shadow-md active:scale-[0.99] transition-all duration-200"
+                variant="light"
+                className="text-sm md:text-base px-8 py-3.5"
               >
                 Aprende Meditación Trascendental
               </Button>
               <a
                 href="/#meditacion-trascendental"
                 className="group flex items-center gap-2 font-sans text-sm font-medium
-                           text-white hover:text-[#3DAEE9] transition-colors [text-shadow:0_1px_4px_rgba(0,0,0,0.2)]"
+                           text-white hover:text-dorado transition-colors [text-shadow:0_1px_4px_rgba(0,0,0,0.2)]"
               >
                 Conoce la ciencia
-                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-[#3DAEE9]" />
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform text-dorado" />
               </a>
             </div>
 

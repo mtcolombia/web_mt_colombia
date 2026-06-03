@@ -64,7 +64,7 @@ function Item({ item, index }: { item: AccordionItem; index: number }) {
         className="flex w-full items-center justify-between gap-4
                    py-5 text-left
                    font-sans font-semibold text-[16px] text-azul-profundo
-                   hover:text-azul-claro transition-colors duration-150"
+                   hover:text-dorado transition-colors duration-150"
       >
         <span>{item.title}</span>
         <ChevronDown

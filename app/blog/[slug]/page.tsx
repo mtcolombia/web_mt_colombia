@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
                   </div>
                   <div className="p-4">
                     <h3 className="font-sans font-semibold text-sm text-azul-profundo line-clamp-2
-                                   group-hover:text-azul-claro transition-colors">
+                                   group-hover:text-dorado transition-colors">
                       {r.title}
                     </h3>
                   </div>

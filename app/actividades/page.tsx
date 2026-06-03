@@ -48,7 +48,7 @@ export default function ActividadesPage() {
         subtitle="Centro de Meditación Trascendental Colombia — Bogotá"
         breadcrumbs={[{ label: 'Actividades' }]}
         imageSrc="/images/hero-actividades.jpg"
-        bgPosition="center 40%"
+        bgPosition="center 15%"
       />
 
       {/* ─── INTRO — Centro en Bogotá ─── */}

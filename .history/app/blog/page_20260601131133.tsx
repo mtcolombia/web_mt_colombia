@@ -197,7 +197,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
                                    group-hover:text-azul-claro transition-colors">
                       {article.title}
                     </h3>
-                    <p className="font-serif text-sm text-azul-profundo/70 mb-4 line-clamp-3 flex-1">
+                    <p className="font-serif text-sm text-azul-profundo mb-4 line-clamp-3 flex-1">
                       {article.excerpt}
                     </p>
                     <p className="text-xs font-sans text-azul-profundo/40">
