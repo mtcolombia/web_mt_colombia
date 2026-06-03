@@ -48,7 +48,7 @@ export default function ActividadesPage() {
         subtitle="Centro de Meditación Trascendental Colombia — Bogotá"
         breadcrumbs={[{ label: 'Actividades' }]}
         imageSrc="/images/hero-actividades.jpg"
-        bgPosition="center 18%"
+        bgPosition="center 40%"
       />
 
       {/* ─── INTRO — Centro en Bogotá ─── */}
@@ -62,7 +62,7 @@ export default function ActividadesPage() {
             <h2 className="text-4xl md:text-5xl leading-tight">
               Programa de Coherencia Social en Bogotá
             </h2>
-            <p className="font-sans text-azul-profundo/70 leading-relaxed text-lg">
+            <p className="font-sans text-azul-profundo leading-relaxed text-lg">
               Infraestructura especializada en Bogotá con capacidad para 40 participantes.
               Espacios diseñados para la instrucción personalizada y la práctica grupal.
               Instructores certificados presentes en varias ciudades del país.
@@ -73,7 +73,7 @@ export default function ActividadesPage() {
               <span className="chip">Virtual disponible</span>
             </div>
             <div className="space-y-4 pt-2">
-              <div className="font-sans text-azul-profundo/70 leading-relaxed text-sm space-y-2">
+              <div className="font-sans text-azul-profundo leading-relaxed text-sm space-y-2">
                 <p className="font-semibold text-azul-profundo text-base">
                   Centro de Meditación Trascendental Colombia
                 </p>
@@ -195,7 +195,7 @@ export default function ActividadesPage() {
 
             {/* Contenido */}
             <div className="space-y-6">
-              <p className="font-sans text-azul-profundo/70 leading-relaxed">
+              <p className="font-sans text-azul-profundo leading-relaxed">
                 Se realizan en diferentes lugares de Colombia, generalmente durante fines de semana,
                 en entornos propicios para el descanso y la introspección.
               </p>

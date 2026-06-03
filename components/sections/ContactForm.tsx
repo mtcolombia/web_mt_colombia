@@ -40,7 +40,7 @@ export function ContactForm() {
         <h3 className="font-sans font-semibold text-azul-profundo text-xl">
           Charla informativa gratuita y virtual
         </h3>
-        <p className="font-serif text-sm text-azul-profundo/70">
+        <p className="font-serif text-sm text-azul-profundo">
           Sin costo, sin experiencia previa. Descubre qué es la Meditación Trascendental
           y cómo puede transformar tu vida.
         </p>
@@ -72,7 +72,7 @@ export function ContactForm() {
       <div className="flex items-start gap-3">
         <input type="checkbox" id="consent" name="consent"
                className="mt-1 h-4 w-4 rounded border-azul-claro/60 accent-dorado cursor-pointer" />
-        <label htmlFor="consent" className="text-xs font-sans text-azul-profundo/70 cursor-pointer">
+        <label htmlFor="consent" className="text-xs font-sans text-azul-profundo cursor-pointer">
           Acepto el tratamiento de mis datos personales conforme a la Ley 1581 de 2012
           (habeas data). La Fundación Maharishi de Colombia los usará únicamente para
           contactarme sobre esta charla y actividades relacionadas.

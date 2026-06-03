@@ -56,7 +56,7 @@ export default function AdminContactosPage() {
                       </span>
                     </div>
                     {s.message && (
-                      <p className="mt-2 text-sm font-serif text-azul-profundo/70 bg-beige/60 rounded-lg px-3 py-2">
+                      <p className="mt-2 text-sm font-serif text-azul-profundo bg-beige/60 rounded-lg px-3 py-2">
                         {s.message}
                       </p>
                     )}

@@ -9,7 +9,7 @@ export function LoginForm() {
   return (
     <form action={action} className="flex flex-col gap-4">
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-sans font-medium text-azul-profundo/70">Usuario</label>
+        <label className="text-xs font-sans font-medium text-azul-profundo">Usuario</label>
         <input
           name="username"
           type="text"
@@ -20,7 +20,7 @@ export function LoginForm() {
         />
       </div>
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-sans font-medium text-azul-profundo/70">Contraseña</label>
+        <label className="text-xs font-sans font-medium text-azul-profundo">Contraseña</label>
         <input
           name="password"
           type="password"

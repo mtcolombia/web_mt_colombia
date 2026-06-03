@@ -13,7 +13,7 @@ export function TestimonialForm() {
         <Field label="Título / rol" name="title" required placeholder="ej: Practicante desde 2020" />
       </div>
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-sans font-medium text-azul-profundo/70">Testimonio *</label>
+        <label className="text-xs font-sans font-medium text-azul-profundo">Testimonio *</label>
         <textarea name="quote" required rows={3} className={`${inp} resize-none`} />
       </div>
       <div className="grid grid-cols-2 gap-4">
@@ -46,7 +46,7 @@ function Field({ label, name, required, placeholder }: {
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-xs font-sans font-medium text-azul-profundo/70">{label}</label>
+      <label className="text-xs font-sans font-medium text-azul-profundo">{label}</label>
       <input name={name} required={required} placeholder={placeholder} className={inp} />
     </div>
   )

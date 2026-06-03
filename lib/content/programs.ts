@@ -89,7 +89,7 @@ export const programs: Program[] = [
       { text: 'Mejor descanso',                   icon: 'Moon' },
       { text: 'Equilibrio y confort',             icon: 'Scale' },
     ],
-    image: '/images/programs/aromaterapia.jpg',
+    image: '/images/programs/aromaterapia.png',
   },
   {
     id: 'diagnostico-pulso',
@@ -111,7 +111,13 @@ export const programs: Program[] = [
     name: 'Ayurveda Maharishi',
     tagline: 'La ciencia védica del bienestar integral',
     description:
-      'El Ayurveda Maharishi es la más completa expresión de la medicina natural védica, revitalizada por Maharishi Mahesh Yogi. Integra dieta, rutinas diarias, hierbas y tratamientos personalizados según el biotipo individual (dosha) para restablecer el equilibrio profundo del organismo.',
+      `El Ayurveda Maharishi es un sistema natural y científico de salud integral, basado en el conocimiento védico de la India, que busca crear equilibrio entre cuerpo, mente y conciencia.
+
+Su objetivo principal es prevenir enfermedades y fortalecer la salud mediante hábitos diarios correctos, alimentación adecuada, descanso profundo, manejo del estrés y armonía con las leyes de la naturaleza.
+
+El Ayurveda reconoce que cada persona posee una constitución única —Vata, Pitta y Kapha— y, a partir de ella, recomienda cuidados personalizados para mantener el equilibrio físico, mental y emocional.
+
+Más que tratar síntomas, el Ayurveda Maharishi busca eliminar la causa del desequilibrio y desarrollar una vida con mayor energía, claridad mental, bienestar y longevidad natural.`,
     benefits: [
       { text: 'Equilibrio de doshas (biotipos)',          icon: 'Scale' },
       { text: 'Desintoxicación y rejuvenecimiento',       icon: 'Sparkles' },

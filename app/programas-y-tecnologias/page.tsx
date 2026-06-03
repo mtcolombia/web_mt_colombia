@@ -99,7 +99,11 @@ export default function ProgramasPage() {
               <div>
                 <h3 className="text-2xl md:text-3xl mb-2 text-azul-profundo">{program.name}</h3>
                 <p className="text-[#8a6e2d] font-sans font-medium mb-4">{program.tagline}</p>
-                <p className="font-serif text-azul-profundo mb-6">{program.description}</p>
+                {program.description.split(/\n\s*\n/).map((paragraph, index) => (
+                  <p key={index} className="font-serif text-azul-profundo mb-4 last:mb-6">
+                    {paragraph.trim()}
+                  </p>
+                ))}
 
                 <h4 className="font-sans font-semibold mb-3 text-azul-profundo">Beneficios</h4>
                 <ul className="space-y-2.5">

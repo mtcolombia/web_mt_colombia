@@ -205,18 +205,10 @@ export default function ProyectosPage() {
                 <div className="absolute inset-0 bg-gradient-to-r from-azul-profundo/85 via-azul-profundo/50 to-transparent" />
                 <div className="absolute inset-0 flex items-center">
                   <div className="p-8 max-w-2xl">
-                    <div className="flex items-center gap-2 mb-4">
-                      <span className="chip">{projects[3].category}</span>
-                      <span className="chip-light">{projects[3].year}</span>
-                      <span className="chip-light"><MapPin size={10} />{projects[3].territory}</span>
-                    </div>
-                    <h3 className="font-display text-2xl md:text-3xl text-white mb-3 leading-snug
+                    <h3 className="font-display text-2xl md:text-3xl text-white leading-snug
                                    [text-shadow:0_2px_16px_rgba(0,0,0,0.40)]">
                       {projects[3].title}
                     </h3>
-                    <p className="font-sans text-white/70 text-sm leading-relaxed line-clamp-2">
-                      {projects[3].description}
-                    </p>
                   </div>
                 </div>
               </article>
@@ -277,7 +269,7 @@ export default function ProyectosPage() {
                             border border-azul-profundo/[0.08] rounded-[14px] px-5 py-4
                             shadow-[0_4px_20px_rgba(15,42,68,0.07)] text-left">
               <BookOpen size={15} className="text-dorado shrink-0 mt-0.5" />
-              <p className="font-sans text-sm text-azul-profundo/70 leading-relaxed">
+              <p className="font-sans text-sm text-azul-profundo leading-relaxed">
                 <strong className="text-azul-profundo">Alineado con políticas nacionales:</strong>{' '}
                 CONPES 140 de 2019 · PTAFI 3.0 · CRESE — Ministerio de Educación Nacional.
               </p>
@@ -408,20 +400,9 @@ export default function ProyectosPage() {
                 </div>
 
                 <div>
-                  <p className="font-sans text-azul-profundo/70 leading-relaxed text-sm mb-5">
-                    Un programa de coherencia social con Meditación Trascendental entrena
-                    la regulación neuronal individual en grupo, con el objetivo de generar
-                    estabilidad y orden en sistemas sociales más amplios. Cuando el 1% de
-                    una población practica Sidhis MT se reportan:
+                  <p className="font-sans text-azul-profundo leading-relaxed text-sm mb-6">
+                    Un programa de coherencia social basado en la Meditación Trascendental y el programa MT-Sidhis fortalece la autorregulación neuronal y la coherencia cerebral en individuos que meditan en grupo. Según investigaciones publicadas, cuando aproximadamente el 1% de una población practica MT-Sidhis, se reportan efectos positivos en indicadores sociales, incluyendo reducción del estrés colectivo, disminución de la violencia y mayor estabilidad social.
                   </p>
-                  <ul className="space-y-2 mb-7">
-                    {['Disminución de violencia', 'Disminución del crimen', 'Disminución del estrés en la conciencia colectiva'].map((e) => (
-                      <li key={e} className="flex items-center gap-3 font-sans text-sm text-azul-profundo/70">
-                        <Shield size={12} className="text-dorado/70 shrink-0" />
-                        {e}
-                      </li>
-                    ))}
-                  </ul>
 
                   {/* Gráficos — click para ampliar */}
                   <div className="grid grid-cols-2 gap-4">
@@ -464,13 +445,13 @@ export default function ProyectosPage() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 bg-beige rounded-[14px] border border-azul-profundo/[0.06]">
-                    <p className="font-sans font-semibold text-xs text-azul-profundo/70 uppercase tracking-wide mb-3">
+                    <p className="font-sans font-semibold text-xs text-azul-profundo uppercase tracking-wide mb-3">
                       Cuando menos estrés colectivo
                     </p>
                     <ul className="space-y-2">
                       {['Mejor regulación emocional', 'Mayor integración cerebral', 'Menor reactividad', 'Mayor cooperación'].map((r) => (
-                        <li key={r} className="font-sans text-xs text-azul-profundo/65 flex items-center gap-2">
-                          <span className="w-1 h-1 rounded-full bg-dorado/70 shrink-0" />
+                        <li key={r} className="font-sans font-semibold text-sm text-azul-profundo flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-dorado/70 shrink-0" />
                           {r}
                         </li>
                       ))}
@@ -478,13 +459,13 @@ export default function ProyectosPage() {
                   </div>
 
                   <div className="p-4 bg-beige rounded-[14px] border border-azul-profundo/[0.06]">
-                    <p className="font-sans font-semibold text-xs text-azul-profundo/70 uppercase tracking-wide mb-3">
+                    <p className="font-sans font-semibold text-xs text-azul-profundo uppercase tracking-wide mb-3">
                       Condiciones del programa
                     </p>
                     <ul className="space-y-2">
                       {['Lugar fijo y constante', 'Horarios sincronizados', 'Práctica grupal sostenida', 'Consistencia crítica'].map((l) => (
-                        <li key={l} className="font-sans text-xs text-azul-profundo/65 flex items-center gap-2">
-                          <span className="w-1 h-1 rounded-full bg-dorado/70 shrink-0" />
+                        <li key={l} className="font-sans font-semibold text-sm text-azul-profundo flex items-center gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-dorado/70 shrink-0" />
                           {l}
                         </li>
                       ))}

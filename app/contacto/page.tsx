@@ -25,7 +25,7 @@ export default function ContactoPage() {
         title="Contacto"
         subtitle="Estamos para acompañarte en tu práctica"
         breadcrumbs={[{ label: 'Contacto' }]}
-        imageSrc="/images/hero-contacto.jpg"
+        imageSrc="/images/hero-contacto.png"
       />
 
       {/* ─── DATOS + FORMULARIO ─── */}
@@ -168,7 +168,7 @@ export default function ContactoPage() {
 
           <h2 className="text-3xl md:text-4xl mb-10">Política de Privacidad</h2>
 
-          <div className="space-y-8 font-sans text-azul-profundo/70 leading-relaxed">
+          <div className="space-y-8 font-sans text-azul-profundo leading-relaxed">
 
             <p>
               El presente Política de Privacidad establece los términos en que Meditación Trascendental Co

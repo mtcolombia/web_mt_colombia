@@ -48,9 +48,9 @@
   {
     "slug": "terapias-reconexion-mente-cuerpo",
     "title": "Terapias de Reconexión Mente-Cuerpo",
-    "excerpt": "Sesiones integrales del Ayurveda Maharishi diseñadas para disolver tensiones profundas y activar los mecanismos naturales de autocuración del cuerpo. Agendar cita previa.",
+    "excerpt": "Las terapias de Ayurveda ayudan a equilibrar mente y cuerpo de forma natural, favoreciendo relajación profunda, mejor sueño, más energía y estabilidad emocional.\n\nTambién apoyan la desintoxicación del organismo, mejoran la digestión y fortalecen el bienestar físico y mental mediante aceites herbales, hábitos saludables y técnicas naturales de armonización. Sus principales beneficios incluyen:\n\n- Reducción de la tensión y el agotamiento físico y mental.\n- Mejor calidad del sueño y descanso profundo.\n- Fortalecimiento de la energía, vitalidad y equilibrio emocional.\n- Mejora de la digestión, circulación y procesos de desintoxicación natural.\n- Favorecen una sensación de armonía integral y bienestar duradero.\n\nEl Ayurveda utiliza aceites herbales, alimentación consciente y terapias naturales para apoyar la capacidad de regeneración del organismo.",
     "category": "actividades",
-    "coverImage": "/images/blog/maharishi-ayurveda.jpeg",
+    "coverImage": "/images/blog/maharishi-ayurveda.png",
     "publishedAt": "2026-06-01",
     "readingTime": 2
   },
@@ -59,16 +59,16 @@
     "title": "Conferencia Introductoria sobre el Curso de MT",
     "excerpt": "Todos los miércoles a las 7:00 p.m. vía Zoom. Descubre el origen científico de la técnica, sus beneficios documentados y cómo aprenderla. Inscribirse vía WhatsApp para recibir el enlace de conexión.",
     "category": "actividades",
-    "coverImage": "/images/blog/hombre-meditando.png",
+    "coverImage": "/images/blog/conferencia-zoom.png",
     "publishedAt": "2026-06-01",
     "readingTime": 1
   },
   {
     "slug": "jornada-bienestar-centro-trascendental",
-    "title": "Jornada de Bienestar en el Centro Trascendental",
-    "excerpt": "Ven a compartir una experiencia de coherencia y recarga el sábado 20 de junio de 2026 a las 9:00 a.m. Práctica en grupo, charlas avanzadas y comunidad.",
+    "title": "Jornada de Bienestar Integral ✨",
+    "excerpt": "Regálese un espacio para renovar su mente, cuerpo y energía interior.\nLe invitamos a vivir una experiencia de bienestar profundo a través de Yoga, Meditación Trascendental y conocimiento práctico para una vida más equilibrada y saludable.\n\n📅 Fecha: 20 de junio de 2026\n🕘 Hora: 9:00 a. m.\n📍 Lugar: Centro MT Bogotá\n\nDurante esta jornada podrá experimentar técnicas naturales que ayudan a reducir la tensión, mejorar la claridad mental y fortalecer el bienestar integral.\n\nBeneficios de participar:\n\n- Reducción profunda del cansancio físico y mental.\n- Mayor claridad, enfoque y estabilidad emocional.\n- Mejor descanso y equilibrio del sistema nervioso.\n- Incremento de energía, creatividad y bienestar interior.\n- Aprendizaje de herramientas prácticas para una vida más saludable y consciente.",
     "category": "actividades",
-    "coverImage": "/images/blog/equipo-blanco.jpeg",
+    "coverImage": "/images/blog/jornada-bienestar.jpg",
     "publishedAt": "2026-06-20",
     "readingTime": 4
   },

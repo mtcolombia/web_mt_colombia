@@ -27,7 +27,9 @@ const SECTIONS = [
 export default async function BlogPage() {
   // Filtramos los artículos correspondientes a cada sección para los carruseles individuales
   const investigacionArticles = articles.filter(a => a.category === 'investigacion-cientifica')
-  const noticiasArticles = articles.filter(a => a.category === 'noticias-positivas')
+  const noticiasArticles = [...articles]
+    .filter(a => a.category === 'noticias-positivas')
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
   const actividadesArticles = articles.filter(a => a.category === 'actividades')
 
   // Helper para generar los slides de texto amplio sin imágenes
@@ -98,14 +100,16 @@ export default async function BlogPage() {
                           group">
             
             {/* Contenedor de la Imagen (Lado Izquierdo) */}
-            <div className="relative w-full md:w-1/2 h-[240px] md:h-auto shrink-0 overflow-hidden bg-azul-profundo/5">
-              <Image
-                src={article.coverImage}
-                alt={article.title}
-                fill
-                className="object-cover group-hover:scale-[1.02] transition-transform duration-700"
-                sizes="(max-w-768px) 100vw, 50vw"
-              />
+            <div className="relative w-full md:w-1/2 h-[240px] md:h-auto shrink-0 overflow-hidden bg-azul-profundo/[0.02] p-6 flex items-center justify-center">
+              <div className="relative w-full h-full min-h-[200px] md:min-h-[300px]">
+                <Image
+                  src={article.coverImage}
+                  alt={article.title}
+                  fill
+                  className="object-contain group-hover:scale-[1.02] transition-transform duration-700"
+                  sizes="(max-w-768px) 100vw, 50vw"
+                />
+              </div>
             </div>
             
             {/* Contenedor del Texto (Lado Derecho) */}
@@ -119,9 +123,28 @@ export default async function BlogPage() {
                   {article.title}
                 </h3>
                 
-                <p className="font-sans text-sm md:text-base text-azul-profundo/70 leading-relaxed">
-                  {article.excerpt}
-                </p>
+                <div className="font-sans text-sm md:text-base text-azul-profundo leading-relaxed space-y-3 max-h-[300px] overflow-y-auto pr-2">
+                  {article.excerpt.split(/\n\s*\n/).map((p, idx) => {
+                    const lines = p.split('\n').map(l => l.trim()).filter(Boolean);
+                    const isList = lines.length > 0 && lines.every(l => l.startsWith('•') || l.startsWith('-') || l.startsWith('*') || /^\d+\./.test(l));
+                    if (isList) {
+                      return (
+                        <ul key={idx} className="list-disc pl-5 space-y-1.5 my-2">
+                          {lines.map((l, lIdx) => (
+                            <li key={lIdx}>
+                              {l.replace(/^[•\-*\d\.]\s*/, '')}
+                            </li>
+                          ))}
+                        </ul>
+                      );
+                    }
+                    return (
+                      <p key={idx}>
+                        {p}
+                      </p>
+                    );
+                  })}
+                </div>
               </div>
               
               {/* Pie de tarjeta */}
@@ -230,32 +253,6 @@ export default async function BlogPage() {
         </div>
       </section>
 
-      {/* ─── Pestañas Sticky de Navegación Rápida (Slim Sticky Bar) ─── */}
-      <div className="bg-white/95 backdrop-blur-md border-b border-azul-profundo/[0.06] sticky top-16 z-20 transition-all duration-300 py-3.5">
-        <div className="container-site flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-azul-claro" />
-            <span className="text-[10px] font-sans font-bold tracking-wider text-azul-profundo/50 uppercase">
-              Navegación Rápida
-            </span>
-          </div>
-          <nav className="flex gap-2 overflow-x-auto [&::-webkit-scrollbar]:hidden scrollbar-none">
-            {SECTIONS.map((s) => {
-              const Icon = s.Icon
-              return (
-                <a
-                  key={s.key}
-                  href={s.target}
-                  className="group shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-azul-profundo/[0.08] text-azul-profundo/65 hover:border-azul-claro/40 hover:text-azul-claro transition-all duration-200 font-sans text-[11px] font-semibold"
-                >
-                  <Icon size={12} className="text-azul-profundo/40 group-hover:text-azul-claro transition-colors" />
-                  {s.label}
-                </a>
-              )
-            })}
-          </nav>
-        </div>
-      </div>
 
       {/* ────────────────────────────────────────────────────────
           1. INVESTIGACIÓN CIENTÍFICA

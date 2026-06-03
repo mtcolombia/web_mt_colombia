@@ -170,7 +170,7 @@ export function Slider({
               "font-sans text-[11px] font-bold tracking-widest px-4.5 py-1.5 rounded-full border shadow-sm select-none",
               darkBg 
                 ? "border-white/10 text-white/80 bg-white/[0.03]" 
-                : "border-azul-profundo/10 text-azul-profundo/70 bg-azul-profundo/[0.01]"
+                : "border-azul-profundo/10 text-azul-profundo bg-azul-profundo/[0.01]"
             )}>
               <span className="text-dorado">{active + 1}</span>
               <span className="opacity-30 px-2">/</span>

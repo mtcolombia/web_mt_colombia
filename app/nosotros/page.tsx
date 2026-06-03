@@ -39,7 +39,7 @@ export default function NosotrosPage() {
         subtitle="Desarrollando el pleno potencial humano desde 1973"
         breadcrumbs={[{ label: 'Nosotros' }]}
         imageSrc="/images/portada-equipo-nosotros.jpg"
-        bgPosition="top"
+        bgPosition="center 35%"
       />
 
       {/* ─── 1. QUIÉNES SOMOS — Split editorial ─── */}
@@ -72,7 +72,7 @@ export default function NosotrosPage() {
             <h2 className="text-4xl md:text-5xl leading-tight">
               Una entidad oficial al servicio del desarrollo humano
             </h2>
-            <div className="space-y-4 font-sans text-azul-profundo/70 leading-relaxed">
+            <div className="space-y-4 font-sans text-azul-profundo leading-relaxed">
               <p>
                 La Fundación Maharishi de Colombia es una organización dedicada al desarrollo del
                 pleno potencial humano a través de tecnologías avanzadas de la conciencia, basadas
@@ -191,10 +191,13 @@ export default function NosotrosPage() {
             <h2 className="text-4xl md:text-5xl leading-tight">Maharishi Mahesh Yogi</h2>
             <blockquote className="border-l-[3px] border-dorado pl-5">
               <p className="font-display text-xl md:text-2xl text-azul-profundo/85 italic leading-relaxed">
-                "La vida es bienavenurarse. El sufrimiento no es el destino del hombre."
+                “La vida no es lucha, ni tensión. La vida es felicidad, sabiduría y evolución.”
               </p>
+              <cite className="block font-sans text-xs text-dorado uppercase tracking-wider not-italic mt-2">
+                — Maharishi Mahesh Yogi
+              </cite>
             </blockquote>
-            <div className="font-sans text-azul-profundo/70 leading-relaxed space-y-4 text-sm md:text-base">
+            <div className="font-sans text-azul-profundo leading-relaxed space-y-4 text-sm md:text-base">
               <p>
                 Maharishi Mahesh Yogi (1918–2008) fue un maestro de la tradición védica de la India, graduado en Física y matemática por la Universidad de Allahabad y fundador de la Ciencia de la Inteligencia Creativa, una disciplina que propone que la conciencia es el campo fundamental de la inteligencia y el orden en la naturaleza.
               </p>

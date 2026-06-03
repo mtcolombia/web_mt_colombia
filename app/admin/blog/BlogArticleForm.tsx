@@ -15,7 +15,7 @@ export function BlogArticleForm({ article }: Props) {
       <Field label="Título *" name="title" defaultValue={article?.title} required />
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-sans font-medium text-azul-profundo/70">
+        <label className="text-xs font-sans font-medium text-azul-profundo">
           Slug * <span className="font-normal text-azul-profundo/40">(URL: /blog/slug)</span>
         </label>
         <input
@@ -28,7 +28,7 @@ export function BlogArticleForm({ article }: Props) {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-sans font-medium text-azul-profundo/70">Categoría *</label>
+        <label className="text-xs font-sans font-medium text-azul-profundo">Categoría *</label>
         <select name="category" required defaultValue={article?.category} className={inputCls}>
           {(Object.entries(CATEGORY_LABELS) as [BlogCategory, string][]).map(([k, v]) => (
             <option key={k} value={k}>{v}</option>
@@ -37,7 +37,7 @@ export function BlogArticleForm({ article }: Props) {
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-sans font-medium text-azul-profundo/70">Extracto *</label>
+        <label className="text-xs font-sans font-medium text-azul-profundo">Extracto *</label>
         <textarea
           name="excerpt"
           required
@@ -49,11 +49,11 @@ export function BlogArticleForm({ article }: Props) {
 
       <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
-          <label className="text-xs font-sans font-medium text-azul-profundo/70">Fecha publicación</label>
+          <label className="text-xs font-sans font-medium text-azul-profundo">Fecha publicación</label>
           <input name="publishedAt" type="date" defaultValue={article?.publishedAt ?? today} className={inputCls} />
         </div>
         <div className="flex flex-col gap-1.5">
-          <label className="text-xs font-sans font-medium text-azul-profundo/70">Tiempo lectura (min)</label>
+          <label className="text-xs font-sans font-medium text-azul-profundo">Tiempo lectura (min)</label>
           <input name="readingTime" type="number" min={1} max={60} defaultValue={article?.readingTime ?? 5} className={inputCls} />
         </div>
       </div>
@@ -62,11 +62,11 @@ export function BlogArticleForm({ article }: Props) {
 
       <div className="flex items-center gap-2">
         <input type="checkbox" name="featured" id="featured" defaultChecked={article?.featured} className="rounded" />
-        <label htmlFor="featured" className="text-sm font-sans text-azul-profundo/70">Artículo destacado</label>
+        <label htmlFor="featured" className="text-sm font-sans text-azul-profundo">Artículo destacado</label>
       </div>
 
       <div className="flex flex-col gap-1.5">
-        <label className="text-xs font-sans font-medium text-azul-profundo/70">Cuerpo (HTML o texto)</label>
+        <label className="text-xs font-sans font-medium text-azul-profundo">Cuerpo (HTML o texto)</label>
         <textarea name="body" rows={8} defaultValue={article?.body} className={`${inputCls} resize-y`} />
       </div>
 
@@ -84,7 +84,7 @@ export function BlogArticleForm({ article }: Props) {
           {pending ? 'Guardando…' : 'Publicar artículo'}
         </button>
         <a href="/admin/blog" className="px-4 py-2.5 border border-azul-profundo/15 rounded-lg
-                                        text-sm font-sans text-azul-profundo/70 hover:bg-beige transition-colors">
+                                        text-sm font-sans text-azul-profundo hover:bg-beige transition-colors">
           Cancelar
         </a>
       </div>
@@ -104,7 +104,7 @@ function Field({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="text-xs font-sans font-medium text-azul-profundo/70">{label}</label>
+      <label className="text-xs font-sans font-medium text-azul-profundo">{label}</label>
       <input
         name={name}
         required={required}

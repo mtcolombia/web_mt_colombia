@@ -276,7 +276,7 @@ export default function MTPage() {
                            pb-4 border-b border-azul-profundo/10">
               Fase 1 del curso de MT — Aprendizaje de la técnica
             </h3>
-            <p className="font-sans text-azul-profundo/70 text-sm mb-10 leading-relaxed">
+            <p className="font-sans text-azul-profundo text-sm mb-10 leading-relaxed">
               El aprendizaje se desarrolla en 7 pasos, repartidos a lo largo de 4 días consecutivos.
             </p>
 
@@ -340,7 +340,7 @@ export default function MTPage() {
                     <h4 className="font-sans font-semibold text-[15px] md:text-[17px] text-azul-profundo mb-1">
                       {step.title}
                     </h4>
-                    <p className="font-sans text-sm text-azul-profundo/70 leading-relaxed">{step.body}</p>
+                    <p className="font-sans text-sm text-azul-profundo leading-relaxed">{step.body}</p>
                   </div>
                   <span className="hidden md:block font-sans text-xs text-[#8a6e2d] font-medium
                                    whitespace-nowrap mt-1">
@@ -442,7 +442,7 @@ export default function MTPage() {
               href="https://research.miu.edu"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-azul-profundo/70 hover:text-azul-profundo transition-colors underline-offset-2 underline"
+              className="text-azul-profundo hover:text-azul-profundo transition-colors underline-offset-2 underline"
             >
               research.miu.edu
             </a>

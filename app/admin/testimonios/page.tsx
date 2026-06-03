@@ -47,7 +47,7 @@ export default function AdminTestimoniosPage() {
                     YouTube: {t.videoId}
                   </p>
                 )}
-                <p className="text-sm font-serif text-azul-profundo/70 mt-1 line-clamp-2">{t.quote}</p>
+                <p className="text-sm font-serif text-azul-profundo mt-1 line-clamp-2">{t.quote}</p>
               </div>
               <form action={deleteTestimonial.bind(null, t.id)}>
                 <button
