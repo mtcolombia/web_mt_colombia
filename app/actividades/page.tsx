@@ -48,7 +48,7 @@ export default function ActividadesPage() {
         subtitle="Centro de Meditación Trascendental Colombia — Bogotá"
         breadcrumbs={[{ label: 'Actividades' }]}
         imageSrc="/images/hero-actividades.jpg"
-        bgPosition="center 30%"
+        bgPosition="center 15%"
       />
 
       {/* ─── INTRO — Centro en Bogotá ─── */}
@@ -57,7 +57,7 @@ export default function ActividadesPage() {
 
           <div className="space-y-6">
             <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase">
-              El Centro
+              El Centro MT
             </p>
             <h2 className="text-4xl md:text-5xl leading-tight">
               Programa de Coherencia Social en Bogotá

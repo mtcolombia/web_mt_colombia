@@ -31,7 +31,7 @@ export function Footer() {
                 Meditación<br/>Trascendental
               </span>
             </Link>
-            <p className="text-sm font-sans text-white/75 leading-relaxed max-w-[200px]">
+            <p className="text-sm font-sans text-white/90 leading-relaxed max-w-[200px]">
               Desarrollo del pleno potencial humano a través de la Meditación Trascendental.
             </p>
           </div>
@@ -46,7 +46,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm font-sans text-white/80 hover:text-white transition-colors"
+                    className="text-sm font-sans text-white/90 hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -65,7 +65,7 @@ export function Footer() {
                 <a
                   href={whatsappLink(contactInfo.whatsappOficina.number, 'Hola, me interesa información sobre Meditación Trascendental')}
                   target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-sans text-white/80 hover:text-white transition-colors"
+                  className="flex items-center gap-2 text-sm font-sans text-white/90 hover:text-white transition-colors"
                 >
                   <MessageCircle size={16} className="text-dorado shrink-0" />
                   {contactInfo.whatsappOficina.label}
@@ -75,7 +75,7 @@ export function Footer() {
                 <a
                   href={whatsappLink(contactInfo.whatsappBusiness.number)}
                   target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-sans text-white/80 hover:text-white transition-colors"
+                  className="flex items-center gap-2 text-sm font-sans text-white/90 hover:text-white transition-colors"
                 >
                   <MessageCircle size={16} className="text-dorado shrink-0" />
                   {contactInfo.whatsappBusiness.label}
@@ -84,7 +84,7 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${contactInfo.email}`}
-                  className="flex items-center gap-2 text-sm font-sans text-white/80 hover:text-white transition-colors"
+                  className="flex items-center gap-2 text-sm font-sans text-white/90 hover:text-white transition-colors"
                 >
                   <Mail size={16} className="text-dorado shrink-0" />
                   <span className="break-all">{contactInfo.email}</span>
@@ -118,7 +118,7 @@ export function Footer() {
               {institutionalLinks.map((link) => (
                 <li key={link.url}>
                   <a href={link.url} target="_blank" rel="noopener noreferrer"
-                     className="flex items-center gap-1.5 text-sm font-sans text-white/80 hover:text-white transition-colors">
+                     className="flex items-center gap-1.5 text-sm font-sans text-white/90 hover:text-white transition-colors">
                     <ExternalLink size={13} />
                     {link.label}
                   </a>
@@ -130,9 +130,9 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between
-                        items-center gap-3 text-xs font-sans text-white/50">
+                        items-center gap-3 text-xs font-sans text-white/90">
           <p>© {year} Fundación Maharishi de Colombia</p>
-          <p>Entidad oficial sin ánimo de lucro · Colombia</p>
+          <p>Entidad sin ánimo de lucro · Colombia</p>
         </div>
 
       </div>

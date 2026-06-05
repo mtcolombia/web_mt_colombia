@@ -40,12 +40,16 @@ export function TeachersMap({ teachers }: TeachersMapProps) {
   const mapInst   = useRef<import('leaflet').Map | null>(null)
 
   useEffect(() => {
-    // Evitar doble init en StrictMode
-    if (mapInst.current) return
     if (!mapRef.current) return
 
-    // Leaflet solo corre en el browser — import dinámico
+    let aborted = false
+
     import('leaflet').then((L) => {
+      // Si el efecto fue limpiado antes de que el import resolviera, salir
+      if (aborted) return
+      // Si el contenedor ya tiene un mapa Leaflet activo, reutilizarlo o salir
+      if (mapInst.current) return
+
       // Corregir rutas de íconos default (bug conocido de Leaflet + Webpack)
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       delete (L.Icon.Default.prototype as any)._getIconUrl
@@ -143,6 +147,7 @@ export function TeachersMap({ teachers }: TeachersMapProps) {
     })
 
     return () => {
+      aborted = true
       mapInst.current?.remove()
       mapInst.current = null
     }

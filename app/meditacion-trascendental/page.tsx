@@ -130,7 +130,7 @@ export default function MTPage() {
             <h2 className="text-4xl md:text-5xl leading-tight">
               Una técnica completamente natural
             </h2>
-            <div className="space-y-4 font-sans text-azul-profundo/80 leading-relaxed">
+            <div className="space-y-4 font-sans text-azul-profundo/90 leading-relaxed">
               <p>
                 La Meditación Trascendental (MT) es una técnica ampliamente estudiada dentro del campo
                 de la medicina mente-cuerpo. Durante más de cinco décadas, ha sido objeto de investigación
@@ -189,7 +189,7 @@ export default function MTPage() {
               naturalmente hasta alcanzar la conciencia pura — un estado de completo
               silencio interior con plena alerta.
             </p>
-            <p className="font-sans text-azul-profundo/85 leading-relaxed text-base md:text-lg">
+            <p className="font-sans text-azul-profundo/95 leading-relaxed text-base md:text-lg">
               El cuerpo entra en un reposo más profundo que el sueño, el cerebro alcanza
               su mayor grado de coherencia, y el resultado es claridad mental y energía
               genuinamente renovada.
@@ -212,10 +212,10 @@ export default function MTPage() {
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-azul-profundo">Beneficios documentados</h2>
               </div>
-              <p className="font-sans text-azul-profundo/50 text-sm max-w-xs leading-relaxed md:text-right">
+              <p className="font-sans text-azul-profundo/90 text-sm max-w-xs leading-relaxed md:text-right">
                 Publicados en{' '}
-                <em className="not-italic text-azul-profundo/80">American Journal of Hypertension</em>,{' '}
-                <em className="not-italic text-azul-profundo/80">Journal of Clinical Psychology</em>{' '}
+                <em className="not-italic text-azul-profundo/90">American Journal of Hypertension</em>,{' '}
+                <em className="not-italic text-azul-profundo/90">Journal of Clinical Psychology</em>{' '}
                 y otras revistas de referencia.
               </p>
             </div>
@@ -357,7 +357,7 @@ export default function MTPage() {
                 <span className="text-white font-bold underline underline-offset-2">gratuita</span>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform text-white" />
               </Button>
-              <p className="font-sans text-xs text-azul-profundo/50">
+              <p className="font-sans text-xs text-azul-profundo/90">
                 Sin compromiso · Virtual · 90 minutos
               </p>
             </div>
@@ -386,7 +386,7 @@ export default function MTPage() {
               <p className="font-sans font-semibold text-azul-profundo text-xs tracking-[0.20em] uppercase mb-1">
                 Referencias científicas seleccionadas
               </p>
-              <p className="font-sans text-azul-profundo/80 text-xs leading-relaxed">
+              <p className="font-sans text-azul-profundo/90 text-xs leading-relaxed">
                 Estudios publicados en revistas peer-reviewed · indexados en PubMed, JSTOR y Scopus
               </p>
             </div>
@@ -408,7 +408,7 @@ export default function MTPage() {
                                hover:bg-azul-profundo/[0.05] -mx-4 px-4 rounded-xl
                                transition-colors duration-150"
                   >
-                    <span className="font-display text-azul-profundo/70 group-hover:text-azul-profundo
+                    <span className="font-display text-azul-profundo/90 group-hover:text-azul-profundo
                                      text-sm leading-none mt-1 w-6 shrink-0 text-right
                                      transition-colors select-none font-bold">
                       [{String(i + 1).padStart(2, '0')}]
@@ -418,7 +418,7 @@ export default function MTPage() {
                         {authorYear}
                       </p>
                       {journal && (
-                        <p className="font-sans text-[11px] text-azul-profundo/80
+                        <p className="font-sans text-[11px] text-azul-profundo/90
                                       mt-0.5 tracking-wide italic">
                           {journal}
                         </p>
@@ -435,7 +435,7 @@ export default function MTPage() {
           </ol>
 
           <p className="mt-10 pt-6 border-t border-azul-profundo/[0.12]
-                        font-sans text-xs text-azul-profundo/55 leading-relaxed text-center">
+                        font-sans text-xs text-azul-profundo/90 leading-relaxed text-center">
             Más de 800 estudios publicados en más de 250 universidades en 35 países.
             Base de datos completa:{' '}
             <a
@@ -465,7 +465,7 @@ export default function MTPage() {
               </p>
               <h2 className="text-4xl md:text-5xl text-azul-profundo">Lo que dicen los practicantes</h2>
             </div>
-            <p className="font-sans text-azul-profundo/50 text-sm max-w-xs leading-relaxed md:text-right">
+            <p className="font-sans text-azul-profundo/90 text-sm max-w-xs leading-relaxed md:text-right">
               Más de 6 millones de personas en el mundo han integrado la MT en su vida cotidiana.
             </p>
           </div>
@@ -523,14 +523,14 @@ export default function MTPage() {
                 <p className="font-display text-5xl md:text-6xl lg:text-7xl text-azul-profundo leading-none mb-3">
                   {s.n}
                 </p>
-                <p className="text-[13px] font-sans text-azul-profundo/50 tracking-wide uppercase">
+                <p className="text-[13px] font-sans text-azul-profundo/90 tracking-wide uppercase">
                   {s.label}
                 </p>
               </div>
             ))}
           </div>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="font-display text-2xl md:text-3xl text-azul-profundo/85 leading-snug">
+            <p className="font-display text-2xl md:text-3xl text-azul-profundo/95 leading-snug">
               El único estado de coherencia cerebral global documentado
               por la neurociencia moderna.
             </p>

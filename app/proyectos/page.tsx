@@ -37,7 +37,7 @@ const projects: Project[] = [
     category:    'Educativo',
     description: 'Programa intergeneracional. Documentó reducción de ansiedad, mejora de cohesión grupal y disminución de conductas de riesgo.',
     reach:       '1.750 estudiantes',
-    img:         '/images/proyectos/cedeco-2024-v2.jpg',
+    img:         '/images/proyectos/proyecto-cedeco-hd.jpg',
   },
   {
     id:          'estrella-2016',
@@ -109,11 +109,11 @@ export default function ProyectosPage() {
                   ].map((s) => (
                     <div key={s.label} className="text-center">
                       <p className="font-display text-2xl text-azul-profundo leading-none">{s.n}</p>
-                      <p className="text-[10px] font-sans text-azul-profundo/45 tracking-wide uppercase mt-0.5">{s.label}</p>
+                      <p className="text-[10px] font-sans text-azul-profundo/90 tracking-wide uppercase mt-0.5">{s.label}</p>
                     </div>
                   ))}
                 </div>
-                <p className="font-sans text-azul-profundo/45 text-xs max-w-xs leading-relaxed md:text-right">
+                <p className="font-sans text-azul-profundo/90 text-xs max-w-xs leading-relaxed md:text-right">
                   Concordantes con el CONPES 140 de 2019 y el Plan Nacional de Desarrollo.
                 </p>
               </div>
@@ -141,14 +141,14 @@ export default function ProyectosPage() {
                     <span className="chip-light">{projects[0].year}</span>
                   </div>
                   <div>
-                    <p className="font-sans text-white/60 text-xs mb-1.5 flex items-center gap-1.5">
+                    <p className="font-sans text-white/90 text-xs mb-1.5 flex items-center gap-1.5">
                       <MapPin size={11} />{projects[0].territory}
                     </p>
                     <h3 className="font-display text-2xl md:text-3xl text-white mb-3 leading-snug
                                    [text-shadow:0_2px_16px_rgba(0,0,0,0.40)]">
                       {projects[0].title}
                     </h3>
-                    <p className="font-sans text-white/70 text-sm leading-relaxed line-clamp-3 max-w-lg mb-4">
+                    <p className="font-sans text-white/90 text-sm leading-relaxed line-clamp-3 max-w-lg mb-4">
                       {projects[0].description}
                     </p>
                     <span className="chip-light"><Tag size={10} />{projects[0].reach}</span>
@@ -177,7 +177,7 @@ export default function ProyectosPage() {
                       <span className="chip-light">{p.year}</span>
                     </div>
                     <div>
-                      <p className="font-sans text-white/55 text-xs mb-1 flex items-center gap-1.5">
+                      <p className="font-sans text-white/90 text-xs mb-1 flex items-center gap-1.5">
                         <MapPin size={10} />{p.territory}
                       </p>
                       <h3 className="font-display text-xl text-white mb-2 leading-snug
@@ -245,7 +245,7 @@ export default function ProyectosPage() {
             <p className="text-dorado font-sans font-semibold text-sm tracking-[0.12em] uppercase mb-8">
               Misión educativa
             </p>
-            <div className="space-y-5 font-sans text-azul-profundo/75 leading-[1.85] text-justify
+            <div className="space-y-5 font-sans text-azul-profundo/90 leading-[1.85] text-justify
                             hyphens-auto" lang="es">
               <p>
                 <strong className="text-azul-profundo font-semibold">La Educación Basada en la Conciencia</strong>{' '}
@@ -293,7 +293,7 @@ export default function ProyectosPage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8">
               <div>
-                <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase
+                <h4 className="font-sans font-semibold text-xs text-azul-profundo/90 uppercase
                                tracking-widest mb-4 pb-3 border-b border-azul-profundo/10">
                   En estudiantes y docentes
                 </h4>
@@ -302,7 +302,7 @@ export default function ProyectosPage() {
                     'Regulación emocional y rendimiento académico',
                     'Mejora la calidad del sueño',
                     'Mejora en la comunicación y relaciones interpersonales'].map((b) => (
-                    <li key={b} className="flex items-start gap-3 font-sans text-sm text-azul-profundo/75">
+                    <li key={b} className="flex items-start gap-3 font-sans text-sm text-azul-profundo/90">
                       <span className="w-4 h-4 rounded-full bg-dorado/15 flex items-center justify-center shrink-0 mt-0.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-dorado" />
                       </span>
@@ -310,19 +310,19 @@ export default function ProyectosPage() {
                     </li>
                   ))}
                 </ul>
-                <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase tracking-widest mb-3">
+                <h4 className="font-sans font-semibold text-xs text-azul-profundo/90 uppercase tracking-widest mb-3">
                   Se disminuye significativamente:
                 </h4>
                 <ul className="space-y-2">
                   {['Estrés crónico', 'Hipertensión', 'Trastornos de ansiedad', 'Depresión e insomnio'].map((b) => (
-                    <li key={b} className="flex items-center gap-2.5 font-sans text-sm text-azul-profundo/65">
+                    <li key={b} className="flex items-center gap-2.5 font-sans text-sm text-azul-profundo/90">
                       <Shield size={11} className="text-dorado/70 shrink-0" />{b}
                     </li>
                   ))}
                 </ul>
               </div>
               <div>
-                <h4 className="font-sans font-semibold text-xs text-azul-profundo/60 uppercase
+                <h4 className="font-sans font-semibold text-xs text-azul-profundo/90 uppercase
                                tracking-widest mb-4 pb-3 border-b border-azul-profundo/10">
                   El cerebro en máxima integración
                 </h4>
@@ -332,10 +332,10 @@ export default function ProyectosPage() {
                     { n: '03', title: 'Mayor autocontrol',  desc: 'Dominancia prefrontal desarrollada' },
                     { n: '04', title: 'Mayor resiliencia',  desc: 'Regulación emocional estable' }].map((item) => (
                     <div key={item.n} className="flex items-center gap-3 py-2.5 border-b border-azul-profundo/[0.06] last:border-0">
-                      <span className="font-display text-lg text-dorado/30 select-none w-7 shrink-0">{item.n}</span>
+                      <span className="font-display text-lg text-dorado/90 select-none w-7 shrink-0">{item.n}</span>
                       <div>
                         <p className="font-sans font-semibold text-sm text-azul-profundo">{item.title}</p>
-                        <p className="font-sans text-xs text-azul-profundo/50">{item.desc}</p>
+                        <p className="font-sans text-xs text-azul-profundo/90">{item.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -394,7 +394,7 @@ export default function ProyectosPage() {
                     "Cuando muchas personas están en calma por dentro, pueden ayudar
                     a que el mundo esté más en calma por fuera."
                   </p>
-                  <p className="font-sans text-white/50 text-xs tracking-wide uppercase">
+                  <p className="font-sans text-white/90 text-xs tracking-wide uppercase">
                     El efecto Maharishi
                   </p>
                 </div>
@@ -431,7 +431,7 @@ export default function ProyectosPage() {
                   ].map((n) => (
                     <div key={n.label} className="py-3.5 grid grid-cols-[5.5rem_1fr] gap-4 items-baseline">
                       <span className="font-sans font-semibold text-dorado text-xs uppercase tracking-wide">{n.label}</span>
-                      <span className="font-sans text-sm text-azul-profundo/65">{n.desc}</span>
+                      <span className="font-sans text-sm text-azul-profundo/90">{n.desc}</span>
                     </div>
                   ))}
                 </div>
@@ -499,7 +499,7 @@ export default function ProyectosPage() {
                 <h2 className="text-3xl md:text-4xl leading-tight">
                   Programas de formación y expansión digital
                 </h2>
-                <p className="font-sans text-azul-profundo/65 leading-relaxed text-sm">
+                <p className="font-sans text-azul-profundo/90 leading-relaxed text-sm">
                   La Maharishi Foundation for Programs in Latin America ha desarrollado
                   plataformas digitales para escalar la EBC a toda Latinoamérica, con acceso
                   remoto en varios idiomas. Cursos modulares de 30–70 lecciones, formación
@@ -532,7 +532,7 @@ export default function ProyectosPage() {
                     <span className="w-1.5 h-1.5 rounded-full bg-dorado mt-2 shrink-0" />
                     <div>
                       <p className="font-sans font-semibold text-sm text-azul-profundo">{item.label}</p>
-                      <p className="font-sans text-xs text-azul-profundo/50">{item.sub}</p>
+                      <p className="font-sans text-xs text-azul-profundo/90">{item.sub}</p>
                     </div>
                   </li>
                 ))}

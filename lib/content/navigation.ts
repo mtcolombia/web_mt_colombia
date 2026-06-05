@@ -10,7 +10,6 @@ export const mainNav: Nav = [
   { label: 'Proyectos',                 href: routes.proyectos },
   { label: 'Actividades',               href: routes.actividades },
   { label: 'Blog',                      href: routes.blog },
-  { label: 'Foro',                      href: routes.foro },
   { label: 'Contacto',                  href: routes.contacto },
 ]
 

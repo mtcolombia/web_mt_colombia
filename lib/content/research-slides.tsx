@@ -91,7 +91,7 @@ export const researchSlides: SliderSlide[] = [
                 <span className="font-display text-xl md:text-2xl text-dorado/40 select-none">{b.n}</span>
                 <span className="text-dorado/70">{b.icon}</span>
                 <h3 className="font-sans font-semibold text-[14px] md:text-[16px] text-white">{b.title}</h3>
-                <p className="hidden md:block font-sans text-[13px] text-white/55 leading-relaxed">{b.body}</p>
+                <p className="hidden md:block font-sans text-[13px] text-white/90 leading-relaxed">{b.body}</p>
               </div>
             ))}
           </div>
@@ -110,7 +110,7 @@ export const researchSlides: SliderSlide[] = [
                 Evidencia científica por área
               </p>
               <h2 className="text-2xl md:text-3xl text-white">{area.title}</h2>
-              <p className="font-sans text-white/65 leading-relaxed text-sm md:text-base">{area.body}</p>
+              <p className="font-sans text-white/90 leading-relaxed text-sm md:text-base">{area.body}</p>
             </div>
             <div className="relative h-[160px] lg:h-[280px] rounded-[16px] overflow-hidden
                             shadow-[0_16px_48px_rgba(0,0,0,0.40)]">
@@ -146,7 +146,7 @@ export const researchSlidesLight: SliderSlide[] = [
                 <span className="font-display text-xl md:text-2xl text-dorado/50 select-none">{b.n}</span>
                 <span className="text-dorado/80">{b.icon}</span>
                 <h3 className="font-sans font-semibold text-[14px] md:text-[16px] text-azul-profundo">{b.title}</h3>
-                <p className="hidden md:block font-sans text-[13px] text-azul-profundo/60 leading-relaxed">{b.body}</p>
+                <p className="hidden md:block font-sans text-[13px] text-azul-profundo leading-relaxed">{b.body}</p>
               </div>
             ))}
           </div>
@@ -165,7 +165,7 @@ export const researchSlidesLight: SliderSlide[] = [
                 Evidencia científica por área
               </p>
               <h2 className="text-2xl md:text-3xl text-azul-profundo">{area.title}</h2>
-              <p className="font-sans text-azul-profundo/65 leading-relaxed text-sm md:text-base">{area.body}</p>
+              <p className="font-sans text-azul-profundo/90 leading-relaxed text-sm md:text-base">{area.body}</p>
             </div>
             <div className="relative h-[160px] lg:h-[280px] rounded-[16px] overflow-hidden
                             shadow-[0_8px_32px_rgba(15,42,68,0.12)] bg-white">

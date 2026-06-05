@@ -33,17 +33,17 @@ export default function HomePage() {
             </p>
             <h2 className="text-4xl md:text-5xl text-azul-profundo">¿Qué la hace diferente?</h2>
             <blockquote className="border-l-[3px] border-[#8a6e2d] pl-5">
-              <p className="font-display text-xl md:text-2xl text-azul-profundo/85 italic leading-relaxed">
+              <p className="font-display text-xl md:text-2xl text-azul-profundo italic leading-relaxed">
                 "Es una técnica natural, sin esfuerzo y científicamente validada para
                 nutrir todos los aspectos de la vida."
               </p>
             </blockquote>
-            <p className="font-sans text-azul-profundo/70 leading-relaxed">
+            <p className="font-sans text-azul-profundo leading-relaxed">
               A diferencia de las técnicas de concentración o control mental, la MT permite
               que la mente se aquiete de forma espontánea. No se requiere guía continua,
               música ni visualización. Es universal y accesible a cualquier persona.
             </p>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-sm font-sans text-azul-profundo/85">
+            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-sm font-sans text-azul-profundo/90">
               <span className="flex items-center gap-1.5 select-none">
                 ⏱️ 20 min · 2 veces al día
               </span>
@@ -87,7 +87,7 @@ export default function HomePage() {
             <h2 className="text-4xl md:text-5xl leading-tight">
               Un enfoque basado en evidencia científica
             </h2>
-            <p className="font-sans text-azul-profundo/70 text-lg leading-relaxed">
+            <p className="font-sans text-azul-profundo text-lg leading-relaxed">
               En un contexto donde el estrés crónico impacta la salud y el desempeño,
               la MT ofrece un enfoque basado en evidencia científica para restablecer
               el equilibrio fisiológico y potenciar el rendimiento humano.
@@ -99,7 +99,7 @@ export default function HomePage() {
                 { emoji: '🌙', text: 'Mejora en la calidad del sueño y recuperación fisiológica' },
                 { emoji: '📈', text: 'Incremento de la capacidad cognitiva, creatividad y enfoque' },
               ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3.5 font-sans text-[14px] text-azul-profundo/80">
+                <li key={i} className="flex items-start gap-3.5 font-sans text-[14px] text-azul-profundo/90">
                   <span className="text-[18px] shrink-0 select-none leading-none mt-0.5">{item.emoji}</span>
                   <span>{item.text}</span>
                 </li>
@@ -121,8 +121,11 @@ export default function HomePage() {
       <section className="pb-20 lg:pb-28 pt-0 bg-white">
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <p className="font-sans text-azul-profundo/70 text-lg leading-relaxed">
+            <div className="space-y-5">
+              <h2 className="text-3xl md:text-4xl text-azul-profundo leading-tight">
+                No necesita cambiar sus creencias para transformar su mente y su vida.
+              </h2>
+              <p className="font-sans text-azul-profundo text-lg leading-relaxed">
                 Universal y accesible: La Meditación Trascendental no pertenece a ninguna
                 religión, filosofía ni estilo de vida en particular. Es un método universal,
                 apto para cualquier persona, en cualquier cultura. Por ello, más de seis
@@ -157,13 +160,13 @@ export default function HomePage() {
         </div>
         <div className="relative container-site section-y">
           <div className="max-w-3xl mb-16">
-            <p className="text-white/80 font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-4">
+            <p className="text-white/90 font-sans font-semibold text-xs tracking-[0.15em] uppercase mb-4">
               Estrés y salud
             </p>
             <h2 className="text-white text-4xl md:text-5xl leading-tight mb-6">
               Una herramienta efectiva para disminuir el estrés
             </h2>
-            <p className="font-sans text-white/85 text-lg leading-relaxed">
+            <p className="font-sans text-white text-lg leading-relaxed">
               El estrés crónico es uno de los principales factores que afectan la salud,
               la felicidad y el rendimiento en la vida moderna. La investigación científica
               ha demostrado que la MT reduce el estrés de manera efectiva y sostenible.
@@ -188,7 +191,7 @@ export default function HomePage() {
                     <h3 className="font-sans font-bold text-white text-lg mb-1">
                       Descanso profundo y restauración
                     </h3>
-                    <p className="font-sans text-white/75 text-sm leading-relaxed">
+                    <p className="font-sans text-white/90 text-sm leading-relaxed">
                       La práctica regular crea un estado de descanso profundo que supera al del
                       sueño ordinario, liberando la tensión acumulada capa por capa de forma natural.
                     </p>
@@ -204,7 +207,7 @@ export default function HomePage() {
                     <h3 className="font-sans font-bold text-white text-lg mb-1">
                       Integración simple y sin esfuerzo
                     </h3>
-                    <p className="font-sans text-white/75 text-sm leading-relaxed">
+                    <p className="font-sans text-white/90 text-sm leading-relaxed">
                       No exige cambios en tu estilo de vida. Se integra de forma orgánica en cualquier rutina,
                       dedicando tan solo 20 minutos dos veces al día.
                     </p>

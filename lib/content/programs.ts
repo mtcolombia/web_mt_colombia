@@ -36,7 +36,7 @@ export const programs: Program[] = [
     name: 'Terapia de Luz y Gemas',
     tagline: 'Armonía física, mental y emocional a través de la luz',
     description:
-      'Combina la aplicación de luz, color y la vibración natural de las gemas para restablecer el equilibrio energético. Utilizada como complemento a la práctica de Meditación Trascendental.',
+      'Combina la aplicación de luz, color y la vibración natural de las piedras preciosas para restablecer el equilibrio energético. Utilizada como complemento a la práctica de Meditación Trascendental.',
     benefits: [
       { text: 'Estabilidad emocional',              icon: 'Scale' },
       { text: 'Equilibrio de la energía personal',  icon: 'Sun' },

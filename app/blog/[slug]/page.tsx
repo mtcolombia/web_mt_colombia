@@ -57,7 +57,7 @@ export default async function BlogPostPage({ params }: Props) {
             {CATEGORY_LABELS[article.category]}
           </span>
           <h1 className="text-white text-4xl md:text-5xl max-w-3xl mb-4">{article.title}</h1>
-          <p className="text-white/60 font-sans text-sm">
+          <p className="text-white/90 font-sans text-sm">
             {formatDate(article.publishedAt)} · {article.readingTime} min lectura
           </p>
         </div>
@@ -69,14 +69,14 @@ export default async function BlogPostPage({ params }: Props) {
           {article.body ? (
             /* Cuando hay contenido real (MDX/HTML) */
             <div
-              className="font-serif text-azul-profundo/85 leading-relaxed
+              className="font-serif text-azul-profundo/95 leading-relaxed
                          [&_h2]:font-display [&_h2]:text-3xl [&_h2]:mt-10 [&_h2]:mb-4
                          [&_h3]:font-sans [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:mt-8 [&_h3]:mb-3
                          [&_p]:mb-5 [&_blockquote]:border-l-4 [&_blockquote]:border-dorado [&_blockquote]:pl-5 [&_blockquote]:italic"
               dangerouslySetInnerHTML={{ __html: article.body }}
             />
           ) : (
-            <p className="font-serif text-azul-profundo/60 text-center py-12">
+            <p className="font-serif text-azul-profundo/90 text-center py-12">
               Contenido del artículo próximamente…
             </p>
           )}

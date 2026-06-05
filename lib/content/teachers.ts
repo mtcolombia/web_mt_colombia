@@ -57,7 +57,7 @@ export const teachers: Teacher[] = [
 
   // ── Medellín ─────────────────────────────────────────────────────────────
   {
-    name:  'Carlos Alberto Muñoz',
+    name:  'Dr. Carlos Alberto Muñoz',
     role:  'Instructor certificado MT',
     photo: '/images/teachers/carlos-munoz.jpg',
     tag:   'instructor',

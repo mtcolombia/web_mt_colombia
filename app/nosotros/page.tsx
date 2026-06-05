@@ -9,7 +9,7 @@ import { teachers }           from '@/lib/content/teachers'
 export const metadata: Metadata = {
   title: 'Nosotros',
   description:
-    'La Fundación Maharishi de Colombia es una entidad oficial sin ánimo de lucro dedicada al desarrollo del pleno potencial humano.',
+    'La Fundación Maharishi de Colombia es una entidad sin ánimo de lucro dedicada al desarrollo del pleno potencial humano.'
 }
 
 const benefitCards = [
@@ -70,7 +70,7 @@ export default function NosotrosPage() {
               Quiénes somos
             </p>
             <h2 className="text-4xl md:text-5xl leading-tight">
-              Una entidad oficial al servicio del desarrollo humano
+              Una entidad al servicio del desarrollo humano
             </h2>
             <div className="space-y-4 font-sans text-azul-profundo leading-relaxed">
               <p>
@@ -85,7 +85,7 @@ export default function NosotrosPage() {
                 bienestar y el funcionamiento óptimo del cerebro.
               </p>
               <p>
-                En Colombia, la Fundación Maharishi actúa como una entidad oficial sin ánimo de
+                En Colombia, la Fundación Maharishi es una entidad sin ánimo de
                 lucro autorizada para impartir estos conocimientos, garantizando la enseñanza
                 estandarizada de las tecnologías védicas Maharishi, a través de instructores
                 certificados internacionalmente.
@@ -122,7 +122,7 @@ export default function NosotrosPage() {
             <h2 className="text-3xl md:text-4xl text-azul-profundo font-display leading-tight">
               Propósito fundamental de la Fundación Maharishi de Colombia
             </h2>
-            <div className="font-sans text-azul-profundo/75 leading-relaxed space-y-4 text-base md:text-lg">
+            <div className="font-sans text-azul-profundo/90 leading-relaxed space-y-4 text-base md:text-lg">
               <p>
                 La Fundación Maharishi de Colombia tiene como propósito fundamental el desarrollo del pleno potencial humano, promoviendo una vida en armonía con las leyes de la naturaleza y contribuyendo a la superación de los problemas que generan sufrimiento en el individuo y la sociedad.
               </p>
@@ -130,7 +130,7 @@ export default function NosotrosPage() {
                 Para ello, ofrece tecnologías orientadas al desarrollo de la conciencia y al bienestar físico y mental, como la técnica de Meditación Trascendental, técnicas avanzadas, el programa Sidhis MT, Yoga Maharishi, aromaterapia, consultas ayurvédicas y convivencias fuera de la ciudad.
               </p>
               <p className="font-semibold text-azul-profundo pt-2 border-t border-azul-profundo/[0.06]">
-                Fundada sobre la Ciencia de la Inteligencia Creativa, desarrollada por Maharishi Mahesh Yogi, la Fundación es la única entidad oficial en Colombia autorizada para impartir estos conocimientos.
+                Fundada sobre la Ciencia de la Inteligencia Creativa, desarrollada por Maharishi Mahesh Yogi, la Fundación es la entidad en Colombia autorizada para impartir estos conocimientos.
               </p>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function NosotrosPage() {
             <h2 className="text-3xl md:text-4xl text-azul-profundo font-display leading-tight">
               Hacia un impacto integral y coherente en la sociedad
             </h2>
-            <div className="font-sans text-azul-profundo/75 leading-relaxed space-y-4 text-base md:text-lg">
+            <div className="font-sans text-azul-profundo/90 leading-relaxed space-y-4 text-base md:text-lg">
               <p>
                 La Fundación Maharishi de Colombia aspira a contribuir al desarrollo integral del individuo y de la sociedad, promoviendo una vida en equilibrio con las leyes naturales, orientada hacia una paz estable y duradera.
               </p>
@@ -190,7 +190,7 @@ export default function NosotrosPage() {
             </p>
             <h2 className="text-4xl md:text-5xl leading-tight">Maharishi Mahesh Yogi</h2>
             <blockquote className="border-l-[3px] border-dorado pl-5">
-              <p className="font-display text-xl md:text-2xl text-azul-profundo/85 italic leading-relaxed">
+              <p className="font-display text-xl md:text-2xl text-azul-profundo/95 italic leading-relaxed">
                 “La vida no es lucha, ni tensión. La vida es felicidad, sabiduría y evolución.”
               </p>
               <cite className="block font-sans text-xs text-dorado uppercase tracking-wider not-italic mt-2">
@@ -199,7 +199,7 @@ export default function NosotrosPage() {
             </blockquote>
             <div className="font-sans text-azul-profundo leading-relaxed space-y-4 text-sm md:text-base">
               <p>
-                Maharishi Mahesh Yogi (1918–2008) fue un maestro de la tradición védica de la India, graduado en Física y matemática por la Universidad de Allahabad y fundador de la Ciencia de la Inteligencia Creativa, una disciplina que propone que la conciencia es el campo fundamental de la inteligencia y el orden en la naturaleza.
+                Maharishi Mahesh Yogi (1918–2008) fue un maestro de la tradición védica de la India, graduado en Física y Matemática por la Universidad de Allahabad y fundador de la Ciencia de la Inteligencia Creativa, una disciplina que propone que la conciencia es el campo fundamental de la inteligencia y el orden en la naturaleza.
               </p>
               <p>
                 A partir de la década de 1950, introdujo la Meditación Trascendental (MT) en todo el mundo y estableció centros de enseñanza, investigación y educación en más de 120 países.
@@ -221,10 +221,10 @@ export default function NosotrosPage() {
               </p>
               <h2 className="text-4xl md:text-5xl">Beneficios documentados</h2>
             </div>
-            <p className="font-sans text-azul-profundo/55 text-sm max-w-xs leading-relaxed md:text-right">
+            <p className="font-sans text-azul-profundo/90 text-sm max-w-xs leading-relaxed md:text-right">
               Más de 800 estudios en 250 universidades de 35 países, publicados en
-              <em className="not-italic text-azul-profundo/80"> Science</em>,{' '}
-              <em className="not-italic text-azul-profundo/80">Lancet</em> y otras revistas de referencia.
+              <em className="not-italic text-azul-profundo/90"> Science</em>,{' '}
+              <em className="not-italic text-azul-profundo/90">Lancet</em> y otras revistas de referencia.
             </p>
           </div>
 
@@ -247,7 +247,7 @@ export default function NosotrosPage() {
                   <h3 className="font-sans font-semibold text-white text-lg mb-2 leading-snug">
                     {card.title}
                   </h3>
-                  <p className="font-sans text-white/70 text-sm leading-relaxed">
+                  <p className="font-sans text-white/90 text-sm leading-relaxed">
                     {card.desc}
                   </p>
                 </div>
@@ -270,7 +270,7 @@ export default function NosotrosPage() {
               </p>
               <h2 className="text-4xl md:text-5xl">Equipo en Colombia</h2>
             </div>
-            <p className="font-sans text-azul-profundo/55 text-sm max-w-xs leading-relaxed md:text-right">
+            <p className="font-sans text-azul-profundo/90 text-sm max-w-xs leading-relaxed md:text-right">
               Formados por la Maharishi European Research University y la Maharishi
               International University (Iowa, EE. UU.).
             </p>
@@ -278,7 +278,7 @@ export default function NosotrosPage() {
 
           {/* Mapa interactivo — clic en marcador para ver profesores y contacto */}
           <div className="mb-14">
-            <p className="font-sans text-xs text-azul-profundo/40 mb-4 flex items-center gap-1.5">
+            <p className="font-sans text-xs text-azul-profundo/90 mb-4 flex items-center gap-1.5">
               <MapPin size={12} className="text-dorado" />
               Haz clic en cada marcador para ver los profesores disponibles en esa ciudad
             </p>
@@ -294,7 +294,7 @@ export default function NosotrosPage() {
             if (!list.length) return null
             return (
               <div key={group} className="mb-10 last:mb-0">
-                <h3 className="font-sans font-semibold text-xs text-azul-profundo/55 uppercase
+                <h3 className="font-sans font-semibold text-xs text-azul-profundo/90 uppercase
                                tracking-widest mb-4 pb-3 border-b border-azul-profundo/10
                                flex items-center gap-2">
                   {!isNational && <MapPin size={11} className="text-dorado" />}
@@ -309,7 +309,7 @@ export default function NosotrosPage() {
                         <div className="w-11 h-11 rounded-full bg-azul-profundo/[0.07]
                                         border border-azul-profundo/10 shrink-0 overflow-hidden
                                         flex items-center justify-center">
-                          <span className="font-sans font-semibold text-sm text-azul-profundo/50
+                          <span className="font-sans font-semibold text-sm text-azul-profundo/90
                                            select-none">
                             {initials}
                           </span>
@@ -318,7 +318,7 @@ export default function NosotrosPage() {
                           <p className="font-sans font-semibold text-[15px] md:text-[16px] text-azul-profundo leading-snug">
                             {t.name}
                           </p>
-                          <p className="font-sans text-xs text-azul-profundo/45 mt-0.5">{t.role}</p>
+                          <p className="font-sans text-xs text-azul-profundo/90 mt-0.5">{t.role}</p>
                         </div>
 
                       </div>
@@ -342,7 +342,7 @@ export default function NosotrosPage() {
           ].map((s) => (
             <div key={s.n} className="text-center px-4 md:px-10">
               <p className="font-display text-4xl md:text-5xl text-white leading-none mb-2">{s.n}</p>
-              <p className="text-[11px] md:text-[12px] font-sans text-white/45 tracking-wide uppercase">{s.label}</p>
+              <p className="text-[11px] md:text-[12px] font-sans text-white/90 tracking-wide uppercase">{s.label}</p>
             </div>
           ))}
         </div>

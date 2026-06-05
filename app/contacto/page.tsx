@@ -47,7 +47,7 @@ export default function ContactoPage() {
                     <MessageCircle size={20} className="text-dorado shrink-0" />
                     <div>
                       <p className="font-semibold">Oficina Nacional — WhatsApp</p>
-                      <p className="text-sm text-azul-profundo/60">{contactInfo.whatsappOficina.label}</p>
+                      <p className="text-sm text-azul-profundo/90">{contactInfo.whatsappOficina.label}</p>
                     </div>
                   </a>
                 </li>
@@ -61,7 +61,7 @@ export default function ContactoPage() {
                     <MessageCircle size={20} className="text-dorado shrink-0" />
                     <div>
                       <p className="font-semibold">WhatsApp Business</p>
-                      <p className="text-sm text-azul-profundo/60">{contactInfo.whatsappBusiness.label}</p>
+                      <p className="text-sm text-azul-profundo/90">{contactInfo.whatsappBusiness.label}</p>
                     </div>
                   </a>
                 </li>
@@ -73,7 +73,7 @@ export default function ContactoPage() {
                     <Mail size={20} className="text-dorado shrink-0" strokeWidth={1.5} />
                     <div>
                       <p className="font-semibold">Correo electrónico</p>
-                      <p className="text-sm text-azul-profundo/60 break-all">{contactInfo.email}</p>
+                      <p className="text-sm text-azul-profundo/90 break-all">{contactInfo.email}</p>
                     </div>
                   </a>
                 </li>
@@ -140,13 +140,13 @@ export default function ContactoPage() {
                   <div key={t.name} className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-full bg-azul-profundo/8 border border-azul-profundo/12
                                     flex items-center justify-center shrink-0">
-                      <span className="font-sans font-semibold text-sm text-azul-profundo/60">
+                      <span className="font-sans font-semibold text-sm text-azul-profundo/90">
                         {t.name.split(' ').map(w => w[0]).slice(0, 2).join('')}
                       </span>
                     </div>
                     <div>
                       <p className="text-sm font-sans font-semibold text-azul-profundo">{t.name}</p>
-                      <p className="text-xs font-sans text-azul-profundo/60">{t.role.split('·')[0].trim()}</p>
+                      <p className="text-xs font-sans text-azul-profundo/90">{t.role.split('·')[0].trim()}</p>
                     </div>
                   </div>
                 ))}
@@ -178,7 +178,7 @@ export default function ContactoPage() {
             <div className="mt-8 space-y-8 font-sans text-azul-profundo leading-relaxed">
 
               <p>
-                El presente Política de Privacidad establece los términos en que Meditación Trascendental Co
+                La presente Política de Privacidad establece los términos en que Meditación Trascendental Colombia
                 usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su
                 sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios.
                 Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser
@@ -214,7 +214,7 @@ export default function ContactoPage() {
                   usted proporcione y podrán ser cancelados en cualquier momento.
                 </p>
                 <p className="mt-3">
-                  Meditación Trascendental Co está altamente comprometido para cumplir con el compromiso de
+                  Meditación Trascendental Colombia está altamente comprometida a cumplir con el compromiso de
                   mantener su información segura. Usamos los sistemas más avanzados y los actualizamos
                   constantemente para asegurarnos de que no exista ningún acceso no autorizado.
                 </p>
@@ -272,7 +272,7 @@ export default function ContactoPage() {
                   sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.
                 </p>
                 <p className="mt-3">
-                  Meditación Trascendental Col. Se reserva el derecho de cambiar los términos de la presente
+                  Meditación Trascendental Colombia se reserva el derecho de cambiar los términos de la presente
                   Política de Privacidad en cualquier momento.
                 </p>
               </div>

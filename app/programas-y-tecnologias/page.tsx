@@ -4,6 +4,7 @@ import * as LucideIcons from 'lucide-react'
 import { HeroSecondary } from '@/components/sections/HeroSecondary'
 import { CTABand }       from '@/components/sections/CTABand'
 import { VideoEmbed }    from '@/components/sections/VideoEmbed'
+import { ImageLightbox } from '@/components/ui/ImageLightbox'
 import { cn }            from '@/lib/utils'
 import { programs }      from '@/lib/content/programs'
 
@@ -85,6 +86,12 @@ export default function ProgramasPage() {
                   </p>
                 ))}
 
+                {hasRealVideo && (
+                  <div className="mb-8">
+                    <VideoEmbed videoId={program.videoId!} title={program.name} />
+                  </div>
+                )}
+
                 <h4 className="font-sans font-semibold mb-3 text-azul-profundo">Beneficios</h4>
                 <ul className="space-y-2.5">
                   {program.benefits.map((b, j) => (
@@ -97,9 +104,19 @@ export default function ProgramasPage() {
                   ))}
                 </ul>
 
-                {hasRealVideo && (
+                {/* Gráfico del Efecto Meissner — solo para Sidhis MT */}
+                {program.id === 'sidhis-mt' && (
                   <div className="mt-8">
-                    <VideoEmbed videoId={program.videoId!} title={program.name} />
+                    <p className="font-sans text-xs text-azul-profundo/60 uppercase tracking-widest mb-3">
+                      El Efecto Maharishi — haz clic para ampliar
+                    </p>
+                    <ImageLightbox
+                      src="/images/grafico-meisner.jpg"
+                      alt="El Efecto Meissner y el Efecto Maharishi — coherencia colectiva y reducción del estrés social"
+                      width={900}
+                      height={600}
+                      className="max-w-full"
+                    />
                   </div>
                 )}
               </div>
